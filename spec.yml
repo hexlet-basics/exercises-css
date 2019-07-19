@@ -1,0 +1,7 @@
+---
+
+language:
+  docker_image: "hexletbasics/exercises-css"
+  extension: html
+  exercise_filename: index.html
+  exercise_test_filename: test.js

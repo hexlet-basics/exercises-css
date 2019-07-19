@@ -1,0 +1,14 @@
+{
+  "scripts": {},
+  "type": "module",
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setup.js"
+    ],
+    "transform": {}
+  },
+  "dependencies": {},
+  "devDependencies": {
+  }
+}

@@ -3,3 +3,6 @@
 
 Following repository was created and maintained by team and community of  _Hexlet_, educational organization. [Read more about Hexlet](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=exercises-php).
 ##
+
+## TODO
+* Тесты для задания из темы Селекторы (1 модуль 3 урок)

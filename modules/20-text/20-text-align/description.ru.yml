@@ -6,7 +6,7 @@ theory: |
 
   ---
 
-  <p style="text-align:center; font-weight:bold">Заголовок, расположенный по центру</p>
+  <p style="text-align: center; font-weight: bold">Заголовок, расположенный по центру</p>
   <p>Текст страницы. Можно заметить, что заголовок бросился в глаза благодаря выравниванию по центру.</p>
 
   ---
@@ -40,9 +40,10 @@ theory: |
   ---
 
   <p>Текст по левому краю</p>
-  <p style="text-align:center">Текст по центру</p>
-  <p style="text-align:right">Текст по правому краю</p>
+  <p style="text-align: center">Текст по центру</p>
+  <p style="text-align: right">Текст по правому краю</p>
 
   ---
 
 instructions: |
+  Добавьте в редактор параграф с классом `important` и выровняйте его по центру.

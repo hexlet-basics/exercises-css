@@ -1,6 +1,9 @@
 const { test } = require('tests');
 
 test(({ query, expect }) => {
-  const p = query(document, 'p');
-  expect(element).to.have.attr('style', 'font-size: 12px');
+  const element = query(document, 'p');
+  expect(element).to.have.class('important');
+
+  const style = getComputedStyle(element);
+  expect(style).to.have.property('text-align', 'center');
 });

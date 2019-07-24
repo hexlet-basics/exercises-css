@@ -23,7 +23,7 @@ theory: |
   ```html
   <style>
     div {
-      font-style: 20px;
+      font-size: 20px;
     }
   </style>
 
@@ -39,11 +39,11 @@ theory: |
   ```html
   <style>
     div {
-      font-style: 20px;
+      font-size: 20px;
     }
 
     p {
-      font-style: 10px;
+      font-size: 10px;
     }
   </style>
 

@@ -4,5 +4,5 @@ test(({ query, expect }) => {
   const element = query(document, 'p');
 
   const style = getComputedStyle(element);
-  expect(style).to.have.property('font-size', '12px');
+  expect(style).to.have.property('font-size', '25px');
 });

@@ -13,4 +13,9 @@ theory: |
 
 
 instructions: |
-  # FIXME: task
+
+  # FIXME: поправить задачу
+
+  ```html
+  <p style="font-size: 32px;">Большой текст</p>
+  ```

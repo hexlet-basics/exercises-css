@@ -1,0 +1,36 @@
+---
+
+name: Рамки
+theory: |
+  Отделить несколько блоков друг от друга позволяют рамки. CSS правило `border` «рисует» вокруг блока линию с заданным цветом. Для этого принимаются 3 значения:
+
+  * Ширина рамки;
+  * Тип рамки;
+  * Цвет рамки.
+
+  Наиболее распространёнными типами рамок являются:
+
+  <div style="border: 3px solid #000; margin-bottom: 10px;">
+    solid (сплошная)
+  </div>
+  <div style="border: 3px dotted #000; margin-bottom: 10px;">
+    dotted (пунктирная)
+  </div>
+  <div style="border: 3px dashed #000; margin-bottom: 10px;">
+    dashed (пунктирная)
+  </div>
+
+  ```html
+  <style>
+    .border-dotted {
+      border: 1px dotted #000;
+    }
+  </style>
+
+  <div class="border-dotted">
+      Блок с пунктирной рамкой и чёрным цветом
+  </div>
+  ```
+
+instructions: |
+  Добавьте в редактор `div` с классом `border` и установите сплошную рамку размером 5 пиксель. Цвет #2196F3

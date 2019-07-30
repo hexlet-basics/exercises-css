@@ -10,6 +10,16 @@ theory: |
 
   Наиболее распространёнными типами рамок являются:
 
+  <div style="border: 3px solid #000; margin-bottom: 10px;">
+    solid (сплошная)
+  </div>
+  <div style="border: 3px dotted #000; margin-bottom: 10px;">
+    dotted (пунктирная)
+  </div>
+  <div style="border: 3px dashed #000; margin-bottom: 10px;">
+    dashed (пунктирная)
+  </div>
+
   ```html
   <style>
     .border-dotted {

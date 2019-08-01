@@ -36,14 +36,11 @@ theory: |
     text-align: right;
   }
   ```
-
-  ---
-
-  <p>Текст по левому краю</p>
-  <p style="text-align: center">Текст по центру</p>
-  <p style="text-align: right">Текст по правому краю</p>
-
-  ---
+  <div class="hexlet-basics-example">
+      <p>Текст по левому краю</p>
+      <p style="text-align: center">Текст по центру</p>
+      <p style="text-align: right">Текст по правому краю</p>
+  </div>
 
 instructions: |
   Добавьте в редактор параграф с классом `important` и выровняйте его по центру. Стили укажите в теге `style`.

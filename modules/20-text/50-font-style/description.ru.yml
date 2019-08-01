@@ -23,8 +23,9 @@ theory: |
     font-style: italic;
   }
   ```
-
-  <p style="font-style: italic">Курсивный текст</p>
+  <div class="hexlet-basics-example">
+      <p style="font-style: italic">Курсивный текст</p>
+  </div>
 
 instructions: |
   Добавьте в редактор параграф с классом `italic-type` и установите начертание `oblique` . Стили добавьте в тег `style`.

@@ -14,7 +14,7 @@ theory: |
   </div>
   ```
 
-  <div style="font-size: 20px">
+  <div class="hexlet-basics-example" style="font-size: 20px">
   Этот текст будет с размером шрифта 20 пикселей
 
   <p>Вложенный параграф также будет иметь размер шрифта 20 пикселей</p>

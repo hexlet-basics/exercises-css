@@ -19,7 +19,7 @@ theory: |
   ```
 
   <div class="hexlet-basics-example">
-      <div style="width: 100px; height: 100px; background-color: #000;">
+      <div style="width: 100px; height: 100px; background-color: #000;"></div>
   </div>
 
 instructions: |

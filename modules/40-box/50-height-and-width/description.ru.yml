@@ -9,11 +9,13 @@ theory: |
   Создадим блок высотой 100 пикселей и шириной 100 пикселей. Чтобы визуально его отделить от основного текста, установим чёрным цвет фона:
 
   ```html
-  .square {
-    width: 100px;
-    height: 100px;
-    background-color: #000;
-  }
+  <style>
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+    }
+  </style>
 
   <div class="square"></div>
   ```

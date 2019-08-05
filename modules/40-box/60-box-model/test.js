@@ -4,7 +4,7 @@ test(({ query, expect }) => {
   const element = query(document, '.card');
   const style = getComputedStyle(element);
 
-  expect(style).to.have.property('width', '130px');
+  expect(style).to.have.property('width', '230px');
   expect(style).to.have.property('height', '25px');
 
   expect(style).to.have.property('padding', '20px');

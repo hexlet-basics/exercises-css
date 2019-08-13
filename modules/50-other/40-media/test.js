@@ -1,7 +1,7 @@
 const { test } = require('tests');
 
-test(({ query, expect }) => {
-  const p = query(document, '.white-landscape');
-  const pStyle = getComputedStyle(p);
-  expect(true);
+test(({ query, expect, html }) => {
+  expect(html).to.contain('@media');
+  expect(html).to.contain('max-width');
+  expect(html).to.contain('750px');
 });

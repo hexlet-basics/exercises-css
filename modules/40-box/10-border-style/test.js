@@ -1,7 +1,7 @@
 const { test } = require('tests');
 
 test(({ query, expect }) => {
-  const element = query(document, '.border');
+  const element = query(document, '.border-bold');
 
   const style = getComputedStyle(element);
   expect(style).to.have.property('border-width', '5px');

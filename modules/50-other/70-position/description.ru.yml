@@ -14,7 +14,7 @@ theory: |
 
   ```html
   <style>
-    .ablosute-position {
+    .absolute-position {
       position: ablosute;
       top: 100px;
       left: 100px;

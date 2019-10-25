@@ -4,7 +4,7 @@ name: Внутренние отступы
 theory: |
   Взгляните на пример из прошлого урока. Мы вывели текст на сером фоне, при этом он «приклеен» к блоку, в котором размещается.
 
-  <div class="hexlet-basics-example" style="background-color: #ededed;">
+  <div class="hexlet-basics-example" style="background-color: #cccccc;">
       Текст, который будет выведен на сером фоне
   </div>
 
@@ -18,7 +18,7 @@ theory: |
   ```html
   <style>
     .gray-background {
-      background-color: #ededed;
+      background-color: #cccccc;
       padding: 20px 20px 20px 20px;
     }
   </style>
@@ -28,7 +28,7 @@ theory: |
   </div>
   ```
 
-  <div class="hexlet-basics-example" style="background-color: #ededed; padding: 20px;">
+  <div class="hexlet-basics-example" style="background-color: #cccccc; padding: 20px;">
       Текст, который будет выведен на сером фоне с отступами по 20 пикселей с каждой стороны.
   </div>
 
@@ -42,7 +42,7 @@ theory: |
   ```html
   <style>
     .gray-background {
-      background-color: #ededed;
+      background-color: #cccccc;
       padding: 20px;
     }
   </style>

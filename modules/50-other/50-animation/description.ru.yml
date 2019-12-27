@@ -38,7 +38,7 @@ theory: |
 
   ```css
   .animation-text {
-    animation: color-change 3s infinite
+    animation: color-change 3s infinite;
   }
   ```
 
@@ -61,7 +61,7 @@ theory: |
         }
 
         .animation-text {
-          animation: color-change 3s infinite
+          animation: color-change 3s infinite;
         }
       </style>
       <p class="animation-text">Текст с анимацией color-change. Цвет текста меняется с голубого на красный и обратно</p>

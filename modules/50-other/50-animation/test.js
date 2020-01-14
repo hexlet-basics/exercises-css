@@ -5,5 +5,6 @@ test(({ query, expect, html }) => {
   const pStyle = getComputedStyle(p);
 
   expect(html).to.contain('@keyframes');
+  expect(html).to.contain('<style>');
   expect(pStyle).to.have.property('animation');
 });

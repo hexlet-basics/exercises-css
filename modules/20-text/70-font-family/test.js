@@ -5,5 +5,5 @@ test(({ query, expect }) => {
   expect(element).to.have.class('verdana-text');
 
   const style = getComputedStyle(element);
-  expect(style).to.have.property('font-family', 'Verdana');
+  expect(style).to.have.property('font-family', 'Verdana, sans-serif');
 });

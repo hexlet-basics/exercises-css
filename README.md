@@ -1,4 +1,10 @@
-[![Github Actions Status](https://github.com/hexlet-basics/exercises-css/workflows/Docker/badge.svg)](https://github.com/hexlet-basics/exercises-css/actions)
+# hexlet-basics
+
+[![Github Actions Status](../../workflows/Docker/badge.svg)](../../actions)
+
+### Участие
+
+* Обсуждение в канале #hexlet-volunteers слака http://slack-ru.hexlet.io
 
 ## Develop
 

@@ -17,7 +17,7 @@ theory: |
     dotted (пунктирная)
   </div>
   <div style="border: 3px dashed #000; margin-bottom: 10px;">
-    dashed (пунктирная)
+    dashed (штриховая)
   </div>
 
   ```html

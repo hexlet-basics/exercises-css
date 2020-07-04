@@ -1,4 +1,5 @@
-FROM hexletbasics/base-image:latest
+FROM node:13.7
+
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 
@@ -26,11 +27,6 @@ RUN npm i -g @github/query-selector
 # "expect": "^23.6.0",
 # "lodash": "^4.17.11"
 
+ENV NODE_PATH /usr/local/lib/node_modules:/exercises-css/src
 
 COPY . .
-ENV NODE_PATH /usr/local/lib/node_modules:/exercises-css/src
-#
-#COPY . .
-#
-#ENV NODE_PATH /usr/local/lib/node_modules:/exercises-css/src
-

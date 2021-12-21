@@ -17,5 +17,18 @@ compose-install:
 compose-build:
 	docker-compose build
 
+compose-code-lint:
+	docker-compose run exercises make code-lint
+
 code-lint:
 	htmlhint modules/**/*.{htm,html}
+
+compose-description-lint:
+	docker-compose run exercises make description-lint
+
+compose-schema-validate:
+	docker-compose run exercises make schema-validate
+
+ci-check:
+	docker-compose --file docker-compose.yml build
+	docker-compose --file docker-compose.yml up --abort-on-container-exit

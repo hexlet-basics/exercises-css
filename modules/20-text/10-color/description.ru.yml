@@ -37,4 +37,4 @@ instructions: |
   В редакторе добавьте элемент `<span>` с классом `violet` и установите для него цвет равный `#9400d3`. Для подключения стилей воспользуйтесь тегом `<style>`.
 
 tips:
-  - [HTML Color Codes](https://htmlcolorcodes.com/)
+  - Выбрать цвет и получить его `hex`-код можно на [HTML Color Codes](https://htmlcolorcodes.com/)

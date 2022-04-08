@@ -21,6 +21,8 @@ make compose-test
 make compose-code-lint
 make compose-description-lint
 make compose-schema-validate
+
+make ci-check # run CI checks witn docker-compose
 ```
 
 ##

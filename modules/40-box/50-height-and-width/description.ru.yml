@@ -20,9 +20,15 @@ theory: |
   <div class="square"></div>
   ```
 
-  <div class="hexlet-basics-example">
-      <div style="width: 100px; height: 100px; background-color: #000;"></div>
+  <div class="hexlet-basics-example my-3">
+    <div style="width: 100px; height: 100px; background-color: #000;"></div>
   </div>
 
 instructions: |
-  Добавьте в редактор `div` с классом `rectangle` и установите ширину 300 пикселей. Высота 100 пикселей. Цвет фона - чёрный (`#000000`). Стили запишите в теге `style`.
+  Добавьте в редактор `<div>` с классом `rectangle`. Установите свойства:
+
+  * Ширина: 300px
+  * Высота 100px
+  * Цвет фона: `#000`
+
+  Стили запишите в теге `<style>`

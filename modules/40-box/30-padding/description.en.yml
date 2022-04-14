@@ -39,7 +39,7 @@ theory: |
     A card with white text on a purple background
   </div>
 
-  ## Сокращённое свойство
+  ## Shortened property
 
   If you want to set indents on all sides, you don't use 4 different properties, but one - `padding`. This is an abbreviation of the already known properties and allows you to set:
 

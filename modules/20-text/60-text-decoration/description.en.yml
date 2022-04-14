@@ -1,0 +1,32 @@
+---
+
+name: Horizontal line
+theory: |
+  Underlining</u> is often used to reinforce text. It shows the importance of the current word or text (often also used to indicate links in a document). Another means of stylizing text is to <s>reverse</s> to show the wrong section of text, such as "And <s>this</s>, children, don't do it."
+
+  The `text-decoration` property with three basic properties is used for this kind of decoration:
+
+  * `underline` - <u>underline text</u>
+  * `line-through` - <s>Redraw text</s>
+  * `overline` - <span style="text-decoration: overline;">overline text</span>
+
+  The `none` value is used to remove underscores from links. This is often used to remove the underscore from links, which is the default
+
+  ```html
+  <a href="#">Ordinary link with underscore by default</a>
+  <a href="#" class="text-decoration-none">link without underscore</a>
+  ```
+
+  ```css
+  .text-decoration-none {
+    text-decoration: none;
+  }
+  ```
+
+  <div class="hexlet-basics-example my-3">
+    <a href="#" class="d-block mb-3">Ordinary link with underscore by default</a>
+    <a href="#" style="text-decoration: none">link without underscore</a>
+  </div>
+
+instructions: |
+  Add a paragraph with the class `line` to the editor and add an underline text for it. Add styles to the tag `<style>`

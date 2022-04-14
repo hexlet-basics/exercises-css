@@ -1,0 +1,20 @@
+---
+
+name: Capitel
+theory: |
+  Capitals are a type of lowercase letters whose size is the same as (or close to) the size of capital letters.
+
+  <div class="hexlet-basics-example my-3">
+    <p>Text typed in plain text</p>
+    <p style="font-variant: small-caps" class="m-0">Capitol text</p>
+  </div>
+
+  It is often used as a stylistic device. But there is also a practical side to capitals: they are commonly used to mark abbreviations, and they are also used in the first lines of a work to make it easier for the reader to "enter" the text after the title.
+
+  To set the capitals, use the `font-variant` property with one of two basic values:
+
+  * `normal` - normal writing
+  * `small-caps` - capitel
+
+instructions: |
+  Add a paragraph to the editor with the class `small-capitals` and display the text inside the capitals. Add styles to the tag `<style>`

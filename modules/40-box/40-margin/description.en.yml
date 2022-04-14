@@ -1,0 +1,57 @@
+---
+
+name: External indents
+theory: |
+
+  The internal indents allowed you to add "air" to the block and give space between the border of the block and its content. But how do you keep two adjacent blocks from pressing against each other?
+
+  <div class="hexlet-basics-example mt-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;">
+    A card with white text on a purple background
+  </div>
+  <div class="hexlet-basics-example mb-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;">
+    A card with white text on a purple background
+  </div>
+
+  To separate the two cards from the example above, you use outer indents. Their principle is the same as the internal indents, only the direction is different. In terms of properties and their values, it's the same. There are 4 rules and one general one:
+
+  * `margin-top` - top external indent
+  * `margin-right` - external indent to the right
+  *margin-bottom is outer indent at the bottom
+  * `margin-left` - outer left indent
+
+  To combine values, use the `margin` property, which preserves the order in which it is specified:
+
+  * top indent
+  * right indent
+  * indent at the bottom
+  * indent on the left side
+
+  Also, as with internal indents, there are abbreviations of these rules for convenience:
+
+  * If you specify only one value, it will be used simultaneously for all sides
+  * If you specify two values, the first will be used for vertical (top and bottom) indents, and the second for horizontal (right and left) indents
+  * If you specify three values, they will be used for top, horizontal and bottom indentation
+
+  ```html
+  <div class="card">A card with white text on a purple background</div>
+  <div class="card">A card with white text on a purple background</div>
+  ```
+
+  ```css
+  .card {
+    margin: 10px 0;
+
+    color: #ffffff;
+    background-color: #673ab7;
+  }
+  ```
+
+  <div class="hexlet-basics-example" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;margin: 10px 0;">
+    A card with white text on a purple background
+  </div>
+  <div class="hexlet-basics-example" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;margin: 10px 0;">
+    A card with white text on a purple background
+  </div>
+
+instructions: |
+  Add to the editor `<div>` with the class `margin` and set the outer indents to 20 pixels on all sides. Write the styles in the tag `<style>`. Use an abbreviated notation

@@ -10,7 +10,7 @@ theory: |
 
   Let's take an example from the last lesson:
 
-  ```
+  ```html
   <div style="font-size: 20px;">
     This text will have a font size of 20 pixels
 

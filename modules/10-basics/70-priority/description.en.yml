@@ -89,10 +89,10 @@ theory: |
 
   To find out which selector will have the greater weight, you have to add up all the values obtained using this table.
 
-  * The `.paragraph' selector consists of one class, so its weight is 10
-  * The selector `.paragraph.color-primary' consists of two classes. Its weight is 20.
+  * The `.paragraph` selector consists of one class, so its weight is 10
+  * The selector `.paragraph.color-primary` consists of two classes. Its weight is 20.
 
-  Thus the properties in the `.paragraph.color-primary' selector will have a higher priority than those inside the `.paragraph' selector.
+  Thus the properties in the `.paragraph.color-primary` selector will have a higher priority than those inside the `.paragraph` selector.
 
   This table is not a full-fledged true table, but it can be used in the early stages of learning CSS. With practice, you will learn how to determine the priority of selectors on your own
 

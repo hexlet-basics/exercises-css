@@ -2,4 +2,4 @@
 
 name: Block Elements
 description: |
-  When you work with CSS, it's not just the layout of text, but also the layout of blocks. In this module, you'll learn how to add interior and exterior indents, borders, and backgrounds. You'll learn what a block model is and how properties affect the final dimensions of elements
+  CSS defines not only the text styles, but also the style of blocks. In this module, you'll learn to add paddings and margins, borders and background. You'll undersand what a block model is and how properties can change the size of elements.

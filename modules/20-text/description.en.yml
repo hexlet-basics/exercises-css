@@ -1,5 +1,5 @@
 ---
 
-name: Styles for text
+name: Text styles
 description: |
-  Cascading stylesheets allow you to flexibly customize the appearance of text: indentation, color, font size and many other parameters
+  Cascading style sheets allow you to easily customize the style of the text: paddings и margins, text color, font size and many other features.

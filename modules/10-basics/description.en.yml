@@ -1,5 +1,5 @@
 ---
 
-name: Introduction to CSS
+name: CSS basics
 description: |
-  Cascading Style Sheets (CSS) allows you to design page content according to described rules. Text styles, layout of blocks on the page, animation - all this is described by means of Cascading Style Sheets
+  Cascading Style Sheets (CSS) allow you to lay out web pages according to given rules. Text styles, block layouts, and animations are all specified via Cascading Style Sheets.

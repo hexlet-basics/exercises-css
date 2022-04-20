@@ -1,0 +1,29 @@
+---
+
+name: Positioning
+theory: |
+  CSS provides a great deal of flexibility in how elements can be rendered visually. One of the key features of CSS is positioning - the ability to influence where an element is displayed on the page.
+
+  With the `position` rule, we can `take` a block out of the layout and position it as we see fit. The basic values of the `position` property are as follows:
+
+  * `relative` (relative positioning). Allows you to change the position of an element relative to where it was before the property was applied. In this case, the place on the page which the block occupied before will remain. That is other blocks will not stand where the block was before the rule was applied.
+  * `absolute` (absolute positioning). "Takes the block out of HTML and relocates it to the upper left corner of the page (or parent element if it has a `position` property set to `fixed`, `absolute`, `relative`, or `sticky`). Unlike the `relative`, the place where the `absolute` block was located will be removed, and other blocks can take that place.
+  * `fixed`. Also, like `absolute`, this rule will extract the block from the HTML markup and place it in the upper left corner. The difference from absolute positioning is that the block will "follow the page" and will always be within sight of the user. This is useful for creating menus that must follow the user.
+
+
+  To control the location 4 CSS rules are used: `top`, `right`, `left` and `bottom`, whose values are the coordinates (in pixels, for example) where the block will be located.
+
+  ```html
+  <style>
+    .absolute-position {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+    }
+  </style>
+
+    <div class="absolute-position">A block with absolute positioning that will be 100 pixels from the top and 100 pixels from the left edge of the page</div>
+  ```
+
+instructions: |
+  Create a div with the class `relative-position` and set the relative positioning. Set the `top` value to 100 pixels and the `right` value to 50 pixels. Try different values to see how the block will move. Write the styles in the `style` tag.

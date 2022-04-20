@@ -1,0 +1,73 @@
+---
+
+name: Animation
+theory: |
+  Animation is an extensive module in CSS. Unfortunately, it's impossible to describe all the features in one lesson. In this lesson, we will show you the basic principle of animation in CSS based on `@keyframes`. For example, let's make a text animation - the color of the text changes from blue to red.
+
+  The rule `@keyframes` and the name of the animation will be used to set the animation:
+
+  ```css
+  @keyframes color-change {
+    // Inside will be our animation
+  }
+  ```
+
+  The name of the animation can be anything. You choose it yourself. Afterwards, it is by this name that the `animation` property will know which animation you want to play.
+
+  Inside `@keyframes` you need to specify different time intervals in which the changes will take place. For example, at the start (0% animation completion) will be blue text, in the middle of the animation (50%) will be red, and at the end (100%) will return blue.
+
+  ```css
+  @keyframes color-change {
+    0% {
+      color: blue;
+    }
+
+    50% {
+      color: red;
+    }
+
+    100% {
+      color: blue;
+    }
+  }
+  ```
+
+  Now we need to apply the animation we created to the text on the page. To do this, use the `animation` rule with three basic values:
+
+  * Animation name
+  * Duration of the animation. Specified in seconds (1s, 2s, 3s etc.)
+  * Infinite animation or not (if infinite, then infinite parameter is specified)
+
+  ```css
+  .animation-text {
+    animation: color-change 3s infinite;
+  }
+  ```
+
+  It remains to create a paragraph with the necessary class, and the animation begins to work.
+
+  <div class="hexlet-basics-example">
+    <style>
+      @keyframes color-change {
+        0% {
+          color: blue;
+        }
+
+        50% {
+          color: red;
+        }
+
+        100% {
+          color: blue;
+        }
+      }
+
+      .animation-text {
+        animation: color-change 3s infinite;
+      }
+    </style>
+    <p class="animation-text m-0">Text with color-change animation. The color of the text changes from blue to red and back again</p>
+  </div>
+
+instructions: |
+  Create an animation that changes the color of the text from black to white. Apply the animation to the `black-white` class. Write the styles in the tag `<style>`

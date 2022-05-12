@@ -2,25 +2,25 @@
 
 name: Text alignment
 theory: |
-  A strong way to highlight a section of text is to align it differently from the rest of the text. Many sites use center alignment of the header so that the user can distinguish it more quickly.
+  A strong way to highlight a section of text is to align it differently from the rest of the text. Many sites align the header to the center so that the user can distinguish it more quickly.
 
   <div class="hexlet-basics-example my-3">
     <p style="" class="h3 text-center">Centered header</p>
-    <p class="m-0">Page text. You can see that the header is catchy, thanks to the center alignment</p>
+    <p class="m-0">Page text. You can see that the header jumps out more since it's centered</p>
   </div>
 
   CSS allows you to align text using the `text-align` property with 4 basic values:
 
-  * `left` — left edge text. Used by default
-  * `center` — centrally
-  * `right` — right edge text
-  * `justify` — width-aligned text
+  * `left`. This one is used by default
+  * `center`
+  * `right`
+  * `justify`
 
   ```html
   <p class="left">Left edge text</p>
   <p class="center">Center text</p>
   <p class="right">Right edge text</p>
-  <p class="justify">Width-aligned text. Rarely used because it leaves unequal spaces between words</p>
+  <p class="justify">Justified. It is rarely used, because it leaves unequal spaces between words</p>
   ```
 
   ```css
@@ -45,11 +45,11 @@ theory: |
     <p>Left edge text</p>
     <p style="text-align: center">Center text</p>
     <p style="text-align: right">Right edge text</p>
-    <p style="text-align: justify" class="m-0">Width-aligned text. It is rarely used, because it leaves unequal spaces between words. This method is often used in book layout, because it does not create "torn edges" in the text</p>
+    <p style="text-align: justify" class="m-0">Justified. It is rarely used, because it leaves unequal spaces between words. This method is often used in book layout because it means that the text will be “rectangular”, i.e., every line finishes at the same point.</p>
   </div>
 
 instructions: |
-  Add a paragraph with the class `important` in the editor and center it. Specify styles in the tag `<style>`
+  Add a paragraph with the class `important` to the editor and center it. Write the styles in the `<style>` tag.
 
 tips:
-  - To the eye, the most familiar option is alignment to the left edge. Do not use a large number of different alignments on the page
+  - The most familiar option to most people's eyes is left alignment. Try not to use too many different alignments on one page

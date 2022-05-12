@@ -7,7 +7,7 @@ theory: |
   The `text-decoration` property with three basic properties is used for this kind of text modification:
 
   * `underline` - <u>underline text</u>
-  * `strike-through` - <s>Redraw text</s>
+  * `line-through` - <s>Redraw text</s>
   * `overline` - <span style="text-decoration: overline;">overline text</span>
 
   The `none` value is used to remove underscores from links. This is often used to remove the underscore from links, which are there by default
@@ -24,8 +24,8 @@ theory: |
   ```
 
   <div class="hexlet-basics-example my-3">
-    <a href="#" class="d-block mb-3">Ordinary link with underscore by default</a>
-    <a href="#" style="text-decoration: none">link without underscore</a>
+    <a href="#" class="d-block mb-3">Ordinary link underlined by default</a>
+    <a href="#" style="text-decoration: none">Non-underlined link</a>
   </div>
 
 instructions: |

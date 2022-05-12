@@ -2,9 +2,9 @@
 
 name: Tag style
 theory: |
-  The main problem with using attributes to define styles is that they are overloaded. Often HTML markup contains very many elements, and with the addition of styles, there is much more code, which is bad for reading the markup.
+  The main problem with using attributes to define styles is that they are overloaded. Often, HTML markup contains very many elements, and when you add styles, there ends up being much more code, which is bad for reading the markup.
 
-  The second problem is fixing the styles. To do this, you must first find the desired element in the code, and then edit its styles. There may be 10, 20 or 100 such elements on the page. And for the same name tags have to write styles for each element separately.
+  The second problem is fixing the styles. To do this, you must first find the desired element in the code, and then edit its styles. There may be 10, 20, or 100 such elements on the page. And for tags with the same name, you have to write styles for each element separately.
 
   There is a natural desire to have all the styles in one place where you can quickly edit them. One solution is to use the `<style>` tag which can hold all of the necessary styles.
 
@@ -54,7 +54,7 @@ theory: |
   </div>
   ```
 
-  Inside the tag `<style>` used a construction of the form:
+  Inside the tag `<style>` used a construction in this form:
 
   ```
   tag_name {
@@ -62,7 +62,7 @@ theory: |
   }
   ```
 
-  Anything written before the opening bracket `{` is called a _selector_. Selectors are the rules by which the browser determines which element to add styles to. We'll get to know some of the selectors a little later. In the examples above selectors by tag are used, that is, styles will be applied to all elements with the tag specified as a selector
+  Anything written before the opening bracket `{` is called a _selector_. Selectors are the rules by which the browser determines which element to add styles to. We'll get to know some of the selectors a little later. In the examples above, selectors are used by tag, i.e., styles will be applied to all elements with the tag specified as a selector
 
   ```css
   /* All div elements will be set to a font size of 20px */

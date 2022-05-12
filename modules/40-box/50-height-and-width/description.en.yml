@@ -2,9 +2,9 @@
 
 name: Block height and width
 theory: |
-  When you create pages, you often want to control the height and width of blocks. This is useful in long articles when you want to make explanatory text in a small block. This way it will be separated from the main part of the text, and you can see it immediately.
+  When you create pages, you often want to control the height and width of blocks. This is useful in long articles when you want to put explanatory text in a small block. This way it will be separated from the main part of the text, and you can see it immediately.
 
-  The rules `width` and `height` are used to control the height and width of block elements, taking values of width and height respectively (in pixels or other available units of measure, for example).
+  The rules `width` and `height` are used to control the height and width of block elements, taking values for width and height respectively (in pixels or other available units of measure, for example).
 
   Let's create a block 100 pixels high and 100 pixels wide. To visually separate it from the theory in the tutorial, set the background color to black:
 
@@ -25,10 +25,10 @@ theory: |
   </div>
 
 instructions: |
-  Add to the editor `<div>` with the class `rectangle`. Set the properties:
+  Add `<div>` to the editor with the class set to `rectangle`. Set the properties:
 
   * Width: 300px
   * Height: 100px
   * Background color: `#000`.
 
-  Write the styles in the tag `<style>`
+  Write the styles in the `<style>` tag

@@ -41,7 +41,7 @@ theory: |
 
   ## Shortened property
 
-  If you want to set indents on all sides, don't use 4 different properties, you only need one - `padding`. This is shorthand for some properties we already know and allows you to set:
+  If you want to set indents on all sides, don't use 4 different properties, you only need one - `padding`. This is shorthand for some properties we already know which allows you to set them in the following order:
 
   * top
   * right

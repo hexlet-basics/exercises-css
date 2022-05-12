@@ -2,7 +2,7 @@
 
 name: Priority
 theory: |
-  Speaking of cascading, the question arises, "What happens if different sources have the same rules for an element, but with different values?" In that case, there are rules that prioritize styles from different sources. In order of importance, the list looks like this:
+  Speaking of cascading, you may be wondering what happens if different sources have the same rules for an element, but with different values. In that case, there are rules that prioritize styles from different sources. In order of importance, the list looks like this:
 
   * Styles in a tag attribute
   * Styles in a separate file
@@ -10,17 +10,17 @@ theory: |
 
   The values specified in the `style` attribute will be more important than the properties in the `<style>` tag, and they will be more important than the default browser styles.
 
-  ## Selector Priorities
+  ## Priority selectors
 
   An important feature of CSS is that different types of selectors have different priorities. If styles contradict each other in different selectors, the priority principle comes into play.
 
-  Let's deal with an example. Let's create a paragraph with the class `red` and the identifier `blue`.
+  Let's look at an example. Let's create a paragraph with the class as `red` and the identifier as `blue`.
 
   ```html
-  <p id="blue" class="red">Text with the class red and the identifier blue</p>
+  <p id="blue" class="red">Text with the class red and identifier blue</p>
   ```
 
-  Let's add conflicting styles for class, identifier and tag:
+  Let's add conflicting styles for class, identifier, and tag:
 
   ```css
   p {
@@ -36,11 +36,11 @@ theory: |
   }
   ```
 
-  What color will the paragraph be? Try running this example in the editor. You will see that the text will be blue. What does this have to do with anything?
+  What color will the paragraph be? Try running this example in the editor. You'll see that the text is blue. What does this have to do with anything?
 
   Selectors also have priorities. Conventionally, you can put the selectors in the following order of priority:
 
-  1. Selector by identifier (`#blue`)
+  1. Selector by ID (`#blue`)
   2. Selector by class (`.red`)
   3. Selector by tag (`p`)
 
@@ -60,7 +60,7 @@ theory: |
   }
   ```
 
-  Here a selector of two classes was used at once. This means that styles will only be applied to an element that has both classes. This separation helps developers pinpoint styles for similar elements. For example:
+  Here, a selector for two classes was used at once. This means that styles will only be applied to an element that has both classes. This separation helps developers pinpoint styles for similar elements. For example:
 
   ```html
   <p class="paragraph color-primary">Paragraph</p>
@@ -78,7 +78,7 @@ theory: |
   }
   ```
 
-  In this example, all paragraphs with the `paragraph` class will have red text, but if the `color-primary` class is additionally set, the color will be blue. Why does this happen? Such selectors also have their own priorities. In complex selectors, the number of occurrences of a particular selector is counted and the total weight is counted.
+  In this example, all paragraphs with the `paragraph` class will have red text, but if the `color-primary` class is also set, the color will be blue. Why does this happen? These selectors also have their own priorities. In complex selectors, both the number of occurrences of a particular selector and the total weight are counted.
 
   To determine the priority, you can use a table where each selector is given a "weight":
 
@@ -92,14 +92,14 @@ theory: |
   * The `.paragraph` selector consists of one class, so its weight is 10
   * The selector `.paragraph.color-primary` consists of two classes. Its weight is 20.
 
-  Thus the properties in the `.paragraph.color-primary` selector will have a higher priority than those inside the `.paragraph` selector.
+  Thus, the properties in the `.paragraph.color-primary` selector will have a higher priority than those inside the `.paragraph` selector.
 
-  This table is not a full-fledged true table, but it can be used in the early stages of learning CSS. With practice, you will learn how to determine the priority of selectors on your own
+  This table doesn't tell the whole story, but it can be used in the early stages of learning CSS. With practice, you will learn how to determine the priority of selectors on your own
 
 instructions: |
-  Add a paragraph to the editor with the class `border` and the id `no-border`. Set the following rules:
+  Add a paragraph to the editor with the class set to the `border` and the id as `no-border`. Set the following rules:
 
-  * For the `border` class set a solid border of any color with a thickness of 1px. This can be done like this: `border: 1px solid #000;`.
-  * For the id `no-border` cancel the frame. Use the `none` value for the `border-style` rule.
+  * For the `border` class, set a solid border of any color with a thickness of 1px. This can be done like this: `border: 1px solid #000;`.
+  * For the id `no-border`, cancel the frame. Use the `none` value for the `border-style` rule.
 
-  Write styles in the tag `<style>`
+  Write the styles in the `<style>` tag.

@@ -3,14 +3,14 @@
 name: Cascade
 theory: |
 
-  We already know that CSS translates as "Cascading Style Sheets. Everything is clear with a style sheet by this point, but what does cascading mean? The point is that you can specify styles for an element in more than one place.
+  We already know that CSS stands for "Cascading Style Sheets". It's fairly clear what style sheet means at this point, but what does cascading mean? The point is that you can specify styles for an element in more than one place.
 
-  Imagine a cascade of waterfalls. They flow into each other, accumulating more and more water. Eventually the entire cascade will end up in a common pool. In CSS, the word cascade means the same action, only instead of waterfalls, CSS properties flow over. In other words, cascading is CSS's ability to overlay properties on top of each other as well as to extend properties in selectors.
+  Imagine a cascade of waterfalls. They flow into each other, accumulating more and more water. Eventually, the entire cascade will end up in one body of water. In CSS, the word cascade means the same action, only instead of waterfalls, it's CSS properties that flow over. In other words, cascading is CSS's ability to overlay properties on top of each other as well as to extend properties in selectors.
 
-  Let's create a block with classes `text-bold` and `text-dark` and specify several properties in different selectors:
+  Let's create a block with the classes `text-bold` and `text-dark` and specify several properties in different selectors:
 
   ```html
-  <p class="text-bold text-dark">Important text about the harm of complex CSS</p>
+  <p class="text-bold text-dark">An important text about the danger of complex CSS</p>
   ```
 
   ```css
@@ -27,7 +27,7 @@ theory: |
   }
   ```
 
-  If you paste this example into the editor, you get bold text of 20 pixels in dark color. This happened because of cascading - the browser combined all the styles from the different selectors and got the following instructions for styling the element:
+  If you paste this example into the editor, you get a dark, bold text with a size of 20 pixels. This happened because of cascading - the browser combined all the styles from the different selectors and got the following instructions for styling the element:
 
   ```css
   {
@@ -40,9 +40,9 @@ theory: |
   This is what CSS style cascading is all about. Although we used different selectors, the browser eventually combined them into a single set of rules for the element
 
 instructions: |
-  Add to the editor `p` with the class `cascade` and set the following rules:
+  Add a `p` to the editor and give it the class `cascade` and set the following rules:
 
-  * For the `cascade` class set the font size to 25 pixels
-  * For the tag `p` set the internal indentation to 15 pixels on all sides. This can be done by using the `padding: 15px;` rule.
+  * Set the font size to 25 pixels for the `cascade` class
+  * For the tag `p`, set the internal indentation to 15 pixels on all sides. This can be done by using the `padding: 15px;` rule.
 
-  Note how the styles are applied at the same time. Write the styles in the tag `<style>`
+  Note how the styles are applied at the same time. Write the styles in the `<style>` tag

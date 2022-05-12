@@ -1,15 +1,15 @@
 ---
 
-name: Border
+name: Borders
 theory: |
 
-  Any block element in HTML can be highlighted with frames. This stylistic device allows to separate monochrome components from each other, or to highlight the key element on the page
+  Any block element in HTML can be highlighted with frames. This stylistic device allows you to separate monochrome components from each other, or highlight a key element on the page
 
   <div class="hexlet-basics-example my-3">
-    <p class="m-0">This text is framed, so it's easy to find at a glance on the page</p>
+    <p class="m-0">This text is framed, so it's easy to find on the page straight away</p>
   </div>
 
-  To create a border for an element, the `border` property is used, which is an abbreviation of several properties:
+  To create a border for an element, we use the `border` property, which is shorthand for several properties:
 
   * `border-width`
   * `border-style`
@@ -29,7 +29,7 @@ theory: |
   * `solid` - border style
   * `#ccc` - border color
 
-  Pixel values and hex color we've already dealt with in the course, but there are eight border styles in CSS:
+  Pixel values and hex color we've already dealt with in this course, but there are eight border styles in CSS:
 
   * `dotted`
   * `dashed`
@@ -40,7 +40,7 @@ theory: |
   * `inset`
   * `outset`
 
-  and there is a value of `none` that will "remove" the border, because with `border-style: none` browsers ignore the other properties and remove the border
+  and there is also a `none` value that will "remove" the border, because with `border-style: none`, browsers ignore the other properties and remove the border
 
   ## Border examples
 
@@ -62,12 +62,12 @@ theory: |
   </style>
 
   <div class="border-dotted">
-    Block with a dotted border and black color
+    Block with a dotted black border
   </div>
   ```
 
 instructions: |
-  Add to the editor `<div>` with the class `border-bold` and set a solid border of 5 pixels thick. Color the border `#2196F3`. Write styles in the tag `<style>`
+  Add `<div>` to the editor with the class set to `border-bold` and set a solid border 5 pixels thick. Border color `#2196F3`. Write styles in the `<style>` tag
 
 tips:
   - Try different border styles in the editor

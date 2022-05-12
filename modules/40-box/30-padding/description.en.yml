@@ -13,10 +13,10 @@ theory: |
 
   Four rules are used to create internal indents:
 
-  * `padding-top` - internal margin at the top
-  * `padding-right` - inside margin to the right
-  * `padding-bottom` - inside margin at the bottom
-  * `padding-left` - inside left margin
+  * `padding-top`
+  * `padding-right`
+  * `padding-bottom`
+  * `padding-left`
 
   Each property takes a numeric value and a unit of measurement, e.g. pixels
 
@@ -43,10 +43,10 @@ theory: |
 
   If you want to set indents on all sides, don't use 4 different properties, you only need one - `padding`. This is shorthand for some properties we already know and allows you to set:
 
-  * top indent
-  * right indent
-  * indent at the bottom
-  * padding to the left
+  * top
+  * right
+  * bottom
+  * left
 
   The order in which it is specified is important and corresponds to the order specified above. If you rework the example above, it will look like this:
 

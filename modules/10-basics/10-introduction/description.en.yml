@@ -13,7 +13,7 @@ theory: |
 
   <div class="hexlet-basics-example my-3">
     <p class="h2">Paragraphs</p>
-    <p>Paragraphs are created with a paired <code>&lt;p&gt;</code> tag with a small piece of text in the body. For example:</p>
+    <p>Paragraphs are created using a paired <code>&lt;p&gt;</code> tag with a small amount of text in the body. For example:</p>
     <pre><code>&lt;p&gt;First paragraph&lt;/p&gt;
   &lt;p&gt;Second paragraph&lt;/p&gt;</code></pre>
   </div>
@@ -22,7 +22,7 @@ theory: |
 
   <div class="hexlet-basics-example my-3">
     <p class="border-bottom display-6 pb-2">Paragraphs</p>
-    <p class="lead">Paragraphs are created with a paired <code>&lt;p&gt;</code> tag with a small piece of text in the body. For example:</p>
+    <p class="lead">Paragraphs are created using a paired <code>&lt;p&gt;</code> tag with a small amount of text in the body. For example:</p>
     <pre class="bg-light my-4" style="border-left: 5px solid #673ab7!important;"><code>&lt;p&gt;First paragraph&lt;/p&gt;
   &lt;p&gt;Second paragraph&lt;/p&gt;</code></pre>
   </div>

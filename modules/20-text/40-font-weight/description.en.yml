@@ -3,12 +3,12 @@
 name: Font weight
 theory: |
 
-  In the HTML course, the tag `<b>`, the analog of which is the `font-weight` property, was used to change the saturation of the font. The property is more flexible than the standard styles of the tag `<b>`, as you can not only make it more saturated, but on the contrary - make it thin.
+  In the HTML course, the tag `<b>` had the same role as the `font-weight` property in CSS, namely, of course, to control the font weight. The property is more flexible than the standard styles of the `<b>` tag, as you can not only make it thicker, but also thinner.
 
-  There are two most common values for the `font-weight` property:
+  There are two particularly common values for the `font-weight` property:
 
-  1. `bold` — saturated font. The text will look the same way as when using the `<strong>` or `<b>` tag.
-  2. `normal` - default value. Useful if all text has a non-standard saturation, but some section needs to be made standard in saturation
+  1. `bold` — thicker font. he text will look the same way as if you use the `<strong>` or `<b>` tag.
+  2. `normal` is the default value. This is useful if the entire text has a non-standard font-weight, but a section needs to have a standard weight
 
   ```html
   <p class="bold">Text with bold typeface</p>
@@ -24,7 +24,7 @@ theory: |
     <p style="font-weight: bold;" class="m-0">Text with bold typeface</p>
   </div>
 
-  But these are not all the values a property can take. In addition to the verbal description `bold` and `normal` there are numeric ones:
+  But these are not all the values a property can take. In addition to the `bold` and `normal` descriptions, there are also numeric ones:
 
   * `100`
   * `200`
@@ -36,9 +36,9 @@ theory: |
   * `800`
   * `900`
 
-  Although there are many numerical values, but here it all depends on the typefaces of the font, and more precisely on whether it has characters for each type of saturation. Most fonts support only `normal` and `bold` values and if specified otherwise, the browser will choose which saturation to substitute. Most often all values above `500` will be interpreted as `bold`
+  Although there are many numerical values, here it all depends on the typefaces of the font, and more precisely on whether it has characters for each type of font weight. Most fonts support only `normal` and `bold` values and if specified otherwise, the browser will choose which weight to substitute. More often than not, all values above `500` will be interpreted as `bold`
 
 instructions: |
-  Add a paragraph to the editor with the `weight` class and set the saturation to `bold` . Add styles to the tag `<style>`
+  Add a paragraph to the editor with the class set to `weight` and set the weight set to `bold`. Add styles to the `<style>` tag
 tips:
-  - If the font has only normal saturation, the browser will automatically make the characters saturated when you set it to `bold`. This may not look the way the font designers intended, so make sure that all the right variations of the font are plugged in
+  - If the font has only normal weight, the browser will automatically make the characters bold when you set it to `bold`. This may not look the way the font designers intended, so make sure that all the right variations of the font are installed

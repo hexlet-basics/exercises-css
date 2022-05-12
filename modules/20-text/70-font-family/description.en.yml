@@ -2,7 +2,7 @@
 
 name: Font family
 theory: |
-  Many people are familiar with the phrase "Play with fonts," a great mantra when the appearance of text is not satisfactory. In order to specify a font, the `font-family` rule is used, allowing you to select one or more fonts to be used in the document.
+  Many people are familiar with the phrase "playing around with fonts," it's great to remember when you can't get the text to look right. In order to specify a font, the `font-family` rule is used, allowing you to select one or more fonts to be used in the document.
 
   ```html
   <style>
@@ -14,7 +14,7 @@ theory: |
   <p class="new-font">Paragraph</p>
   ```
 
-  Fonts are plugged in from those installed on your system. For this reason, you should choose "common fonts", because another user may not have them. It is also possible to include fonts from third-party services such as [Google Fonts](https://fonts.google.com/), or to upload them directly to your server where the site is located.
+  You can use fonts installed on your system. You should choose “common fonts” because other users may not have any other fonts. It is also possible to include fonts from third-party services such as [Google Fonts](https://fonts.google.com/), or to upload them directly to the server where the site is located.
 
   The most common fonts are:
 
@@ -24,17 +24,17 @@ theory: |
   * Verdana
   * Courier New
 
-  More likely than not, these fonts will also be installed on another user's system. If the fonts specified in the `font-family` property are not on the computer, the default font specified in the browser settings will be used.
+  More often than not, these fonts will also be installed on other users' systems. If the fonts specified in the `font-family` property are not on the computer, the default font specified in the browser settings will be used.
 
-  When attaching styles, it is good practice to add a universal font family to the `font-family` rule. There are currently 5 such families:
+  When adding styles, it's good practice to add a universal font family to the `font-family` rule. There are currently 5 such families:
 
-  * `serif` - fonts with serifs (antiquas). A prominent representative of such fonts is _Times New Roman_.
-  * `sans-serif` - fonts without serifs (grotesque). The most familiar such fonts are _Arial_ and _Verdana_.
+  * `serif` - fonts with serifs. _Times New Roman_ is a notable example
+  * `sans-serif` - fonts without serifs. The most familiar of these fonts are _Arial_ and _Verdana_.
   * `cursive` - italic fonts
-  * `fantasy` - decorative fonts. This family is used most rarely. Because decorative fonts are too different to be interchangeable.
-  * `monospace` - monospace fonts. These include fonts in which all characters have the same width. Very often they are used by programmers in text editors
+  * `fantasy` - decorative fonts. This family is the least frequently used. This is because decorative fonts are too different to be interchangeable
+  * `monospace` - monospace fonts. These include fonts in which all characters have the same width. They're often used by programmers in text editors
 
-  By adding a universal font family to the `font-family` rule, we insure that the user will not have the font we specified. The browser will automatically choose a replacement for the missing font from the universal font family that was specified.
+  By adding a universal font family to the `font-family` rule, we can insure ourselves, as it were, against the possibility that the user will not have the font we specified. The browser will automatically choose a replacement for the missing font from the universal font family that was specified.
 
   The example from the beginning of the lesson for adding a universal family would look like this:
 
@@ -48,10 +48,10 @@ theory: |
   <p class="new-font">Paragraph</p>
   ```
 
-  Now, if the user does not have _Arial_ or _Futura_ fonts in the system, the system sans serif font will be selected.
+  Now, if the user does not have _Arial_ or _Futura_ fonts in the system, their system's sans serif font will be selected.
 
 instructions: |
-  Add a paragraph to the editor with the class `verdana-text` and set its font to _Verdana_. Write styles in the tag `<style>`. Do not forget to specify a universal font family - sans serif fonts
+  Add a paragraph to the editor with the class set to `verdana-text` and set its font to _Verdana_. Write the styles in the `<style>` tag. Don't forget to specify the universal font family as sans serif fonts
 
 tips:
-  - The font family is always the most recent
+  - The font family is always the last thing you do

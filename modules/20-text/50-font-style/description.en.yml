@@ -2,9 +2,9 @@
 
 name: Italic font
 theory: |
-  Italic type is often used to emphasize quotations or terms. In contrast to changing the saturation, italics allow you to emphasize a section of text, but not highlight it so that it is immediately conspicuous.
+  Italic text is often used to emphasize quotations or terms. In contrast to changing thickness, italics allow you to emphasize a section of the text, but not highlight it so that it is immediately more conspicuous.
 
-  To change the font style, use the `font-style` property, which can take one of the values:
+  To change the font style, use the `font-style` property, which can take one of these values:
 
   * `normal` - normal text output.
   * `italic` - italic style
@@ -16,7 +16,7 @@ theory: |
     <p style="font-style: oblique" class="m-0">Text with oblique font</p>
   </div>
 
-  Note that the text with the meaning `italic` and `oblique` may look exactly the same. What is the point here? The `italic` value looks for a special italic version of the font, while `oblique` merely tilts the characters in the font programmatically. Not all fonts have a separate version for italic, so visually, both values will look the same.
+  Note that the text with a value of `italic` and text with the value set to `oblique` may look exactly the same. So what's the point here? The `italic` value looks for a special italic version of the font, while `oblique` merely systematically tilts the characters in the text. Not all fonts have a separate version for italic, so visually, both values will look the same.
 
   Use `italic` to create italics - this is the most common option
 
@@ -35,4 +35,4 @@ theory: |
   </div>
 
 instructions: |
-  Add a paragraph to the editor with the class `italic-type` and set the font to `oblique`. Add styles to the tag `<style>`
+  Add a paragraph to the editor with the class set to `italic-type` and set the font to `oblique`. Add styles to the `<style>` tag

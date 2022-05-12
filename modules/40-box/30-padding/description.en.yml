@@ -1,24 +1,24 @@
 ---
 
-name: Internal indents
+name: Paddings
 theory: |
 
-  Looking at the various blocks that have been created throughout the lessons, you will notice that the text "sticks" to the edges of the blocks. For example:
+  Looking at the various blocks that we've created during our lessons, you'll notice that the text "sticks" to the edges of the blocks. For example:
 
   <div class="hexlet-basics-example my-3 p-0" style="background-color: #673ab7;color: #fff;padding: 0!important;">
     A card with white text on a purple background
   </div>
 
-  You might say that that's not how the examples usually look in the lessons themselves, and you'd be right. In each example, internal indents from the block edges were used to add "air".
+  You might say that that's not how the examples usually look in the lessons themselves, and you'd be right. In each example, internal indents from the block edges called margins were used to add a little spacing.
 
   Four rules are used to create internal indents:
 
-  * `padding-top` - internal indent at the top
-  * `padding-right` - inside indent to the right
-  * `padding-bottom` - inside indent at the bottom
-  * `padding-left` - inside left indent
+  * `padding-top`
+  * `padding-right`
+  * `padding-bottom`
+  * `padding-left`
 
-  Each property takes a numeric value and a unit of measure, e.g. pixels
+  Each property takes a numeric value and a unit of measurement, e.g. pixels
 
   ```html
   <div class="card">A card with white text on a purple background</div>
@@ -41,14 +41,14 @@ theory: |
 
   ## Shortened property
 
-  If you want to set indents on all sides, you don't use 4 different properties, but one - `padding`. This is an abbreviation of the already known properties and allows you to set:
+  If you want to set indents on all sides, don't use 4 different properties, you only need one - `padding`. This is shorthand for some properties we already know which allows you to set them in the following order:
 
-  * top indent
-  * right indent
-  * indent at the bottom
-  * padding to the left
+  * top
+  * right
+  * bottom
+  * left
 
-  The order in which it is specified is important and corresponds to the order specified above. If you rework the example above, it would look like this:
+  The order in which it is specified is important and corresponds to the order specified above. If you rework the example above, it will look like this:
 
   ```css
   .card {
@@ -59,14 +59,14 @@ theory: |
   }
   ```
 
-  In addition to such a notation, there are abbreviated notations of these rules for convenience:
+  In addition to this notation, there are shorthand notations of these rules for convenience:
 
   * If you specify only one value, it will be used simultaneously for all sides
-  * If you specify two values, the first will be used for vertical (top and bottom) indentation, and the second for horizontal (right and left) indentation
-  * If you specify three values, they will be used for top, horizontal and bottom indentation
+  * If you specify two values, the first will be used for vertical (top and bottom) margin and the second for horizontal (right and left) margin
+  * If you specify three values, they will be used for top, horizontal and bottom margin
 
 instructions: |
-  Add a paragraph to the editor with the `padding` class and set internal indents:
+  Add a paragraph to the editor with the class set to `padding` and set internal indents:
 
   * 10 pixels at the top
   * 15 pixels at the bottom
@@ -75,11 +75,11 @@ instructions: |
   Use the following text for the paragraph:
 
   <div class="hexlet-basics-example my-3">
-    <p class="m-0">What does a coder do? Creates pages using HTML and CSS. Can use the capabilities of Flex and Grid modules. Uses the SASS preprocessor, the Pug templating engine and builds projects with Gulp. Keeps track of site accessibility by creating semantically correct markup. Creates components and utilities on Bootstrap. Diesevelops adaptive projects</p>
+    <p class="m-0">What does a web designer do? They create pages using HTML and CSS. They can use the capabilities of Flex and Grid modules. They use the SASS preprocessor and the Pug templating engine, and builds projects with Gulp. They keep track of site accessibility by creating semantically correct markup. They create components and utilities on Bootstrap. They lay out adaptive projects.</p>
   </div>
 
-  The text itself does not matter and is not checked. The main purpose is to add text that is arranged in multiple lines. This will help to see the left and right indents correctly.
+  The text itself does not matter and won't be checked. The main purpose is to add text to be arranged in multiple lines. This will help you see the left and right indents correctly.
 
   Add a black background to the paragraph and white text. Try different values for the `padding` property to see how it affects the block.
 
-  Write the styles in the tag `<style>`
+  Write the styles in the `<style>` tag

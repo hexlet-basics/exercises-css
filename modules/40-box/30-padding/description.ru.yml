@@ -52,7 +52,7 @@ theory: |
 
   ```css
   .card {
-    padding: 10px 0 10px 20px
+    padding: 10px 0 10px 20px;
 
     color: #ffffff;
     background-color: #673ab7;

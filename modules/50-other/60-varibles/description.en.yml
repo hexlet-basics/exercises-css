@@ -12,7 +12,7 @@ theory: |
 
   As in programming, in CSS, you can specify variables that will be available throughout site development. If variables are used, you can quickly replace some values with other values instead of having to replace property values manually.
 
-  A variable is created using the `---variable-name` construct. You can choose the name of the variable yourself. As an example, let's create a variable called `--main-color` that contains the base color of the pages. Set it to be black:
+  A variable is created using the `--variable-name` construct. You can choose the name of the variable yourself. As an example, let's create a variable called `--main-color` that contains the base color of the pages. Set it to be black:
 
   ```css
   --main-color: #000000;

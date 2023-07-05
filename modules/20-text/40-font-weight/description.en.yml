@@ -7,7 +7,7 @@ theory: |
 
   There are two particularly common values for the `font-weight` property:
 
-  1. `bold` — thicker font. he text will look the same way as if you use the `<strong>` or `<b>` tag.
+  1. `bold` — thicker font. The text will look the same way as if you use the `<strong>` or `<b>` tag.
   2. `normal` is the default value. This is useful if the entire text has a non-standard font-weight, but a section needs to have a standard weight
 
   ```html

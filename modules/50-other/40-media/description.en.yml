@@ -34,7 +34,7 @@ theory: |
   }
   ```
 
-  What are the conditions? Suppose you want to change the text color if the width of the `viewport` is less than or equal to 700 pixels. Then the rule `max-width: 700px` needs to be specified. TThis is very similar to a normal CSS rule which will define that properties should work if the `viewport` width is 700 pixels or less:
+  What are the conditions? Suppose you want to change the text color if the width of the `viewport` is less than or equal to 700 pixels. Then the rule `max-width: 700px` needs to be specified. This is very similar to a normal CSS rule which will define that properties should work if the `viewport` width is 700 pixels or less:
 
   ```css
   @media (max-width: 700px) {

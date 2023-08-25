@@ -1,0 +1,5 @@
+---
+
+name: Elementos de bloque
+description: |
+  Al trabajar con CSS, no solo se aplica formato a los textos, sino también a los elementos de bloque. En este módulo aprenderás cómo agregar márgenes internos y externos, bordes y fondos. Descubrirás qué es el modelo de caja y cómo las propiedades afectan el tamaño final del elemento.

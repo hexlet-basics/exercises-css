@@ -1,0 +1,48 @@
+---
+
+name: Cascada
+theory: |
+
+  Ya sabemos que CSS se traduce como "Hojas de estilo en cascada". Hasta este punto, está claro con las hojas de estilo, pero ¿qué significa "en cascada"? La cuestión radica en que puedes definir estilos para un elemento no solo en un solo lugar.
+
+  Imagina una cascada de agua. Fluyen una sobre otra, acumulando cada vez más agua. Al final, toda la cascada termina en una piscina común. En CSS, el término "cascada" se refiere a un proceso similar, pero en lugar de cascadas de agua, se aplican propiedades CSS una sobre otra. En otras palabras, la "cascada" en CSS se refiere a la capacidad del lenguaje CSS de superponer propiedades entre sí y también de expandir propiedades en selectores.
+
+  Creemos un bloque con las clases `text-bold` y `text-dark`, y definamos algunas propiedades en diferentes selectores:
+
+  ```html
+  <p class="text-bold text-dark">Texto importante sobre los problemas de CSS complejo</p>
+  ```
+
+  ```css
+  p {
+    font-size: 20px;
+  }
+
+  .text-bold {
+    font-weight: bold;
+  }
+
+  .text-dark {
+    color: #333;
+  }
+  ```
+
+  Si insertamos este ejemplo en el editor, se mostrará un texto en negrita con un tamaño de 20 píxeles y de color oscuro. Esto es posible gracias a la "cascada" — el navegador combina todos los estilos de diferentes selectores y obtiene las siguientes instrucciones para estilizar el elemento:
+
+  ```css
+  {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  ```
+
+  Esto es lo que se conoce como "cascada" de estilos en CSS. Aunque usamos diferentes selectores, al final, el navegador los combina en un conjunto único de reglas para el elemento.
+
+instructions: |
+  Agrega en el editor un elemento `p` con la clase `cascade` y aplica las siguientes reglas:
+
+  * Para la clase `cascade`, define un tamaño de fuente de 25 píxeles.
+  * Para la etiqueta `p`, establece un margen interno de 15 píxeles en todos los lados. Puedes lograr esto usando la regla `padding: 15px;`.
+
+  Observa cómo los estilos se aplican simultáneamente. Coloca los estilos dentro de la etiqueta `<style>`.

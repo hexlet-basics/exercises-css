@@ -1,0 +1,48 @@
+---
+
+name: Variables
+theory: |
+  Un sitio web moderno contiene miles de líneas de estilos. Estilos para bloques, texto, pequeñas áreas; todo esto a menudo se encuentra en un solo lugar. Imagina una situación: hay un tono específico de rojo que usamos en varios bloques.
+
+  ¿Qué conveniente sería cambiar todos los valores si quisieras modificar el color base? Correcto, tendrías que encontrar todos los valores en el archivo y reemplazarlos con otros nuevos.
+
+  Durante mucho tiempo, este fue uno de los principales problemas de CSS. Con la introducción del estándar CSS3, este problema se resolvió gracias a las variables.
+
+  Las variables en la programación son pequeñas áreas de memoria donde almacenamos un valor deseado. Siempre se puede acceder a este valor desde cualquier lugar disponible.
+
+  Al igual que en la programación, en CSS puedes definir variables que estarán disponibles durante todo el proceso de desarrollo del sitio web. Si se utilizan variables, puedes reemplazar rápidamente un valor por otro, en lugar de cambiar manualmente los valores de las propiedades.
+
+  Una variable se crea utilizando la sintaxis `--nombre-variable`. Puedes elegir el nombre de la variable tú mismo. Como ejemplo, creemos una variable `--color-principal` que contendrá el color base de la página. Hagámoslo negro:
+
+  ```css
+  --color-principal: #000000;
+  ```
+
+  Detrás de esta simplicidad se encuentra el hecho de que las variables tienen diferentes "ámbitos" - secciones del archivo donde se pueden usar. Este es un tema amplio, así que solo cubriremos el "ámbito global". Esto nos permitirá usar la variable en cualquier parte del archivo CSS.
+
+  Para crear una variable global, debe especificarse en una construcción especial `:root`. Por lo general, esto se hace al comienzo del archivo CSS:
+
+  ```css
+  :root {
+    --color-principal: #000000;
+  }
+  ```
+
+  Ahora puedes usar la variable en cualquier parte del código CSS. Esto se hace utilizando la construcción especial `var(--nombre-variable)`.
+
+  ```css
+  :root {
+    --color-principal: #000000;
+  }
+
+  .bloque-noticias {
+    background-color: var(--color-principal);
+  }
+
+  .barra-lateral-izquierda {
+    background-color: var(--color-principal);
+  }
+  ```
+
+instructions: |
+  Crea una variable `--azul-principal` y establece su valor en el color azul `#00bfff`. Especifica la variable en `:root`. Escribe los estilos dentro de la etiqueta `<style>`.

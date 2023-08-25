@@ -1,0 +1,20 @@
+---
+
+name: Capital
+theory: |
+  La "Kapitel" (capital) es un tipo de letras minúsculas cuyo tamaño coincide (o se aproxima) al tamaño de las letras mayúsculas.
+
+  <div class="hexlet-basics-example my-3">
+    <p>Texto escrito en una fuente normal</p>
+    <p style="font-variant: small-caps" class="m-0">Texto con el uso de letras kapitel</p>
+  </div>
+
+  A menudo, esta forma de escritura se utiliza como recurso estilístico. Sin embargo, también tiene un propósito práctico: se utiliza para abreviaturas y en las primeras líneas de una obra para facilitar la transición del lector al texto después del encabezado.
+
+  Para aplicar la "kapitel", se utiliza la propiedad `font-variant` con uno de los dos valores principales:
+
+  * `normal` — escritura normal del texto
+  * `small-caps` — kapitel (capital)
+
+instructions: |
+  Agrega en el editor un párrafo con la clase `small-capitals` y muestra el texto dentro de una "kapitel" (capital). Agrega los estilos dentro de la etiqueta `<style>`.

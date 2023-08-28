@@ -3,13 +3,13 @@
 name: Hojas de estilo en cascada
 theory: |
 
-  En el curso dedicado al lenguaje de marcado HTML, se han examinado varios elementos que, por defecto, tienen estilos aplicados: los párrafos tienen márgenes, los enlaces tienen un color diferente, los encabezados tienen diferentes tamaños de texto, etc. Como desarrollador, puedes cambiar estos estilos y agregar nuevos estilos por completo. ¿Agregar un fondo al texto? ¿Cambiar el tamaño de los elementos? ¿Crear animaciones? Todo esto se puede hacer con CSS (Cascading Style Sheets - Hojas de estilo en cascada), un lenguaje que define cómo se verán los elementos HTML en el navegador.
+  En el curso dedicado al lenguaje de marcado HTML, se estudiaron varios elementos que, por defecto, tienen estilos aplicados: los párrafos tenían sangría, los enlaces tenían un color diferente, los títulos diferían en el tamaño de letra, etc. Como desarrollador, puedes cambiar estos estilos y agregar unos completamente nuevos. ¿Agregar un fondo al texto? ¿Cambiar el tamaño de los elementos? ¿Crear animaciones? Todo esto se puede hacer con CSS (Hojas de estilo en cascada), un lenguaje que define cómo se verán los elementos HTML en el navegador.
 
-  El curso de CSS es una continuación lógica del [curso de HTML](https://ru.code-basics.com/languages/html). Muchas etiquetas y conceptos que se encontrarán durante el curso ya han sido discutidos.
+  El curso de CSS es una continuación lógica del [curso de HTML](https://ru.code-basics.com/languages/html). Muchas etiquetas y conceptos que se encontrarán durante el curso ya fueron explicados.
 
-  El siguiente ejemplo muestra cómo se muestra el texto sin usar CSS personalizado (es decir, se aplican los estilos que el navegador "asigna") y cómo se puede estilizar el documento utilizando CSS.
+  El siguiente ejemplo muestra cómo se ve el texto sin usar CSS personalizado (es decir, se aplican los estilos que el navegador "define") y cómo se puede estilizar el documento utilizando CSS.
 
-  ## Ejemplo de texto con estilos predeterminados
+  ## Ejemplo de texto con estilo estandartizado
 
   <div class="hexlet-basics-example my-3">
     <p class="h2">Párrafos</p>
@@ -18,7 +18,7 @@ theory: |
   &lt;p&gt;Segundo párrafo&lt;/p&gt;</code></pre>
   </div>
 
-  ## Ejemplo de texto con estilos personalizados
+  ## Ejemplo de texto con estilo personalizado
 
   <div class="hexlet-basics-example my-3">
     <p class="border-bottom display-6 pb-2">Párrafos</p>
@@ -27,7 +27,7 @@ theory: |
   &lt;p&gt;Segundo párrafo&lt;/p&gt;</code></pre>
   </div>
 
-  Ahora el texto es más legible y se puede distinguir rápidamente entre los ejemplos de código y la descripción. En el curso se examinarán las reglas básicas de CSS para trabajar con texto y bloques, lo que permitirá dar formato al texto y estructurar visualmente la información.
+  Ahora el texto es más legible y se puede diferenciar rápidamente los ejemplos de código de las descripciones. En el curso se explicarán las reglas básicas de CSS para trabajar con texto y bloques, lo que permitirá dar formato al texto y estructurar visualmente la información.
 
 instructions: |
   Copia el código en el editor. Intenta reemplazar los diferentes valores para ver cómo funciona el editor. Los tests esperan una copia completa del código a continuación.

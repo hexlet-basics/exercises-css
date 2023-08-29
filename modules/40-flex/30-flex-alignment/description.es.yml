@@ -17,17 +17,17 @@ theory: |
     </div>
   </div>
 
-  El contenedor Flex está resaltado en gris. Todas las propiedades en esta lección se aplicarán a este contenedor.
+  El contenedor Flex está resaltado en gris. Todas las propiedades en esta lección se aplicarán a este contenedor
 
   ## Alineación en el eje principal
 
-  Para alinear elementos en el eje principal, se utiliza la propiedad `justify-content`. Esta propiedad se aplica al contenedor (un bloque con la propiedad `display: flex`) y puede tener varios valores. Vamos a examinar los valores más comunes:
+  Para alinear elementos en el eje principal, se utiliza la propiedad `justify-content`. Esta propiedad se aplica al contenedor (un bloque con la propiedad `display: flex`) y puede tener varios valores. Vamos a estudiar los valores más comunes:
 
-  * `flex-start` — alinea al principio del eje. Aunque no es el valor por defecto, se ve así como en el ejemplo de arriba.
-  * `flex-end` — alinea al final del eje.
-  * `center` — alinea el contenido en el centro del contenedor.
-  * `space-between` — el primer y último elemento se ajustan al principio y final del eje, mientras que los elementos restantes se distribuyen en el espacio restante.
-  * `space-around` — similar a `space-between`, pero el primer y último elemento también tienen márgenes que son la mitad de los márgenes de los demás elementos.
+  * `flex-start` — alinea al principio del eje. Aunque no es el valor por defecto, se ve así como en el ejemplo de arriba
+  * `flex-end` — alinea al final del eje
+  * `center` — alinea el contenido en el centro del contenedor
+  * `space-between` — el primer y último elemento se ajustan al principio y final del eje, mientras que los elementos restantes se distribuyen en el espacio restante
+  * `space-around` — similar a `space-between`, pero el primer y último elemento también tienen márgenes que son la mitad de los márgenes de los demás elementos
 
   <div class="hexlet-basics-example my-3">
     <p class="h3">flex-start</p>
@@ -70,9 +70,9 @@ theory: |
 
   Además de alinear elementos en el eje principal, Flex también permite alinear elementos en el eje secundario al mismo tiempo. Para ello, se utiliza la propiedad `align-items`. Esta propiedad también tiene varios valores, pero vamos a analizar los más comunes:
 
-  * `flex-start` — alinea al comienzo del eje secundario.
-  * `flex-end` — alinea al final del eje secundario.
-  * `center` — alinea en el centro del eje secundario.
+  * `flex-start` — alinea al comienzo del eje secundario
+  * `flex-end` — alinea al final del eje secundario
+  * `center` — alinea en el centro del eje secundario
 
   <div class="hexlet-basics-example my-3">
     <p class="h3">flex-start</p>
@@ -109,7 +109,7 @@ theory: |
   </div>
   
 instructions: |
-  El cliente quiere que aparezca una flecha en el bloque de "Preguntas y Respuestas" para visualmente relacionar la pregunta y la respuesta. Mejora la funcionalidad del bloque:
+  El cliente quiere que aparezca una flecha en el bloque de "Preguntas y Respuestas" para visualmente relacionar la pregunta y la respuesta. Mejora la funcionalidad del bloque
 
   ```html
   <style>
@@ -142,4 +142,4 @@ instructions: |
   </div>
   ```
 
-  La flecha se encuentra visualmente en el centro en relación con los bloques de pregunta y respuesta. Utiliza Flex para mejorar el bloque y, utilizando alineación, coloca los bloques en el centro.
+  La flecha se encuentra visualmente en el centro en relación con los bloques de pregunta y respuesta. Utiliza Flex para mejorar el bloque y, utilizando alineación, coloca los bloques en el centro

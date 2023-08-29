@@ -12,7 +12,7 @@ theory: |
 
   ## Prioridades de los selectores
 
-  Una característica importante de CSS es que los diferentes tipos de selectores tienen diferentes prioridades. Si los estilos se contradicen entre sí en diferentes selectores, entra en juego el principio de prioridad.
+  Una característica importante de CSS es que los diferentes tipos de selectores tienen diferentes prioridades. Si los estilos se contradicen en diferentes selectores, entra en juego el principio de prioridad.
 
   Veamos un ejemplo. Crearemos un párrafo con la clase `red` y el identificador `blue`:
 
@@ -36,9 +36,9 @@ theory: |
   }
   ```
 
-  ¿De qué color será el párrafo? Intente ejecutar este ejemplo en el editor. Verá que el texto será de color azul. ¿A qué se debe esto?
+  ¿De qué color será el párrafo? Intenta ejecutar este ejemplo en el editor. Verás que el texto será de color azul. ¿A qué se debe esto?
 
-  Los selectores también tienen prioridades. De manera condicional, se pueden ordenar los selectores en el siguiente orden de prioridad:
+  Los selectores también tienen prioridades. Convencionalmente, se pueden ordenar los selectores en el siguiente orden de prioridad:
 
   1. Selector por identificador (`#blue`)
   2. Selector por clase (`.red`)
@@ -48,7 +48,7 @@ theory: |
 
   Según estas reglas, se puede entender que las propiedades especificadas en el selector por identificador tendrán mayor prioridad que los estilos en el selector por etiqueta y clase. Por lo tanto, el párrafo en el ejemplo anterior era azul.
 
-  Es fácil de recordar si los selectores son pequeños, pero pueden ser más complejos. Un selector puede ser una combinación de clases, etiquetas, etc. Por ejemplo:
+  Es fácil de recordar si los selectores son pequeños, pero estos pueden ser más complejos. Un selector puede ser una combinación de clases, etiquetas, etc. Por ejemplo:
 
   ```html
   <p class="paragraph color-primary">Párrafo</p>
@@ -94,14 +94,14 @@ theory: |
 
   Por lo tanto, las propiedades del selector `.paragraph.color-primary` tendrán mayor prioridad que las del selector `.paragraph`.
 
-  La lista anterior para calcular los "pesos" o, como también se dice, la "especificidad de las propiedades" no es absolutamente completa, pero este método es suficiente en las primeras etapas de aprendizaje de CSS. Con la práctica, aprenderá a determinar la prioridad de los selectores por sí mismo.
+  La lista anterior para calcular los "pesos" o, como también se dice, la "especificidad de las propiedades" no es absolutamente completa, pero este método es suficiente en las primeras etapas de aprendizaje de CSS. Con la práctica, aprenderás tú mismo a determinar la prioridad de los selectores.
 
 instructions: |
-  Agregue un párrafo al editor con la clase `border` y el id `no-border`. Establezca las siguientes reglas:
+  Agrega un párrafo al editor con la clase `border` y el id `no-border`. Establece las siguientes reglas:
 
-  * Para la clase `border`, establezca un borde sólido de cualquier color con un grosor de 1px. Puede hacerlo así: `border: 1px solid #000;`
-  * Para el id `no-border`, elimine el borde. Utilice el valor `none` para la regla `border-style`
+  * Para la clase `border`, establece un borde sólido de cualquier color con un grosor de 1px. Puedes hacerlo así: `border: 1px solid #000;`
+  * Para el id `no-border`, elimina el borde. Utiliza el valor `none` para la regla `border-style`
 
-  Primero, especifique los estilos para el selector `.border`, luego para el selector `#no-border`.
+  Primero, especifica los estilos para el selector `.border`, luego para el selector `#no-border`.
 
-  Escriba los estilos dentro de la etiqueta `<style>`
+  Escribe los estilos dentro de la etiqueta `<style>`

@@ -3,12 +3,12 @@
 name: Intensidad de la fuente
 theory: |
 
-  En el curso de HTML, se discutió la etiqueta `<b>` para cambiar la intensidad de la fuente, que es equivalente a la propiedad `font-weight`. Esta propiedad es más flexible que los estilos estándar de la etiqueta `<b>`, ya que no solo se puede hacer más intensa, sino también más delgada.
+  En el curso de HTML, se habló de la etiqueta `<b>` para cambiar la intensidad de la fuente, que es equivalente a la propiedad `font-weight`. Esta propiedad es más flexible que los estilos estándar de la etiqueta `<b>`, ya que no solo se puede hacer más intensa, sino también más delgada.
 
   Hay dos valores más comunes para la propiedad `font-weight`:
 
-  1. `bold` - fuente intensa. El texto se verá igual que cuando se usa la etiqueta `<strong>` o `<b>`.
-  2. `normal` - valor predeterminado. Un valor útil si todo el texto tiene una intensidad no estándar, pero se necesita que una parte sea estándar en intensidad.
+  1. `bold` - fuente intensa. El texto se verá igual que cuando se usa la etiqueta `<strong>` o `<b>`
+  2. `normal` - valor predeterminado. Un valor útil si todo el texto tiene una intensidad no estándar, pero se necesita que una parte sea estándar en intensidad
 
   ```html
   <p class="bold">Texto con fuente en negrita</p>
@@ -36,10 +36,10 @@ theory: |
   * `800`
   * `900`
 
-  Aunque hay muchos valores numéricos, todo depende de las variantes de la fuente, es decir, si tiene caracteres para cada tipo de intensidad. La mayoría de las fuentes solo admiten los valores `normal` y `bold`, y si se especifica otro valor, el navegador elegirá automáticamente qué intensidad usar. En la mayoría de los casos, todos los valores superiores a `500` se interpretarán como `bold`.
+  Aunque hay muchos valores numéricos, todo depende de las variantes de la fuente, es decir, si tiene caracteres para cada tipo de intensidad. La mayoría de las fuentes solo admiten los valores `normal` y `bold`, y si se especifica otro valor, el navegador elegirá automáticamente qué intensidad usar. En la mayoría de los casos, todos los valores superiores a `500` se interpretarán como `bold`
 
 instructions: |
   Agrega un párrafo con la clase `weight` en el editor y establece la intensidad en `bold`. Agrega los estilos dentro de la etiqueta `<style>`.
 
 tips:
-  - Si la fuente solo tiene una intensidad normal, al establecer el valor `bold`, el navegador automáticamente hará que los caracteres sean intensos. Esto puede no verse como lo pretendían los desarrolladores de la fuente, así que asegúrate de tener todas las variaciones de fuente necesarias.
+  - Si la fuente solo tiene una intensidad normal, al establecer el valor `bold`, el navegador automáticamente hará que los caracteres sean intensos. Esto puede no verse como lo pretendían los desarrolladores de la fuente, así que asegúrate de tener todas las variaciones de fuente necesarias

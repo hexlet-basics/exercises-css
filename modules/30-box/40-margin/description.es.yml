@@ -3,7 +3,7 @@
 name: Márgenes externos
 theory: |
 
-  Los márgenes internos permiten agregar "espacio" a un bloque y dar espacio entre el borde del bloque y su contenido. Pero, ¿cómo evitar que dos bloques adyacentes se peguen entre sí?
+  Los márgenes internos permiten añadir más espacio a un bloque y dar espacio entre el borde del bloque y su contenido. Pero, ¿cómo evitar que dos bloques adyacentes se peguen entre sí?
 
   <div class="hexlet-basics-example mt-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;">
     Tarjeta con texto blanco sobre fondo violeta

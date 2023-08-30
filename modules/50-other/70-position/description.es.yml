@@ -2,7 +2,7 @@
 
 name: Posicionamiento
 theory: |
-  CSS ofrece grandes posibilidades para la visualización visual de elementos. Una de las características clave de CSS es el posicionamiento, que permite influir en la ubicación de un elemento en la página.
+  CSS ofrece grandes posibilidades para la visualización de elementos. Una de las características clave de CSS es el posicionamiento, que permite influir en la ubicación de un elemento en la página.
 
   Con la regla `position`, podemos "extraer" un bloque de la maquetación y colocarlo donde sea conveniente. Los valores principales de la propiedad `position` son los siguientes:
 

@@ -1,8 +1,8 @@
 ---
 
-name: Consultas de medios
+name: Consulta de medios
 theory: |
-  Para ver páginas web se utilizan muchos dispositivos con diferentes tamaños y resoluciones de pantalla: computadoras, teléfonos inteligentes, tabletas, laptops, entre otros. Esta cantidad de dispositivos requiere que los desarrolladores sean capaces de adaptar sus páginas a diferentes variaciones de resoluciones.
+  Para ver páginas web se utilizan muchos dispositivos con diferentes tamaños y resoluciones de pantalla: computadoras, celulares, tabletas, laptops, etc. Esta cantidad de dispositivos requiere que los desarrolladores sean capaces de adaptar sus páginas a diferentes variaciones de resoluciones.
 
   Una forma de cambiar estilos dependiendo de la resolución es mediante el uso de reglas CSS especiales que se activan cuando se cumplen ciertas condiciones. Estas condiciones pueden ser:
 
@@ -44,12 +44,12 @@ theory: |
   }
   ```
 
-  Con la llegada de los teléfonos móviles, surgió la necesidad de trabajar con la forma en que los usuarios sostienen el teléfono: vertical u horizontalmente. Cuando un usuario sostiene el teléfono verticalmente, la altura de la pantalla es mayor que su ancho. Cuando se utiliza horizontalmente, ocurre lo contrario: el ancho es mayor que la altura. Esto requiere una disposición adecuada de los bloques en la página para que sea fácil de usar desde cualquier posición.
+  Con la llegada de los teléfonos celulares, surgió la necesidad de trabajar con la forma en que los usuarios sostienen el teléfono: vertical u horizontalmente. Cuando un usuario sostiene el teléfono verticalmente, la altura de la pantalla es mayor que su ancho. Cuando se utiliza horizontalmente, ocurre lo contrario: el ancho es mayor que la altura. Esto requiere una disposición adecuada de los bloques en la página para que sea fácil de usar desde cualquier posición.
 
   En las consultas de medios existe una condición especial llamada `orientation`, que puede tener uno de dos valores:
 
-  * `portrait` - orientación vertical del dispositivo. La altura de la pantalla es **mayor** que su ancho.
-  * `landscape` - orientación horizontal del dispositivo. La altura de la pantalla es **menor** que su ancho.
+  * `portrait` - orientación vertical del dispositivo. La altura de la pantalla es **mayor** que su ancho
+  * `landscape` - orientación horizontal del dispositivo. La altura de la pantalla es **menor** que su ancho
 
   Supongamos que para la orientación vertical el texto debe ser blanco, y para la orientación horizontal debe ser negro:
 
@@ -67,7 +67,7 @@ theory: |
   }
   ```
 
-  Las consultas de medios pueden ser mucho más complejas y tener en cuenta muchas variaciones diferentes. No podemos cubrir todo esto en una sola lección, pero ya has aprendido cómo se construyen las consultas de medios, para qué existen y cómo agregarlas a tu archivo CSS.
+  Las consultas de medios pueden ser mucho más complejas e incluir muchas variaciones diferentes. No podemos cubrir todo esto en una sola lección, pero ya has aprendido cómo se construyen las consultas de medios, para qué existen y cómo agregarlas a tu archivo CSS
 
 instructions: |
   Agrega el color blanco al texto de los párrafos con la clase `white-text-mobile` para dispositivos con un ancho de pantalla no mayor a 750 píxeles. Escribe los estilos dentro de la etiqueta `<style>`.

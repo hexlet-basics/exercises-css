@@ -2,7 +2,7 @@
 
 name: Animación
 theory: |
-  La animación es un módulo extenso en CSS. Desafortunadamente, no es posible describir todas las posibilidades en una sola lección. En esta lección se mostrará el principio básico de la animación en CSS basado en `@keyframes`. Como ejemplo, haremos una animación de texto: el color del texto cambiará de azul a rojo.
+  La animación es un módulo extenso en CSS. Desafortunadamente, no es posible describir todas las ventajas en una sola lección. En esta lección se mostrará el principio básico de la animación en CSS basado en `@keyframes`. Como ejemplo, haremos una animación de texto: el color del texto cambiará de azul a rojo.
 
   Para definir una animación, se utiliza la regla `@keyframes` y el nombre de la animación:
 
@@ -12,12 +12,12 @@ theory: |
   }
   ```
 
-  El nombre de la animación puede ser cualquier cosa. Lo eliges tú mismo. En el futuro, será este nombre el que la propiedad `animation` utilizará para saber qué animación reproducir.
+  El nombre de la animación puede ser cualquiera. Lo eliges tú mismo. En el futuro, será este nombre el que la propiedad `animation` utilizará para saber qué animación reproducir.
 
   Dentro de `@keyframes`, debes especificar diferentes intervalos de tiempo en los que se producirán cambios. Por ejemplo, al inicio (0% de completitud de la animación) el texto será azul, en la mitad de la animación (50%) será rojo, y al final (100%) volverá a ser azul.
 
   ```css
-  @keyframes cambio-de-color {
+  @keyframes color-change {
     0% {
       color: blue;
     }
@@ -39,8 +39,8 @@ theory: |
   * Si la animación es infinita o no (si es infinita, se especifica el parámetro `infinite`)
 
   ```css
-  .texto-animado {
-    animation: cambio-de-color 3s infinite;
+  .animation-text {
+    animation: color-change 3s infinite;
   }
   ```
 
@@ -48,7 +48,7 @@ theory: |
 
   <div class="hexlet-basics-example">
     <style>
-      @keyframes cambio-de-color {
+      @keyframes color-change {
         0% {
           color: blue;
         }
@@ -62,12 +62,12 @@ theory: |
         }
       }
 
-      .texto-animado {
-        animation: cambio-de-color 3s infinite;
+      .animation-text {
+        animation: color-change 3s infinite;
       }
     </style>
-    <p class="texto-animado m-0">Texto con animación cambio-de-color. El color del texto cambia de azul a rojo y viceversa</p>
+    <p class="animation-text m-0">Texto con animación color-change. El color del texto cambia de azul a rojo y viceversa</p>
   </div>
 
 instructions: |
-  Crea una animación que cambie el color del texto de negro a blanco. Aplica la animación a la clase `black-white`. Escribe los estilos dentro de la etiqueta `<style>`. Luego, envuelve un texto arbitrario dentro de una etiqueta `<p>` y asigna la clase `black-white` a la misma.
+  Crea una animación que cambie el color del texto de negro a blanco. Aplica la animación a la clase `black-white`. Escribe los estilos dentro de la etiqueta `<style>`. Luego, envuelve un texto libre dentro de una etiqueta `<p>` y asigna la clase `black-white` a la misma.

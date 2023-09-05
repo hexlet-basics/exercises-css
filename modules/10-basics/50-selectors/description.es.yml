@@ -2,7 +2,7 @@
 
 name: Selectores
 theory: |
-  En las lecciones ya hemos visto selectores por etiqueta y por clase. Un selector es una descripción de a qué se debe aplicar un estilo CSS específico. Pueden ser bastante complejos, indicando no solo un elemento específico, sino también el lugar donde se encuentra o dentro de qué etiqueta. Recordemos el selector por clase. Se aplica a cualquier elemento cuya clase hayamos especificado.
+  En otras lecciones ya nos encontramos con selectores por etiqueta y por clase. Un selector es una descripción de a qué se debe aplicar un estilo CSS específico. Pueden ser bastante complejos, indicando no solo un elemento específico, sino también el lugar donde se encuentra o dentro de qué etiqueta. Recordemos el selector por clase. Se aplica a cualquier elemento cuya clase hayamos especificado.
 
   ```html
   <p class="text-bold">Texto en negrita dentro de un párrafo</p>
@@ -16,7 +16,7 @@ theory: |
   }
   ```
 
-  La propiedad `font-weight` con el valor **bold** establecerá el texto en negrita. Te familiarizarás más con esta propiedad al estudiar el formato de texto. Por ahora, lo más importante es que este estilo se aplicará tanto al párrafo como al elemento de bloque `<div>`, ya que ambos tienen la misma clase.
+  La propiedad `font-weight` con el valor **bold** establecerá el texto en negrita. Aprenderás más sobre esta propiedad cuando empieces a estudiar el diseño de textos. Por ahora, lo más importante es que este estilo se aplicará tanto al párrafo como al elemento de bloque `<div>`, ya que ambos tienen la misma clase.
 
   Otro selector que ya conoces es el selector por etiqueta. Su propósito es establecer estilos para todas las etiquetas en la página. Esto es muy útil si necesitas establecer estilos iniciales para las etiquetas en todo el proyecto. Por ejemplo, establecer la fuente, su tamaño y su peso.
 
@@ -29,7 +29,7 @@ theory: |
 
   Utiliza el selector por etiqueta solo para establecer reglas globales en todo el proyecto. Esto es importante, ya que los estilos se aplicarán a todas las etiquetas a la vez y podrías sobrescribir estilos existentes por accidente.
 
-  Otra forma de establecer estilos es mediante el uso de un selector por identificador. Usando el atributo `id`, puedes especificar un nombre único para cualquier elemento en la página. Si se especifica este nombre, es posible acceder al elemento utilizando un selector por identificador. Para ello, se utiliza un selector de la forma `#nombre_identificador`.
+  Otra forma de establecer estilos es mediante el uso de un selector por identificador. Usando el atributo `id`, puedes especificar un nombre único para cualquier elemento en la página. Si este nombre está especificado, es posible acceder al elemento utilizando un selector por identificador. Para ello, se utiliza un selector de la forma `#nombre_identificador`
 
   ```html
   <p id="red">Párrafo rojo</p>

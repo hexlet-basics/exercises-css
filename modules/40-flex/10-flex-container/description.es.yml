@@ -2,13 +2,13 @@
 
 name: Contenedor Flex
 theory: |
-  La disposición de elementos en una página es una de las áreas de trabajo más importantes para un diseñador o desarrollador frontend. En todas las lecciones anteriores, hemos agregado elementos pequeños, pero su disposición se determinaba solo por cómo se agregaban en HTML. La mayoría de las veces, esto simplemente significa colocarlos uno encima del otro.
+  La colocación de elementos en una página es una de las áreas de trabajo más importantes para un diseñador o desarrollador frontend. En todas las lecciones anteriores, hemos agregado elementos pequeños, pero su posición se determinaba solo por cómo se agregaban en HTML. La mayoría de las veces, esto simplemente significa colocarlos uno encima del otro.
 
   Al diseñar páginas, los desarrolladores necesitan colocar elementos no solo de esta manera, sino también uno al lado del otro.
 
-  Eche un vistazo a la página actual. Tiene dos áreas grandes que están colocadas una al lado de la otra: el bloque de teoría y el bloque de editor de código.
+  Echa un vistazo a la página actual. Tiene dos áreas grandes que están colocadas una al lado de la otra: el bloque de teoría y el bloque de editor de código.
 
-  Una forma de resolver esta tarea es utilizar el módulo Flex de CSS. Para hacer esto, simplemente especifique la propiedad `display` con el valor `flex` en el contenedor principal que contiene los bloques de práctica y teoría.
+  Una forma de resolver esta tarea es utilizar el módulo Flex de CSS. Para hacer esto, simplemente especifica la propiedad `display` con el valor `flex` en el contenedor principal que contiene los bloques de práctica y teoría.
 
   ```html
   <style>
@@ -18,8 +18,8 @@ theory: |
   </style>
 
   <div class="container">
-    <div class="theory">Aquí va la teoría</div>
-    <div class="practice">Aquí va el editor de práctica</div>
+    <div class="theory">Aquí está la teoría</div>
+    <div class="practice">Aquí está el editor de práctica</div>
   </div>
   ```
 
@@ -27,8 +27,8 @@ theory: |
 
   <div class="hexlet-basics-example my-3">
     <div class="container d-flex fw-bold text-white" style="height: 200px;">
-      <div class="bg-black bg-opacity-50 p-3">Aquí va la teoría</div>
-      <div class="bg-opacity-50 bg-primary p-3">Aquí va el editor de práctica</div>
+      <div class="bg-black bg-opacity-50 p-3">Aquí está la teoría</div>
+      <div class="bg-opacity-50 bg-primary p-3">Aquí está el editor de práctica</div>
     </div>
   </div>
 
@@ -61,7 +61,7 @@ instructions: |
   1. Un bloque de texto: `¿Cuáles son los lenguajes de programación más demandados en 2023?`. El bloque tiene un ancho del `40%`. Clase para el bloque: `question`
   2. Un bloque de texto: `Python y JavaScript siguen siendo los lenguajes más populares para aprender en 2023`. El bloque tiene un ancho del `60%`. Clase para el bloque: `answer`
 
-  Intenta estilizar los elementos por ti mismo para convertir este bloque en un verdadero bloque de preguntas y respuestas. Las pruebas solo verificarán el uso correcto del contenedor.
+  Intenta estilizar los elementos tú mismo para convertir este bloque en un verdadero bloque de preguntas y respuestas. Las pruebas solo verificarán el uso correcto del contenedor.
 
 tips:
   - Todos los bloques que se encuentran directamente dentro del contenedor se llaman _Elementos Flex_

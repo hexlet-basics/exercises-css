@@ -2,7 +2,7 @@
 
 name: Tamaño flexible de elementos
 theory: |
-  Flex le dio a los desarrolladores una de las características más poderosas: la flexibilidad. Si estás familiarizado con el inglés, habrás notado que el módulo en sí se llama Flex, que se puede traducir como "flexión" o "flexibilidad".
+  Flex le dio a los desarrolladores una de las características más poderosas: la flexibilidad. Si sabes inglés, habrás notado que el módulo en sí se llama Flex, que se puede traducir como "flexión" o "flexibilidad".
 
   La flexibilidad en Flex se manifiesta en la capacidad de los elementos para cambiar su tamaño según ciertas reglas. Por ejemplo, se puede comprimir automáticamente un elemento si no hay suficiente espacio, o, por el contrario, distribuir el espacio vacío en el contenedor entre todos los elementos.
 
@@ -16,9 +16,9 @@ theory: |
   * Para `flex-grow` - qué parte del espacio vacío puede tomar el elemento
   * Para `flex-shrink` - cuánto puede reducirse el elemento
 
-  Todos estos valores funcionan como parte de una fórmula matemática que el navegador utiliza para calcular el tamaño final del elemento. Este es un tema complicado y no obvio para estudiar al principio, por lo que en esta lección omitiremos todas las fórmulas.
+  Todos estos valores funcionan como parte de una fórmula matemática que el navegador utiliza para calcular el tamaño final del elemento. Este es un tema complicado y no tan obvio para estudiar al principio, por lo que en esta lección omitiremos todas las fórmulas.
 
-  En realidad, no se trata solo de fórmulas y del comienzo del aprendizaje. Los diseñadores y los propios desarrolladores no suelen disfrutar de establecer diferentes valores y calcular mentalmente cuánto se reducirá o aumentará un elemento.
+  En realidad, no se trata solo de fórmulas y del comienzo del aprendizaje. Los diseñadores y los propios desarrolladores no son muy aficionados a establecer diferentes valores y calcular en mente cuánto se reducirá o aumentará un elemento.
 
   Para evitar cálculos matemáticos, los desarrolladores han llegado al enfoque más popular para utilizar estas propiedades, que es establecer el valor `1` o `0` para todos los elementos en el contenedor.
 
@@ -76,7 +76,7 @@ theory: |
   La propiedad `flex-shrink` con el valor `1` funcionará de manera similar. Se restará la misma cantidad de ancho de los elementos según la cantidad de espacio que falte para acomodar todos los elementos. Por defecto, todos los elementos flex tienen el valor `flex-shrink: 1`, por lo que los elementos se reducirán incluso sin especificar esta propiedad adicional.
 
 instructions: |
-  El cliente está completamente satisfecho con el bloque de preguntas y respuestas y ha dejado una última solicitud: permitir que el *bloque con la flecha* se estire para ocupar todo el espacio vacío y alinear la flecha en el centro del bloque.
+  El cliente está completamente satisfecho con el bloque de preguntas y respuestas y ha dejado una última corección: permitir que el *bloque con la flecha* se estire para ocupar todo el espacio vacío y alinear la flecha en el centro del bloque.
 
   De esta manera, la flecha siempre conectará de manera ordenada la pregunta y la respuesta en pantallas de alta resolución y el usuario podrá encontrar rápidamente la respuesta a la pregunta.
 

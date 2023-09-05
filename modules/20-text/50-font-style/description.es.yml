@@ -2,13 +2,13 @@
 
 name: Cursiva
 theory: |
-  Para resaltar citas o términos, a menudo se utiliza _la tipografía en cursiva_. A diferencia de cambiar la intensidad, la cursiva permite llamar la atención sobre una parte del texto sin destacarlo de inmediato.
+  Para resaltar citas o términos, a menudo se utiliza _tipografía en cursiva_. A diferencia de cambiar la intensidad, la cursiva permite llamar la atención sobre una parte del texto sin destacarlo de inmediato.
 
   Para cambiar la tipografía se utiliza la propiedad `font-style`, que puede tener uno de los siguientes valores:
 
   * `normal` - texto normal.
-  * `italic` - tipografía en cursiva.
-  * `oblique` - tipografía inclinada.
+  * `italic` - tipografía en cursiva
+  * `oblique` - tipografía inclinada
 
   <div class="hexlet-basics-example my-3">
     <p>Texto con tipografía normal</p>

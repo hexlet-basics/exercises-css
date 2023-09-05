@@ -29,7 +29,7 @@ theory: |
   * `solid` - estilo del borde
   * `#ccc` - color del borde
 
-  Ya hemos visto valores en píxeles y colores hex en el curso, pero en CSS hay ocho estilos de borde:
+  Ya hemos estudiado valores en píxeles y colores hex en el curso, pero en CSS hay ocho estilos de borde:
 
   * `dotted` (punteado)
   * `dashed` (guionado)
@@ -40,7 +40,7 @@ theory: |
   * `inset` (hundido)
   * `outset` (saliente)
 
-  y hay un valor `none` (ninguno) que "elimina" el borde, ya que cuando se establece `border-style: none`, los navegadores ignoran las demás propiedades y eliminan el borde.
+  y hay un valor `none` que "elimina" el borde, ya que cuando se establece `border-style: none`, los navegadores ignoran las demás propiedades y eliminan el borde
 
   ## Ejemplos de bordes
 

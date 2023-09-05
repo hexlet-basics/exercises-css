@@ -25,15 +25,15 @@ theory: |
   <div style="border: 2px solid #000;">
     El bloque tendrá un borde de 2 píxeles de ancho.
 
-    <p>El párrafo no tendrá su propio borde. Si es necesario, se establece por separado.</p>
-    <p style="border: 1px solid #000;">Por ejemplo, así</p>
+    <p>El párrafo no tendrá su propio borde. Al ser necesario, se establece por separado.</p>
+    <p style="border: 1px solid #000;">Por ejemplo, de esta manera</p>
   </div>
   ```
 
   <div class="hexlet-basics-example my-3 bg-light" style="border: 2px solid #000!important;">
     El bloque tendrá un borde de 2 píxeles de ancho.
     <p>El párrafo no tendrá su propio borde. Si es necesario, se establece por separado.</p>
-    <p style="border: 1px solid #000;" class="mb-0">Por ejemplo, así</p>
+    <p style="border: 1px solid #000;" class="mb-0">Por ejemplo, de esta manera</p>
   </div>
 
 instructions: |
@@ -41,4 +41,4 @@ instructions: |
 
 definitions:
   - name: Propiedades heredadas
-    description: propiedades que se aplican no solo al elemento, sino también a todos los elementos dentro de él, incluidos los anidados
+    description: propiedades que se aplican no solo al elemento, sino también a todos los elementos que estén dentro, incluidos los anidados

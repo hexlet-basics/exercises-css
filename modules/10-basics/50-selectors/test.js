@@ -9,5 +9,5 @@ test(({ query, expect }) => {
   const style = getComputedStyle(element);
 
   expect(style).to.have.property('font-weight', 'bold');
-  expect(style).to.have.property('color', 'red');
+  expect(style).to.have.property('color', 'rgb(255, 0, 0)');
 });

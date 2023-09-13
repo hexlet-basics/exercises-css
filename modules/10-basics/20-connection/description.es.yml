@@ -1,0 +1,27 @@
+---
+
+name: Uso de CSS en HTML
+theory: |
+
+  El lenguaje de estilos CSS no está directamente relacionado con HTML. Es necesario indicar al navegador desde dónde descargar e interpretar los estilos. Para ello, existen tres formas:
+
+  1. Especificar los estilos como valor del atributo `style`. Esta forma se conoce como "en línea" (inline), lo que significa que se escribe la regla en una sola línea utilizando el atributo `style`.
+  2. Utilizar la etiqueta especial `<style>`, que se coloca en la sección `head`. El navegador procesará todo lo que esté escrito dentro de esta etiqueta como el código CSS.
+  3. Enlazar un archivo separado con los estilos. En este caso, se crea un archivo con extensión `.css`, donde se especifican las reglas CSS. Para enlazar el archivo se utiliza la etiqueta meta `<link>`.
+
+  En esta lección, veremos el principio de la escritura en línea de estilos utilizando el atributo `style`. Independientemente de la forma que elijas para enlazar los estilos, la sintaxis de las reglas sigue siendo la misma: `nombre-propiedad: valor;`. Es importante no olvidar agregar el símbolo `;` después del valor de la propiedad. De esta manera, el navegador podrá separar las reglas entre sí.
+
+  Una de las principales formas de "probar" los estilos es trabajar con texto. CSS permite dar formato al texto de muchas maneras: aumentar el tamaño de la fuente, definir el estilo, la negrita, etc. Todas las reglas básicas para trabajar con texto se estudiarán a lo largo del curso.
+
+  Vamos a aprender cómo cambiar el tamaño de la fuente. El tamaño se puede modificar utilizando la propiedad `font-size`, cuyo valor es un número seguido de una unidad de medida. Intentaremos hacer que el texto tenga un tamaño de _32 píxeles_. La unidad de medida píxel se indica utilizando la abreviatura `px`. Se explicarán en detalle las diferentes unidades de medida y cómo funcionan en las próximas lecciones.
+
+  ```html
+  <p style="font-size: 32px;">Texto grande</p>
+  ```
+
+  <div class="hexlet-basics-example my-3 bg-light">
+    <p class="m-0" style="font-size: 32px;">Texto grande</p>
+  </div>
+
+instructions: |
+  Agrega la etiqueta `<p></p>` al editor y, utilizando el atributo `style`, establece el tamaño de la fuente en 12 píxeles.

@@ -1,0 +1,50 @@
+---
+
+name: Selectores
+theory: |
+  En otras lecciones ya nos encontramos con selectores por etiqueta y por clase. Un selector es una descripción de a qué se debe aplicar un estilo CSS específico. Pueden ser bastante complejos, indicando no solo un elemento específico, sino también el lugar donde se encuentra o dentro de qué etiqueta. Recordemos el selector por clase. Se aplica a cualquier elemento cuya clase hayamos especificado.
+
+  ```html
+  <p class="text-bold">Texto en negrita dentro de un párrafo</p>
+
+  <div class="text-bold">Otro texto dentro de un elemento de bloque simple. Como también tiene la clase text-bold, se mostrará en negrita</div>
+  ```
+
+  ```css
+  .text-bold {
+    font-weight: bold;
+  }
+  ```
+
+  La propiedad `font-weight` con el valor **bold** establecerá el texto en negrita. Aprenderás más sobre esta propiedad cuando empieces a estudiar el diseño de textos. Por ahora, lo más importante es que este estilo se aplicará tanto al párrafo como al elemento de bloque `<div>`, ya que ambos tienen la misma clase.
+
+  Otro selector que ya conoces es el selector por etiqueta. Su propósito es establecer estilos para todas las etiquetas en la página. Esto es muy útil si necesitas establecer estilos iniciales para las etiquetas en todo el proyecto. Por ejemplo, establecer la fuente, su tamaño y su peso.
+
+  ```css
+  p {
+    color: #333;
+    font: 18px/1.5 sans-serif;
+  }
+  ```
+
+  Utiliza el selector por etiqueta solo para establecer reglas globales en todo el proyecto. Esto es importante, ya que los estilos se aplicarán a todas las etiquetas a la vez y podrías sobrescribir estilos existentes por accidente.
+
+  Otra forma de establecer estilos es mediante el uso de un selector por identificador. Usando el atributo `id`, puedes especificar un nombre único para cualquier elemento en la página. Si este nombre está especificado, es posible acceder al elemento utilizando un selector por identificador. Para ello, se utiliza un selector de la forma `#nombre_identificador`
+
+  ```html
+  <p id="red">Párrafo rojo</p>
+  ```
+
+  ```css
+  #red {
+    color: red;
+  }
+  ```
+
+  Es importante recordar que el valor del identificador es único. En la página solo puede haber un elemento con un valor específico. Por ejemplo, en el ejemplo anterior ya se ha utilizado el identificador `red` en el párrafo. No puede haber otro elemento igual en la página. Por esta razón, los identificadores se utilizan para envoltorios más grandes, como el encabezado principal del sitio, pero esto no es un requisito obligatorio.
+
+instructions: |
+  En el editor, crea un párrafo con el identificador **red** y la clase **bold**. Establece las siguientes propiedades:
+
+  * Para el identificador red, establece el color del texto en rojo.
+  * Para la clase bold, establece el texto en negrita.

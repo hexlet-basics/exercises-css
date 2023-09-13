@@ -1,0 +1,57 @@
+---
+
+name: Márgenes externos
+theory: |
+
+  Los márgenes internos permiten añadir más espacio a un bloque y dar espacio entre el borde del bloque y su contenido. Pero, ¿cómo evitar que dos bloques adyacentes se peguen entre sí?
+
+  <div class="hexlet-basics-example mt-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;">
+    Tarjeta con texto blanco sobre fondo violeta
+  </div>
+  <div class="hexlet-basics-example mb-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;">
+    Tarjeta con texto blanco sobre fondo violeta
+  </div>
+
+  Para separar las dos tarjetas del ejemplo anterior, se utilizan márgenes externos. Su principio de funcionamiento es similar al de los márgenes internos, pero solo cambia la dirección. En cuanto a las propiedades y sus valores, todo es lo mismo. Existen 4 reglas y una regla general:
+
+  * `margin-top` - margen externo superior
+  * `margin-right` - margen externo derecho
+  * `margin-bottom` - margen externo inferior
+  * `margin-left` - margen externo izquierdo
+
+  Para combinar valores, se utiliza la propiedad `margin`, en la que se mantiene el orden de especificación:
+
+  * margen superior
+  * margen derecho
+  * margen inferior
+  * margen izquierdo
+
+  Al igual que con los márgenes internos, existen formas abreviadas de escribir estas reglas para mayor comodidad:
+
+  * Si se especifica solo un valor, se utilizará simultáneamente para todos los lados
+  * Si se especifican dos valores, el primero se utilizará para los márgenes verticales (superior e inferior) y el segundo para los márgenes horizontales (derecho e izquierdo)
+  * Si se especifican tres valores, se utilizarán para el margen superior, horizontal e inferior
+
+  ```html
+  <div class="card">Tarjeta con texto blanco sobre fondo violeta</div>
+  <div class="card">Tarjeta con texto blanco sobre fondo violeta</div>
+  ```
+
+  ```css
+  .card {
+    margin: 10px 0;
+
+    color: #ffffff;
+    background-color: #673ab7;
+  }
+  ```
+
+  <div class="hexlet-basics-example" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;margin: 10px 0;">
+    Tarjeta con texto blanco sobre fondo violeta
+  </div>
+  <div class="hexlet-basics-example" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;margin: 10px 0;">
+    Tarjeta con texto blanco sobre fondo violeta
+  </div>
+
+instructions: |
+  Agrega un `<div>` con la clase `margin` en el editor y establece márgenes externos de 20 píxeles en todos los lados. Escribe los estilos dentro de la etiqueta `<style>`. Utiliza la forma abreviada.

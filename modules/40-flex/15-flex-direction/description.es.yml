@@ -1,0 +1,78 @@
+---
+
+name: Dirección de los elementos flexibles
+theory: |
+  Si profundizamos un poco en la teoría de cómo funciona el módulo Flex, entenderemos que es un eje en el que se "insertan" los elementos. Casi como cubos en una varilla o fichas en un contador.
+
+  Al igual que en el mundo real, podemos girar el eje principal para colocar los elementos de manera diferente. Para esto se utiliza la propiedad `flex-direction`, que puede tener uno de los cuatro valores:
+
+  * `row` - valor por defecto. Los elementos se colocan en una línea, donde el primer elemento está a la izquierda
+  * `row-reverse` - Efecto similar a `row`, pero los elementos se alinean en orden inverso, es decir, el primer elemento estará a la derecha
+  * `column` - los elementos se alinean desde arriba hacia abajo. El primer elemento está arriba
+  * `column-reverse` - los elementos se alinean desde abajo hacia arriba, es decir, el primer elemento está abajo
+
+  <div class="hexlet-basics-example my-3">
+    <p class="h3">Fila</p>
+    <div class="d-flex mb-3">
+      <div class="bg-primary" style="width: 50px; height: 50px">1</div>
+      <div class="bg-danger" style="width: 50px; height: 50px">2</div>
+      <div class="bg-success" style="width: 50px; height: 50px">3</div>
+    </div>
+
+    <p class="h3">Fila inversa</p>
+    <div class="d-flex flex-row-reverse mb-3">
+      <div class="bg-primary" style="width: 50px; height: 50px">1</div>
+      <div class="bg-danger" style="width: 50px; height: 50px">2</div>
+      <div class="bg-success" style="width: 50px; height: 50px">3</div>
+    </div>
+
+    <p class="h3">Columna</p>
+    <div class="d-flex flex-column mb-3">
+      <div class="bg-primary" style="width: 50px; height: 50px">1</div>
+      <div class="bg-danger" style="width: 50px; height: 50px">2</div>
+      <div class="bg-success" style="width: 50px; height: 50px">3</div>
+    </div>
+
+    <p class="h3">Columna inversa</p>
+    <div class="d-flex flex-column-reverse">
+      <div class="bg-primary" style="width: 50px; height: 50px">1</div>
+      <div class="bg-danger" style="width: 50px; height: 50px">2</div>
+      <div class="bg-success" style="width: 50px; height: 50px">3</div>
+    </div>
+  </div>
+
+  Además del eje principal en el que se colocan los elementos, se utiliza el concepto de _eje secundario_. Este eje es perpendicular al eje principal.
+
+  Por ejemplo, si los elementos se alinean horizontalmente, el eje secundario será una línea vertical. Este concepto es importante al estudiar la alineación de los elementos flex dentro del contenedor.
+
+instructions: |
+  Modifica los estilos para el bloque de preguntas y respuestas:
+
+  ```html
+  <style>
+    .qa {
+      font: 18px/1.5 sans-serif;
+      display: flex;
+    }
+
+    .question {
+      width: 40%;
+      padding: 20px;
+
+      color: #fff;
+      background: #8ea7e9;
+    }
+
+    .answer {
+      width: 60%;
+      padding: 20px;
+    }
+  </style>
+
+  <div class="qa">
+    <div class="question">¿Cuáles son los lenguajes de programación más demandados en 2023?</div>
+    <div class="answer">Los lenguajes más populares para aprender en 2023 siguen siendo Python y JavaScript</div>
+  </div>
+  ```
+
+  El cliente te pide que intercambies el bloque de pregunta y respuesta. Utiliza las capacidades aprendidas para hacerlo sin editar el HTML. Copia todo el código en el editor y completa los estilos necesarios.

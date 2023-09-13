@@ -1,0 +1,57 @@
+---
+
+name: Familia de fuentes
+theory: |
+  Muchos conocen con la frase "Juega con las fuentes" - un gran mantra cuando el aspecto visual del texto no es satisfactorio. Para especificar una fuente, se utiliza la regla `font-family`, que permite seleccionar una o varias fuentes que se utilizarán en el documento.
+
+  ```html
+  <style>
+    .nueva-fuente {
+      font-family: Arial, Futura;
+    }
+  </style>
+
+  <p class="nueva-fuente">Párrafo</p>
+  ```
+
+  Las fuentes se obtienen de las que están instaladas en tu sistema. Por esta razón, es recomendable elegir "fuentes comunes", ya que otro usuario puede no tenerlas. Además, es posible conectar fuentes de servicios externos, como [Google Fonts](https://fonts.google.com/), o cargarlas directamente en tu servidor donde se encuentra el sitio web.
+
+  Las fuentes más comunes son:
+
+  * Times New Roman
+  * Arial
+  * Tahoma
+  * Verdana
+  * Courier New
+
+  Es más probable que estas fuentes estén instaladas en el sistema de otro usuario. Si las fuentes especificadas en la propiedad `font-family` no están en la computadora, se utilizará la fuente predeterminada establecida en la configuración del navegador.
+
+  Al agregar estilos, es una buena práctica agregar una familia de fuentes universal a la regla `font-family`. Actualmente hay 5 de estas familias:
+
+  * `serif` - fuentes con remates (antiguas). Un ejemplo destacado de estas fuentes es _Times New Roman_
+  * `sans-serif` - fuentes sin remates (grotesco). Las fuentes más conocidas de este tipo son _Arial_ y _Verdana_
+  * `cursive` - fuentes cursivas
+  * `fantasy` - fuentes decorativas. Esta familia se utiliza con menos frecuencia. El motivo es que las fuentes decorativas son demasiado diferentes para ser intercambiables
+  * `monospace` - fuentes de ancho fijo. Estas son fuentes en las que todos los caracteres tienen el mismo ancho. Los programadores las utilizan con mucha frecuencia en editores de texto
+
+  Al agregar una familia de fuentes universal a la regla `font-family`, nos protegemos de que el usuario no tenga la fuente que hemos especificado. El navegador automáticamente seleccionará una sustitución de la fuente faltante de la familia de fuentes universal que se haya especificado.
+
+  El ejemplo del comienzo de la lección, al agregar una familia de fuentes universal, se verá así:
+
+  ```html
+  <style>
+    .nueva-fuente {
+      font-family: Arial, Futura, sans-serif;
+    }
+  </style>
+
+  <p class="nueva-fuente">Párrafo</p>
+  ```
+
+  Ahora, si el usuario no tiene las fuentes _Arial_ o _Futura_ en su sistema, se seleccionará una fuente del sistema sin remates.
+
+instructions: |
+  Agrega un párrafo con la clase `verdana-text` en el editor y establece la fuente _Verdana_ para él. Escribe los estilos dentro de la etiqueta `<style>`. No olvide especificar una familia de fuentes universal: fuentes sin remates.
+
+tips:
+  - La familia de fuentes siempre se especifica al final

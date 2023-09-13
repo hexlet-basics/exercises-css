@@ -1,0 +1,27 @@
+---
+
+name: Tamaño de fuente
+theory: |
+
+  Otra forma de separar secciones de texto con significado es utilizando diferentes tamaños de fuente. Ya hemos visto que los navegadores estilizan los títulos de diferentes maneras. Es precisamente el tamaño del texto lo que diferencia un título `<h1>` de un título `<h2>` y así sucesivamente.
+
+  En CSS, se puede controlar el tamaño de la fuente utilizando la propiedad `font-size`, que acepta un valor numérico y una unidad de medida. Por ahora, utilizaremos píxeles como unidad de medida, aunque hay algunas unidades importantes que se estudiarán al final de este curso.
+
+  ```html
+  <p>¡Atención! Este párrafo tiene el tamaño de fuente estándar</p>
+  <p class="warning">¡Atención! Este párrafo tiene un tamaño de fuente de 24 píxeles</p>
+  ```
+
+  ```css
+  .warning {
+    font-size: 24px;
+  }
+  ```
+
+  <div class="hexlet-basics-example my-3">
+    <p>¡Atención! Este párrafo tiene el tamaño de fuente estándar</p>
+    <p class="m-0" style="font-size: 24px;">¡Atención! Este párrafo tiene un tamaño de fuente de 24 píxeles</p>
+  </div>
+
+instructions: |
+  Agrega un párrafo con la clase `big` en el editor y establece el tamaño de fuente en 60 píxeles. Agrega los estilos en la etiqueta `<style>`.

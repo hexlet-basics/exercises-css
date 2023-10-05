@@ -12,28 +12,28 @@ theory: |
   * `column-reverse` - los elementos se alinean desde abajo hacia arriba, es decir, el primer elemento está abajo
 
   <div class="hexlet-basics-example my-3">
-    <p class="h3">Fila</p>
+    <p class="h3">Row (Fila)</p>
     <div class="d-flex mb-3">
       <div class="bg-primary" style="width: 50px; height: 50px">1</div>
       <div class="bg-danger" style="width: 50px; height: 50px">2</div>
       <div class="bg-success" style="width: 50px; height: 50px">3</div>
     </div>
 
-    <p class="h3">Fila inversa</p>
+    <p class="h3">Row-Reverse (Fila Inversa)</p>
     <div class="d-flex flex-row-reverse mb-3">
       <div class="bg-primary" style="width: 50px; height: 50px">1</div>
       <div class="bg-danger" style="width: 50px; height: 50px">2</div>
       <div class="bg-success" style="width: 50px; height: 50px">3</div>
     </div>
 
-    <p class="h3">Columna</p>
+    <p class="h3">Column (Columna)</p>
     <div class="d-flex flex-column mb-3">
       <div class="bg-primary" style="width: 50px; height: 50px">1</div>
       <div class="bg-danger" style="width: 50px; height: 50px">2</div>
       <div class="bg-success" style="width: 50px; height: 50px">3</div>
     </div>
 
-    <p class="h3">Columna inversa</p>
+    <p class="h3">Column-Reverse (Columna Inversa)</p>
     <div class="d-flex flex-column-reverse">
       <div class="bg-primary" style="width: 50px; height: 50px">1</div>
       <div class="bg-danger" style="width: 50px; height: 50px">2</div>

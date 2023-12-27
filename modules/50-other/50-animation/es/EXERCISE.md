@@ -1,0 +1,1 @@
+Crea una animación que cambie el color del texto de negro a blanco. Aplica la animación a la clase `black-white`. Escribe los estilos dentro de la etiqueta `<style>`. Luego, envuelve un texto libre dentro de una etiqueta `<p>` y asigna la clase `black-white` a la misma.

@@ -1,0 +1,1 @@
+Agrega un párrafo con la clase `verdana-text` en el editor y establece la fuente _Verdana_ para él. Escribe los estilos dentro de la etiqueta `<style>`. No olvide especificar una familia de fuentes universal: fuentes sin remates.

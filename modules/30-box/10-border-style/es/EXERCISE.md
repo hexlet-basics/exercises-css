@@ -1,0 +1,1 @@
+Agrega un `<div>` con la clase `border-bold` en el editor y establece un borde sólido de 5 píxeles de grosor. El color del borde debe ser `#2196F3`. Escribe los estilos dentro de la etiqueta `<style>`

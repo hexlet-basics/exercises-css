@@ -1,0 +1,106 @@
+Одна из главных фишек флекс — возможность выравнивание контента по любой из осей. Будь то главная или побочная ось, вы всегда можете воспользоваться несколькими свойствами, чтобы автоматически разместить элементы на странице.
+
+В этом уроке мы изучим свойства `justify-content` и `align-items`, которые позволяют расположить элементы по главной и побочной оси соответственно.
+
+Для разбора работы свойств используем следующий пример:
+
+<div class="hexlet-basics-example my-3">
+  <div class="bg-opacity-25 bg-secondary d-flex fw-bold gap-2" style="height: 200px;">
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">1</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">2</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
+  </div>
+</div>
+
+Серым цветом обозначен Flex-контейнер. Именно к нему и будут применяться все свойства из этого урока
+
+## Выравнивание по главной оси
+
+Для выравнивания по главной оси используется свойство `justify-content`. Оно указывается у контейнера (блок со свойством `display: flex`) и может иметь множество значений. Разберём самые распространённые значения:
+
+* `flex-start` — выравнивание по началу оси. Хоть это и не значение по умолчанию, но оно выглядит именно так, как на примере выше
+* `flex-end` — выравнивание по концу оси
+* `center` — выравнивание контента по центру контейнера
+* `space-between` — первый и последний элемент прижимаются к началу и концу оси, а остальные элементы распределяются по остальному пространству
+* `space-around` — принцип такой же, как и у значения `space-between`, но первый и последний элемент так же получают отступы, которые равны половине отступов у остальных элементов
+
+<div class="hexlet-basics-example my-3">
+  <p class="h3">flex-start</p>
+  <div class="bg-opacity-25 bg-secondary d-flex fw-bold gap-2 mb-3" style="height: 200px;">
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">1</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">2</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
+  </div>
+
+  <p class="h3">flex-end</p>
+  <div class="bg-opacity-25 bg-secondary d-flex justify-content-end fw-bold gap-2 mb-3" style="height: 200px;">
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">1</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">2</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
+  </div>
+
+  <p class="h3">center</p>
+  <div class="bg-opacity-25 bg-secondary d-flex justify-content-center fw-bold gap-2 mb-3" style="height: 200px;">
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">1</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">2</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
+  </div>
+
+  <p class="h3">space-between</p>
+  <div class="bg-opacity-25 bg-secondary d-flex justify-content-between fw-bold gap-2 mb-3" style="height: 200px;">
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">1</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">2</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
+  </div>
+
+  <p class="h3">space-around</p>
+  <div class="bg-opacity-25 bg-secondary d-flex justify-content-around fw-bold gap-2 mb-3" style="height: 200px;">
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">1</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">2</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
+  </div>
+</div>
+
+## Выравнивание по побочной оси
+
+Помимо выравнивания элементов по главной оси, флекс позволяет одновременно выравнять элементы по побочной оси. Именно для понимания этого эффекта примеры в этом уроке имеют большую высоту контейнера чем необходимо.
+
+Чтобы выровнять элементы по побочной оси используется свойство `align-items`. В нём также много значений, но рассмотрим работу самых популярных:
+
+* `flex-start` — выравнивание по началу побочной оси
+* `flex-end` — выравнивание по концу побочной оси
+* `center` — выравнивание по центру
+
+<div class="hexlet-basics-example my-3">
+  <p class="h3">flex-start</p>
+  <div class="bg-opacity-25 bg-secondary d-flex fw-bold gap-2 mb-3" style="height: 200px;">
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">1</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">2</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
+  </div>
+
+  <p class="h3">flex-end</p>
+  <div class="bg-opacity-25 bg-secondary d-flex align-items-end fw-bold gap-2 mb-3" style="height: 200px;">
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">1</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">2</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
+  </div>
+
+  <p class="h3">center</p>
+  <div class="bg-opacity-25 bg-secondary d-flex align-items-center fw-bold gap-2 mb-3" style="height: 200px;">
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">1</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">2</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
+  </div>
+</div>
+
+Как видите, значений тут сильно меньше, чем при выравнивании по главной оси. Помните про две оси — если воспользоваться свойством `flex-direction: column`, то визуально выравнивание изменится. В этом случае для выравнивания по вертикали будет использоваться свойство `justify-content`:
+
+<div class="hexlet-basics-example my-3">
+  <p class="h3">flex-direction: column и justify-content: space-between</p>
+  <div class="bg-opacity-25 bg-secondary d-flex flex-column justify-content-between fw-bold gap-2 mb-3" style="height: 200px;">
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">1</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">2</div>
+    <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
+  </div>
+</div>

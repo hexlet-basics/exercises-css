@@ -1,0 +1,7 @@
+name: Intensidad de la fuente
+tips:
+  - >-
+    Si la fuente solo tiene una intensidad normal, al establecer el valor
+    `bold`, el navegador automáticamente hará que los caracteres sean intensos.
+    Esto puede no verse como lo pretendían los desarrolladores de la fuente, así
+    que asegúrate de tener todas las variaciones de fuente necesarias

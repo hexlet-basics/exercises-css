@@ -1,0 +1,6 @@
+name: Herencia de estilos
+definitions:
+  - name: Propiedades heredadas
+    description: >-
+      propiedades que se aplican no solo al elemento, sino también a todos los
+      elementos que estén dentro, incluidos los anidados

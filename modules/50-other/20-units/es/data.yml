@@ -1,0 +1,6 @@
+name: Unidades de medida
+tips:
+  - >-
+    Con unidades de medida relativas, puedes controlar no solo el tamaño de
+    fuente, sino también otras propiedades que aceptan un número y una unidad de
+    medida como valor.

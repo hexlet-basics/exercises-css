@@ -1,0 +1,1 @@
+Agrega un `<div>` con la clase `header`. Establece el tamaño de fuente en 22px. Dentro del `<div>`, coloca un párrafo con la clase `offer` y establece el tamaño de fuente en 200%. Escribe los estilos dentro de la etiqueta `<style>`.

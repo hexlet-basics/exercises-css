@@ -1,0 +1,6 @@
+name: Style inheritance
+definitions:
+  - name: Inherited properties
+    description: >-
+      are properties that are set not only for an element, but for all elements
+      within it, including nested ones

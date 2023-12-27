@@ -1,0 +1,5 @@
+name: Contenedor Flex
+tips:
+  - >-
+    Todos los bloques que se encuentran directamente dentro del contenedor se
+    llaman _Elementos Flex_

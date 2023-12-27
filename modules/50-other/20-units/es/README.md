@@ -1,0 +1,67 @@
+A lo largo de todo el curso, se utilizaron píxeles como unidad de medida, que es el elemento más pequeño de la pantalla que muestra color. Un conjunto de píxeles (y hay muchos en la pantalla) forman una imagen, la cual estás viendo. Se utilizan para indicar el tamaño de la fuente, la altura y el ancho de un elemento, los márgenes internos y externos, el espaciado entre líneas, etc.
+
+Los píxeles son una unidad de medida **absoluta** en CSS. ¿Qué significa esto? Significa que, sin importar el tamaño de la pantalla, el valor especificado en píxeles se mantendrá. Si se especifica un margen de 30 píxeles, será el mismo en un teléfono, en un televisor de 102 pulgadas y en un horno de microondas doméstico.
+
+Por un lado, esto es bueno, ya que puedes estar seguro de que todos los tamaños se mantendrán iguales en diferentes dispositivos. Pero también es un problema. Imagina un texto con un tamaño de fuente de 12 píxeles. Será legible en una pantalla promedio, pero su uso en un televisor o un celular hará que el texto sea demasiado pequeño para ser leído cómodamente, ya que los dispositivos tienen diferentes tamaños de pantalla. Si la pantalla tiene solo 50 píxeles, ese texto será increíblemente grande, ya que ocupará la mayor parte de la pantalla
+
+Además de los píxeles, también existen otras unidades de medida absolutas:
+
+* centímetros
+* milímetros
+* pulgadas
+* puntos
+
+Aunque no se utilizan con frecuencia, pueden ser útiles para el diseño de páginas impresas. En los sitios web, solo se utilizan píxeles.
+
+En contraste con las unidades de medida absolutas, también existen las unidades de medida **relativas**. Como su nombre indica, el tamaño de estos elementos no está fijo, sino que se calcula en relación con algo. En el caso de las páginas web, ese "algo" es el tamaño de la fuente. ¿Por qué la fuente? Imagina que, como usuario, aumentas el tamaño de la fuente en un sitio web para mayor comodidad. Si los márgenes, el ancho y la altura no están vinculados al tamaño del texto, ese texto se saldrá del bloque. Y el texto es la base de cualquier página web.
+
+Una de las unidades de medida relativas son los porcentajes. Se calculan en relación con el tamaño de la fuente del elemento padre, es decir, el elemento en el que se encuentran. Por ejemplo,
+
+```html
+<section class="news">
+  <h2>Noticias</h2>
+</section>
+```
+
+```css
+.news {
+  font-size: 20px;
+}
+
+.news h2 {
+  font-size: 200%;
+}
+```
+
+¿Cuál será el tamaño del título del segundo nivel? La respuesta correcta es `40px`, ya que para la sección `news` se estableció un tamaño de fuente de `20px`. En relación con este tamaño, se calculó el valor `200%`. No importa qué otras etiquetas haya, ni en qué envoltorios se encuentren estas noticias: el tamaño se calcula a partir del valor `font-size` del elemento `news`.
+
+Pero es importante recordar que `font-size` es una propiedad heredada. Si no se especifica explícitamente en el elemento `news` en nuestro ejemplo, se establecerá el valor `font-size` del padre. Ampliemos el ejemplo:
+
+```html
+<main>
+  <section class="news">
+    <h2>Noticias</h2>
+  </section>
+</main>
+```
+
+```css
+main {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 200%;
+}
+```
+
+¿Cuál es el tamaño del título del segundo nivel? La respuesta correcta es `32px`. Si construimos una cadena lógica de tamaños de fuente, se verá así:
+
+* El elemento `<main>` tiene un tamaño de fuente establecido en `16px`
+* El elemento con la clase `news` no tiene una especificación de tamaño de fuente separada, por lo que hereda el tamaño de fuente de `<main>`, es decir, también `16px`
+* El título de nivel 2 tiene un tamaño de fuente del `200%`. El valor se establece en relación con el tamaño de fuente del padre, es decir, el bloque con la clase `.news`. Por lo tanto, obtenemos `16px * 2 = 32px`
+
+También existen otras unidades de medida relativas principales:
+
+1. **em**. se define en relación con el tamaño de fuente del elemento padre, es decir, `1.5em` será un 50% más grande que el tamaño de fuente base calculado del padre. Es muy similar al uso de porcentajes, solo se especifica de una manera ligeramente diferente
+2. **rem**. se define en relación con el tamaño de fuente del elemento raíz, es decir, la etiqueta `html` (valor predeterminado de 16px)

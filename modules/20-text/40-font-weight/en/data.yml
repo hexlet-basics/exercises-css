@@ -1,0 +1,7 @@
+name: Font weight
+tips:
+  - >-
+    If the font has only normal weight, the browser will automatically make the
+    characters bold when you set it to `bold`. This may not look the way the
+    font designers intended, so make sure that all the right variations of the
+    font are installed

@@ -1,0 +1,31 @@
+Para resaltar citas o términos, a menudo se utiliza _tipografía en cursiva_. A diferencia de cambiar la intensidad, la cursiva permite llamar la atención sobre una parte del texto sin destacarlo de inmediato.
+
+Para cambiar la tipografía se utiliza la propiedad `font-style`, que puede tener uno de los siguientes valores:
+
+* `normal` - texto normal.
+* `italic` - tipografía en cursiva
+* `oblique` - tipografía inclinada
+
+<div class="hexlet-basics-example my-3">
+  <p>Texto con tipografía normal</p>
+  <p style="font-style: italic">Texto con tipografía en cursiva</p>
+  <p style="font-style: oblique" class="m-0">Texto con tipografía inclinada</p>
+</div>
+
+Ten en cuenta que el texto con los valores `italic` y `oblique` pueden verse exactamente igual. ¿Cuál es la diferencia? Al utilizar el valor `italic`, se busca una versión especial de la tipografía en cursiva, mientras que `oblique` simplemente inclina los caracteres de la tipografía. No todas las tipografías tienen una versión separada para la cursiva, por lo que visualmente ambos valores se verán iguales.
+
+Utiliza el valor `italic` para crear cursiva, ya que es la opción más común.
+
+```html
+<p class="italic">Texto en cursiva</p>
+```
+
+```css
+.italic {
+  font-style: italic;
+}
+```
+
+<div class="hexlet-basics-example my-3">
+  <p style="font-style: italic" class="m-0">Texto en cursiva</p>
+</div>

@@ -1,0 +1,13 @@
+La capital es un tipo de letras minúsculas cuyo tamaño coincide (o se aproxima) al tamaño de las letras mayúsculas.
+
+<div class="hexlet-basics-example my-3">
+  <p>Texto escrito en una fuente normal</p>
+  <p style="font-variant: small-caps" class="m-0">Texto con el uso de letras capitales</p>
+</div>
+
+A menudo, esta forma de escritura se utiliza como recurso estilístico. Sin embargo, también tiene un propósito práctico: se utiliza para abreviaturas y en las primeras líneas de una obra para facilitar la transición del lector al texto después del título.
+
+Para aplicar la letra capital, se utiliza la propiedad `font-variant` con uno de los dos valores principales:
+
+* `normal` — escritura normal del texto
+* `small-caps` — capital

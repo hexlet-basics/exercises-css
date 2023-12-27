@@ -1,0 +1,72 @@
+Flex le dio a los desarrolladores una de las características más poderosas: la flexibilidad. Si sabes inglés, habrás notado que el módulo en sí se llama Flex, que se puede traducir como "flexión" o "flexibilidad".
+
+La flexibilidad en Flex se manifiesta en la capacidad de los elementos para cambiar su tamaño según ciertas reglas. Por ejemplo, se puede comprimir automáticamente un elemento si no hay suficiente espacio, o, por el contrario, distribuir el espacio vacío en el contenedor entre todos los elementos.
+
+Hay dos propiedades que controlan la flexibilidad de los elementos:
+
+1. `flex-grow` - la capacidad de un elemento para ocupar parte del espacio vacío
+2. `flex-shrink` - la capacidad de un elemento para reducir su tamaño y ajustarse al contenedor
+
+Ambas propiedades aceptan un valor numérico positivo, que significa:
+
+* Para `flex-grow` - qué parte del espacio vacío puede tomar el elemento
+* Para `flex-shrink` - cuánto puede reducirse el elemento
+
+Todos estos valores funcionan como parte de una fórmula matemática que el navegador utiliza para calcular el tamaño final del elemento. Este es un tema complicado y no tan obvio para estudiar al principio, por lo que en esta lección omitiremos todas las fórmulas.
+
+En realidad, no se trata solo de fórmulas y del comienzo del aprendizaje. Los diseñadores y los propios desarrolladores no son muy aficionados a establecer diferentes valores y calcular en mente cuánto se reducirá o aumentará un elemento.
+
+Para evitar cálculos matemáticos, los desarrolladores han llegado al enfoque más popular para utilizar estas propiedades, que es establecer el valor `1` o `0` para todos los elementos en el contenedor.
+
+Si se establece el valor `flex-grow: 1`, esto significa que se agregará la misma cantidad a la anchura de todos los elementos.
+
+Por ejemplo, si el contenedor tiene 600 píxeles y contiene cuatro elementos de 100 píxeles cada uno, quedan 200 píxeles de espacio vacío. Este espacio se dividirá en cuatro partes y cada parte se asignará a uno de los elementos. Esto significa que el ancho de cada elemento será de 150 píxeles.
+
+Piensa en el espacio restante en el contenedor como en un pastel que se debe dividir en partes iguales. Este enfoque funcionará si se establece el valor `flex-grow: 1`.
+
+```html
+<style>
+  .container {
+    width: 1000px;
+    display: flex;
+  }
+
+  .item {
+    width: 200px;
+    flex-grow: 1;
+  }
+</style>
+
+<div class="container">
+  <div class="item">Elemento 1</div>
+  <div class="item">Elemento 2</div>
+  <div class="item">Elemento 3</div>
+  <div class="item">Elemento 4</div>
+</div>
+```
+
+Así es como se ven los elementos sin `flex-grow`:
+
+<div class="hexlet-basics-example my-3">
+  <div class="bg-opacity-25 bg-secondary d-flex fw-bold py-3" style="width: 600px;">
+    <div class="text-bg-danger text-center" style="width: 100px;height: 50px;">Elemento 1</div>
+    <div class="text-bg-dark text-center" style="width: 100px;height: 50px;">Elemento 2</div>
+    <div class="text-bg-primary text-center" style="width: 100px;height: 50px;">Elemento 3</div>
+    <div class="text-bg-success text-center" style="width: 100px;height: 50px;">Elemento 4</div>
+  </div>
+</div>
+
+Y así es con `flex-grow: 1` en los elementos:
+
+<div class="hexlet-basics-example my-3">
+  <div class="bg-opacity-25 bg-secondary d-flex fw-bold py-3" style="width: 600px;">
+    <div class="flex-grow-1 text-bg-danger text-center" style="width: 100px;height: 50px;">Elemento 1</div>
+    <div class="flex-grow-1 text-bg-dark text-center" style="width: 100px;height: 50px;">Elemento 2</div>
+    <div class="flex-grow-1 text-bg-primary text-center" style="width: 100px;height: 50px;">Elemento 3</div>
+    <div class="flex-grow-1 text-bg-success text-center" style="width: 100px;height: 50px;">Elemento 4</div>
+  </div>
+</div>
+
+También se puede establecer `flex-grow: 1` solo para un elemento. En este caso, ese elemento ocupará todo el espacio vacío. Este es un truco común al crear diseños en los que una de las columnas debe ocupar todo el espacio disponible.
+
+La propiedad `flex-shrink` con el valor `1` funcionará de manera similar. Se restará la misma cantidad de ancho de los elementos según la cantidad de espacio que falte para acomodar todos los elementos. Por defecto, todos los elementos flex tienen el valor `flex-shrink: 1`, por lo que los elementos se reducirán incluso sin especificar esta propiedad adicional.

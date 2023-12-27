@@ -1,0 +1,68 @@
+El principal problema de usar atributos para definir estilos es su sobrecarga. A menudo, el marcado HTML contiene muchos elementos y al agregar estilos, el código se vuelve mucho más extenso, lo cual dificulta la lectura del marcado.
+
+El segundo problema es la modificación de estilos. Para ello, es necesario encontrar primero el elemento requerido en el código y luego editar sus estilos. Puede haber 10, 20, 100 de estos elementos en la página. Y para las etiquetas con el mismo nombre, se deben escribir los estilos por separado para cada elemento.
+
+Surge el deseo lógico de tener todos los estilos en un solo lugar donde se puedan editar rápidamente. La solución es usar la etiqueta `<style>`, dentro de la cual se pueden colocar todos los estilos necesarios.
+
+Tomemos el ejemplo de la lección anterior:
+
+```
+<div style="font-size: 20px;">
+  Este texto tendrá un tamaño de fuente de 20 píxeles
+
+  <p>El párrafo anidado también tendrá un tamaño de fuente de 20 píxeles</p>
+</div>
+```
+
+Para eliminar los atributos, agreguemos la etiqueta `style` y especifiquemos que se utiliza un tamaño de fuente de 20 píxeles para la etiqueta `<div>`.
+
+```html
+<style>
+  div {
+    font-size: 20px;
+  }
+</style>
+
+<div>
+  Este texto tendrá un tamaño de fuente de 20 píxeles
+
+  <p>El párrafo anidado también tendrá un tamaño de fuente de 20 píxeles</p>
+</div>
+```
+
+De la misma manera, podemos especificar que el párrafo tendrá un tamaño de fuente de 10 píxeles.
+
+```html
+<style>
+  div {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+</style>
+
+<div>
+  Este texto tendrá un tamaño de fuente de 20 píxeles
+
+  <p>El párrafo anidado tendrá un tamaño de fuente de 10 píxeles</p>
+</div>
+```
+
+Dentro de la etiqueta `<style>`, se utilizó la siguiente estructura:
+
+```
+nombre_etiqueta {
+  propiedad: valor;
+}
+```
+
+Todo lo que está escrito antes de la llave de apertura `{` se llama _selector_. Los selectores son reglas que el navegador utiliza para determinar a qué elemento se deben aplicar los estilos. A continuación hablaremos de algunos de los seleccionadores. En los ejemplos anteriores, se utilizan selectores por etiqueta, es decir, los estilos se aplicarán a todos los elementos con la etiqueta especificada como selector.
+
+```css
+/* Todos los elementos div tendrán un tamaño de fuente de 20px */
+div {
+  font-size: 20px;
+}
+```

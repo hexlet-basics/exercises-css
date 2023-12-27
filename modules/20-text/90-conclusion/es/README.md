@@ -1,0 +1,27 @@
+Después de revisar la mayoría de las reglas de trabajo con texto, puede surgir la pregunta: "¿Cómo aplicarlas correctamente?". Esta pregunta es extensa y merece un curso aparte.
+
+La tipografía ayuda que la lectura sea cómoda y también en el diseño. Un buen diseño puede arruinarse con una mala tipografía.
+
+En esta lección se explican algunas reglas básicas que se pueden utilizar para hacer las páginas más cómodas de leer.
+
+## Utiliza fuentes estándar
+
+  La mejor opción al utilizar fuentes son las fuentes estándar. Por ejemplo, _Arial_, _Verdana_, _Tahoma_, _Times New Roman_, entre otras. La mayoría de estas fuentes ya están en las computadoras de los usuarios, son comunes y fáciles de leer.
+
+  Evita fuentes extravagantes (como _Comic Sans_). A pesar de que son divertidos, es difícil leer grandes cantidades de texto escritas con estas fuentes.
+
+## Utiliza no más de dos fuentes en una página
+
+  Esto ayudará al usuario a orientarse más rápidamente en la página. El caso estándar es utilizar una fuente para los títulos y otra para el texto.
+
+## Utiliza un tamaño de fuente adecuado
+
+  Este concepto es ambiguo, pero no se debe utilizar un tamaño de fuente menor a 14 píxeles para el texto principal. Si el tamaño de la fuente es menor, la lectura desde dispositivos móviles será incómoda.
+
+## Utiliza un interlineado adecuado
+
+  El interlineado más común es el valor del 150% del tamaño de la fuente. Si el texto tiene un tamaño de 14 píxeles, se recomienda establecer un interlineado de al menos 21 píxeles.
+
+## Alinea el texto a la izquierda
+
+  No escribas todo el texto alineado al centro o a la derecha. Al leer este tipo de textos, los ojos se cansan mucho más rápido, ya que pierden el punto de referencia desde donde comienza el texto. Utiliza la alineación no estándar solo para pequeñas secciones de texto (por ejemplo, encabezados o citas).

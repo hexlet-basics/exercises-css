@@ -1,0 +1,63 @@
+
+Cualquier elemento de bloque en HTML se puede resaltar con marcos. Este recurso estilístico permite separar convenientemente componentes monocromáticos entre sí o resaltar un elemento clave en la página.
+
+<div class="hexlet-basics-example my-3">
+  <p class="m-0">Este texto está dentro de un marco, por lo que es fácil de encontrar a primera vista en la página</p>
+</div>
+
+Para crear un borde en un elemento se utiliza la propiedad `border`, que es una abreviatura de varias propiedades:
+
+* `border-width` - ancho del borde
+* `border-style` - estilo del borde
+* `border-color` - color del borde
+
+Se pueden especificar varias propiedades o se pueden combinar todas en la propiedad `border`. Esta es la opción más común y se ve así:
+
+```css
+.element {
+  border: 1px solid #ccc;
+}
+```
+
+donde:
+
+* `1px` - ancho del borde
+* `solid` - estilo del borde
+* `#ccc` - color del borde
+
+Ya hemos estudiado valores en píxeles y colores hex en el curso, pero en CSS hay ocho estilos de borde:
+
+* `dotted` (punteado)
+* `dashed` (guionado)
+* `solid` (sólido)
+* `double` (doble)
+* `groove` (acanalado)
+* `ridge` (relieve)
+* `inset` (hundido)
+* `outset` (saliente)
+
+y hay un valor `none` que "elimina" el borde, ya que cuando se establece `border-style: none`, los navegadores ignoran las demás propiedades y eliminan el borde
+
+## Ejemplos de bordes
+
+<div style="border: 3px solid #000; margin-bottom: 10px;" class="p-2">
+  solid (sólido)
+</div>
+<div style="border: 3px dotted #000; margin-bottom: 10px;" class="p-2">
+  dotted (punteado)
+</div>
+<div style="border: 3px dashed #000; margin-bottom: 10px;" class="p-2">
+  dashed (guionado)
+</div>
+
+```html
+<style>
+  .border-dotted {
+    border: 1px dotted #000;
+  }
+</style>
+
+<div class="border-dotted">
+  Bloque con borde punteado y color negro
+</div>
+```

@@ -1,0 +1,1 @@
+Add a paragraph to the editor with the class set to `verdana-text` and set its font to _Verdana_. Write the styles in the `<style>` tag. Don't forget to specify the universal font family as sans serif fonts

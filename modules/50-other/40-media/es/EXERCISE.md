@@ -1,0 +1,1 @@
+Agrega el color blanco al texto de los párrafos con la clase `white-text-mobile` para dispositivos con un ancho de pantalla no mayor a 750 píxeles. Escribe los estilos dentro de la etiqueta `<style>`.

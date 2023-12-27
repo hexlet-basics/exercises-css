@@ -1,0 +1,36 @@
+CSS sigue desarróllandose y se van agregando nuevas reglas. Antes de que una propiedad se convierta en un estándar oficial, pasa por un largo proceso de discusión y "pulido". Los fabricantes de navegadores también se esfuerzan por mantenerse al día y agregan soporte para propiedades modernas en las nuevas versiones de sus productos.
+
+Esto se utiliza para probar y ajustar el funcionamiento de una propiedad en los navegadores. Si la regla es importante, los fabricantes de navegadores "acuerdan" los detalles de su uso y lo implementan en sus nuevos navegadores.
+
+Muchas de las propiedades que pueden parecer estándar han pasado de ser una idea y una implementación parcial a convertirse en una propiedad común que utilizarás en tu trabajo diario. ¿Qué sucede cuando aparece una nueva propiedad?
+
+1. Pasa por una etapa de discusión. Los desarrolladores acuerdan cómo funcionará la regla, en qué y cómo afectará a la página
+2. Los desarrolladores de navegadores agregan gradualmente la funcionalidad de la nueva propiedad a su producto. Por lo general, en este momento, los diferentes navegadores procesan las propiedades de manera ligeramente diferente
+3. La propiedad se convierte en un estándar y todos los navegadores comienzan a admitirla "oficialmente"
+
+Si los puntos 1 y 3 están claros, el punto 2 es el más interesante. En el momento de agregar la funcionalidad, ya puedes comenzar a usar la propiedad teniendo en cuenta los siguientes aspectos:
+
+1. El comportamiento puede variar ligeramente en diferentes navegadores
+2. La propiedad no funcionará en versiones antiguas del navegador
+
+Para no confundir a los desarrolladores, las propiedades que aún no son completamente compatibles y no forman parte del estándar se indican con construcciones especiales, llamadas prefijos. Ayudan al navegador a identificar que se trata de una nueva propiedad y, si hay una implementación para ella, se ejecutará. Si no hay implementación, la propiedad se considerará inválida y se ignorará
+
+Por ejemplo, antes la propiedad `box-shadow`, que establece una sombra para un elemento, estaba en proceso de discusión e implementación. Para usarla, era necesario especificar prefijos, que son pequeñas adiciones a la propiedad y se colocan antes del nombre de la propiedad. El CSS se veía así:
+
+```css
+.shadow {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+```
+
+Se pueden observar tres menciones de la propiedad `box-shadow`:
+
+* `-webkit-box-shadow` - propiedad para navegadores basados en WebKit
+* `-moz-box-shadow` - propiedad para navegadores basados en soluciones de Mozilla
+* `box-shadow` - propiedad sin prefijos
+
+Si el navegador no puede procesar la propiedad `box-shadow`, buscará su prefijo `-webkit-` o `-moz-`. Si no se encuentra ninguno de ellos, la regla se ignora. Actualmente, el uso de estos prefijos ayuda a utilizar la propiedad `box-shadow` en navegadores Chrome, Safari y Firefox muy antiguos.
+
+No es necesario siempre tener esto en mente. Muchos procesos ya están automatizados y la adición de prefijos se realiza automáticamente. En el futuro, tendrás todas las herramientas para hacerlo si te dedicas al diseño web. Pero es muy importante saber qué son los prefijos y cómo ayudan a los navegadores nuevos y antiguos

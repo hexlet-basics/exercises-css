@@ -1,0 +1,13 @@
+Por defecto, todas las etiquetas HTML tienen su propio estilo predeterminado. Estos estilos son definidos por los navegadores, y cada navegador puede tener su propio estilo. Debido a esto, el mismo diseño puede verse diferente dependiendo del navegador, el sistema operativo y las configuraciones del sistema.
+
+Por ejemplo, el título de primer nivel `<h1>` en los navegadores tiene un tamaño de `2em`, lo que significa _dos veces el tamaño de fuente en el bloque_. Este valor no es fijo, puede cambiar dependiendo de las configuraciones del sistema o si los desarrolladores del navegador deciden hacerlo ligeramente diferente.
+
+Usando la etiqueta `<style>` aprendimos a cambiar los estilos para todos los elementos a la vez, por ejemplo:
+
+```css
+h1 {
+  font-size: 35px;
+}
+```
+
+Sin embargo, esta opción solo es conveniente para establecer valores iniciales/principales para nuestra página web. En diferentes partes de la página, pueden ser necesarios estilos diferentes para los encabezados del mismo nivel. Aprenderemos a resolver este problema utilizando selectores CSS y atributos HTML en las próximas lecciones. Lo más importante es recordar que casi todos los elementos tienen estilos predeterminados, lo que puede ser tanto una ventaja como un inconveniente al desarrollar una página.

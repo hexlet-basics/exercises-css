@@ -68,7 +68,7 @@ theory: |
   ## Alineación en el eje secundario
 
   Además de alinear elementos en el eje principal, Flex también permite alinear elementos en el eje secundario al mismo tiempo. Para comprender este efecto, los ejemplos de esta lección tienen una altura de contenedor mayor de la necesaria.
-  
+
   Para ello, se utiliza la propiedad `align-items`. Esta propiedad también tiene varios valores, pero vamos a analizar los más comunes:
 
   * `flex-start` — alinea al comienzo del eje secundario
@@ -108,7 +108,7 @@ theory: |
       <div class="bg-warning ps-2" style="width: 50px; height: 50px;">3</div>
     </div>
   </div>
-  
+
 instructions: |
   El cliente quiere que aparezca una flecha en el bloque de "Preguntas y Respuestas" para visualmente relacionar la pregunta y la respuesta. Mejora la funcionalidad del bloque
 

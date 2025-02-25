@@ -1,7 +1,7 @@
 
 When using some properties, such as `border` and `padding`, you may notice that it affects the final block size. And indeed it does. This is how browsers calculate the final block size on the page:
 
-![Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png)
+![Box Model](https://raw.githubusercontent.com/hexlet-basics/exercises-css/refs/heads/main/modules/30-box/60-box-model/assets/box-model-standard-small.png)
 
 I.e., the final size is set not only by the properties `height` and `width` but by many other ones:
 

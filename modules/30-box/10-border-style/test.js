@@ -6,5 +6,5 @@ test(({ query, expect }) => {
   const style = getComputedStyle(element);
   expect(style).to.have.property('border-width', '5px');
   expect(style).to.have.property('border-style', 'solid');
-  expect(style).to.have.property('border-color', '#2196f3');
+  expect(style).to.have.property('border-color', 'rgb(33, 150, 243)');
 });

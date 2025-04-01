@@ -1,7 +1,7 @@
 
 При использовании некоторых свойств, таких как `border` и `padding`, можно заметить, что это влияет на конечный размер блока. И это действительно так. Вот как браузеры высчитывают конечный размер блока на странице:
 
-![Блочная модель](https://raw.githubusercontent.com/hexlet-basics/exercises-css/refs/heads/main/modules/30-box/60-box-model/assets/box-model-standard-small.png)
+![Блочная модель](../assets/box-model-standard-small.png)
 
 То есть конечный размер формируется не только свойствами `height` и `width`, а множеством других свойств:
 

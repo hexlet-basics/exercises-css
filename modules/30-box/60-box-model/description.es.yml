@@ -5,7 +5,7 @@ theory: |
 
   Al utilizar algunas propiedades como `border` y `padding`, se puede notar que esto afecta el tamaño final del bloque. Y es realmente así. Los navegadores calculan el tamaño final del bloque en la página de la siguiente manera:
 
-  ![Modelo de caja](https://raw.githubusercontent.com/hexlet-basics/exercises-css/refs/heads/main/modules/30-box/60-box-model/assets/box-model-standard-small.png)
+  ![Modelo de caja](../assets/box-model-standard-small.png)
 
   Es decir, el tamaño final se forma no solo por las propiedades `height` y `width`, sino por muchas otras propiedades:
 

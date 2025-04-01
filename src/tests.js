@@ -1,3 +1,4 @@
+// TODO: replace with vitest
 require('jsdom-global')()
 
 const fs = require('fs');

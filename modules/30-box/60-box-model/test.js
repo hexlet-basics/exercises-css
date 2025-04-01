@@ -14,7 +14,7 @@ test(({ query, expect }) => {
   expect(style).to.have.property('font-size', '20px');
 
   expect(style).to.have.property('border-width', '2px');
-  expect(style).to.have.property('border-color', '#9c27b0');
+  expect(style).to.have.property('border-color', 'rgb(156, 39, 176)');
   expect(style).to.have.property('border-style', 'solid');
 
   expect(style).to.have.property('background-color', 'rgb(250, 114, 104)');

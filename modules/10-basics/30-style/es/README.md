@@ -52,7 +52,7 @@ De la misma manera, podemos especificar que el párrafo tendrá un tamaño de fu
 
 Dentro de la etiqueta `<style>`, se utilizó la siguiente estructura:
 
-```
+```text
 nombre_etiqueta {
   propiedad: valor;
 }

@@ -52,7 +52,7 @@ In the same way, you can specify that the paragraph will have a font size of 10 
 
 Inside the tag `<style>` used a construction in this form:
 
-```
+```text
 tag_name {
   property: value;
 }

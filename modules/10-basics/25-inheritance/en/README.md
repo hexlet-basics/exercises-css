@@ -8,10 +8,7 @@ When you use styles in CSS, it often affects not only the element for which the 
 </div>
 ```
 
-<div class="hexlet-basics-example my-3 bg-light" style="font-size: 20px;">
-  The text's font size is 20 pixels.
-  <p class="mb-0">The nested paragraph will also have a font size of 20 pixels.</p>
-</div>
+![Inherited font size preview](../assets/font-size-inheritance.png)
 
 In addition to the styles that are inherited for all nested tags, CSS has many styles that are unique to the element to which they are applied.
 
@@ -26,8 +23,4 @@ One such property is `border`, which allows you to set a border around the eleme
 </div>
 ```
 
-<div class="hexlet-basics-example my-3 bg-light" style="border: 2px solid #000!important;">
-  The block will have a border with a width of 2 pixels
-  <p>And the paragraph will not have its own border. If necessary, it can be set separately</p>
-  <p style="border: 1px solid #000;" class="mb-0">For example, like this</p>
-</div>
+![Borders are not inherited](../assets/border-inheritance.png)

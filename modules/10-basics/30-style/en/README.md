@@ -14,6 +14,8 @@ Let's take an example from the last lesson:
 </div>
 ```
 
+![Result of inline font size](../assets/inline-font-size.png)
+
 To get rid of the attributes, let's add a `style` tag and specify that the `<div>` tag uses a font size of 20 pixels.
 
 ```html
@@ -29,6 +31,8 @@ To get rid of the attributes, let's add a `style` tag and specify that the `<div
   <p>The enclosed paragraph will also have a font size of 20 pixels</p>
 </div>
 ```
+
+![Font size applied via the style tag](../assets/style-tag-font-size.png)
 
 In the same way, you can specify that the paragraph will have a font size of 10 pixels
 
@@ -49,6 +53,8 @@ In the same way, you can specify that the paragraph will have a font size of 10 
   <p>The enclosed paragraph will have a font size of 10 pixels</p>
 </div>
 ```
+
+![Different sizes for the div and nested paragraph](../assets/style-nested-paragraph.png)
 
 Inside the tag `<style>` used a construction in this form:
 

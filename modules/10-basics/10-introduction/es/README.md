@@ -7,20 +7,24 @@ El siguiente ejemplo muestra cómo se ve el texto sin usar CSS personalizado (es
 
 ## Ejemplo de texto con estilo estandartizado
 
-<div class="hexlet-basics-example my-3">
-  <p class="h2">Párrafos</p>
-  <p>Los párrafos se crean utilizando la etiqueta de apertura y cierre <code>&lt;p&gt;</code>, dentro de la cual se coloca una pequeña parte de texto. Por ejemplo:</p>
-  <pre><code>&lt;p&gt;Primer párrafo&lt;/p&gt;
-&lt;p&gt;Segundo párrafo&lt;/p&gt;</code></pre>
-</div>
+```html
+<p class="h2">Paragraphs</p>
+<p>Paragraphs are created using a paired <code>&lt;p&gt;</code> tag with a small amount of text in the body. For example:</p>
+<pre><code>&lt;p&gt;First paragraph&lt;/p&gt;
+&lt;p&gt;Second paragraph&lt;/p&gt;</code></pre>
+```
+
+![Texto renderizado con los estilos por defecto del navegador](../assets/text-without-custom-css.png)
 
 ## Ejemplo de texto con estilo personalizado
 
-<div class="hexlet-basics-example my-3">
-  <p class="border-bottom display-6 pb-2">Párrafos</p>
-  <p class="lead">Los párrafos se crean utilizando la etiqueta de apertura y cierre <code>&lt;p&gt;</code>, dentro de la cual se coloca una pequeña parte de texto. Por ejemplo:</p>
-  <pre class="bg-light my-4" style="border-left: 5px solid #673ab7!important;"><code>&lt;p&gt;Primer párrafo&lt;/p&gt;
-&lt;p&gt;Segundo párrafo&lt;/p&gt;</code></pre>
-</div>
+```html
+<p class="border-bottom display-6 pb-2">Paragraphs</p>
+<p class="lead">Paragraphs are created using a paired <code>&lt;p&gt;</code> tag with a small amount of text in the body. For example:</p>
+<pre class="bg-light my-4" style="border-left: 5px solid #673ab7!important;"><code>&lt;p&gt;First paragraph&lt;/p&gt;
+&lt;p&gt;Second paragraph&lt;/p&gt;</code></pre>
+```
+
+![Texto renderizado con estilos personalizados](../assets/text-with-custom-css.png)
 
 Ahora el texto es más legible y se puede diferenciar rápidamente los ejemplos de código de las descripciones. En el curso se explicarán las reglas básicas de CSS para trabajar con texto y bloques, lo que permitirá dar formato al texto y estructurar visualmente la información.

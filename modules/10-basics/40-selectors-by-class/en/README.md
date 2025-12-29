@@ -21,3 +21,5 @@ To specify a style for a class in CSS, we use the selector `.name-class'. Note t
 ```
 
 Since there can be many classes with the same name on the page, this rule will work for all elements where the class attribute is `paragraph`
+
+![Result of styling a paragraph by class](../assets/class-selector.png)

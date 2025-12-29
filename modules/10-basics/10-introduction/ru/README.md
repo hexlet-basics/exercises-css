@@ -7,20 +7,24 @@
 
 ## Пример текста со стандартным оформлением
 
-<div class="hexlet-basics-example my-3">
-  <p class="h2">Параграфы</p>
-  <p>Параграфы создаются с помощью парного тега <code>&lt;p&gt;</code>, в тело которого помещается небольшая часть текста. Например:</p>
-  <pre><code>&lt;p&gt;Первый параграф&lt;/p&gt;
-&lt;p&gt;Второй параграф&lt;/p&gt;</code></pre>
-</div>
+```html
+<p class="h2">Paragraphs</p>
+<p>Paragraphs are created using a paired <code>&lt;p&gt;</code> tag with a small amount of text in the body. For example:</p>
+<pre><code>&lt;p&gt;First paragraph&lt;/p&gt;
+&lt;p&gt;Second paragraph&lt;/p&gt;</code></pre>
+```
+
+![Текст, отображённый со стандартными стилями браузера](../assets/text-without-custom-css.png)
 
 ## Пример текста с пользовательским оформлением
 
-<div class="hexlet-basics-example my-3">
-  <p class="border-bottom display-6 pb-2">Параграфы</p>
-  <p class="lead">Параграфы создаются с помощью парного тега <code>&lt;p&gt;</code>, в тело которого помещается небольшая часть текста. Например:</p>
-  <pre class="bg-light my-4" style="border-left: 5px solid #673ab7!important;"><code>&lt;p&gt;Первый параграф&lt;/p&gt;
-&lt;p&gt;Второй параграф&lt;/p&gt;</code></pre>
-</div>
+```html
+<p class="border-bottom display-6 pb-2">Paragraphs</p>
+<p class="lead">Paragraphs are created using a paired <code>&lt;p&gt;</code> tag with a small amount of text in the body. For example:</p>
+<pre class="bg-light my-4" style="border-left: 5px solid #673ab7!important;"><code>&lt;p&gt;First paragraph&lt;/p&gt;
+&lt;p&gt;Second paragraph&lt;/p&gt;</code></pre>
+```
+
+![Текст, отображённый с кастомными стилями](../assets/text-with-custom-css.png)
 
 Теперь текст читается проще, и можно быстро отделить примеры кода от описания. В курсе будут рассмотрены базовые CSS-правила для работы с текстом и блоками, которые позволят оформить текст и визуально структурировать информацию.

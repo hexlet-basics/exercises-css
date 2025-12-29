@@ -25,6 +25,8 @@ p {
 
 If you paste this example into the editor, you get a dark, bold text with a size of 20 pixels. This happened because of cascading - the browser combined all the styles from the different selectors and got the following instructions for styling the element:
 
+![Result of cascading styles](../assets/cascade-text.png)
+
 ```css
 {
   font-size: 20px;

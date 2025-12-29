@@ -1,9 +1,22 @@
 
 Looking at the various blocks that we've created during our lessons, you'll notice that the text "sticks" to the edges of the blocks. For example:
 
-<div class="hexlet-basics-example my-3 p-0" style="background-color: #673ab7;color: #fff;padding: 0!important;">
-  A card with white text on a purple background
-</div>
+```html
+<div class="card card-tight">A card with white text on a purple background</div>
+```
+
+```css
+.card {
+  color: #ffffff;
+  background-color: #673ab7;
+}
+
+.card-tight {
+  padding: 0;
+}
+```
+
+![Card without internal padding](../assets/padding-no-spacing.png)
 
 You might say that that's not how the examples usually look in the lessons themselves, and you'd be right. In each example, internal indents from the block edges called margins were used to add a little spacing.
 
@@ -31,9 +44,7 @@ Each property takes a numeric value and a unit of measurement, e.g. pixels
 }
 ```
 
-<div class="hexlet-basics-example my-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;">
-  A card with white text on a purple background
-</div>
+![Card with asymmetric padding](../assets/padding-with-spacing.png)
 
 ## Shortened property
 

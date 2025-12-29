@@ -8,7 +8,7 @@
 
 
 ```html
-<p><span class="info">Внимание!</span> Важная информация</p>
+<p><span class="info">Attention!</span> Important information</p>
 ```
 
 ```css
@@ -17,9 +17,7 @@
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p class="m-0"><span style="color:#5263f3;">Внимание!</span> Важная информация</p>
-</div>
+![Highlighted word rendered in purple](../assets/highlighted-inline-color.png)
 
 Чтобы установить цвет текста для всей страницы можно использовать селектор `body`. Свойство `color` является наследуемым, поэтому цвет будет установлен для всех текстовых элементов:
 

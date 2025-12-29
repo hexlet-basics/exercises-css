@@ -6,11 +6,13 @@ To change the font style, use the `font-style` property, which can take one of t
 * `italic` - italic style
 * `oblique` - italic style
 
-<div class="hexlet-basics-example my-3">
-  <p>Text with normal font style</p>
-  <p style="font-style: italic">Text with italic font</p>
-  <p style="font-style: oblique" class="m-0">Text with oblique font</p>
-</div>
+```html
+<p>Text with normal font style</p>
+<p class="italic">Text with italic font</p>
+<p class="oblique">Text with oblique font</p>
+```
+
+![Normal, italic, and oblique text](../assets/font-style-samples.png)
 
 Note that the text with a value of `italic` and text with the value set to `oblique` may look exactly the same. So what's the point here? The `italic` value looks for a special italic version of the font, while `oblique` merely systematically tilts the characters in the text. Not all fonts have a separate version for italic, so visually, both values will look the same.
 
@@ -26,6 +28,4 @@ Use `italic` to create italics - this is the most common option
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p style="font-style: italic" class="m-0">Italic text</p>
-</div>
+![Single paragraph rendered in italics](../assets/font-style-italic.png)

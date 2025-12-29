@@ -1,9 +1,17 @@
 Small caps are a type of lowercase letter whose size is the same as (or close to) the size of capital letters.
 
-<div class="hexlet-basics-example my-3">
-  <p>Text typed as plain text</p>
-  <p style="font-variant: small-caps" class="m-0">Text with small caps</p>
-</div>
+```html
+<p>Text typed as plain text</p>
+<p class="small-caps">Text with small caps</p>
+```
+
+```css
+.small-caps {
+  font-variant: small-caps;
+}
+```
+
+![Plain text and a version with small caps](../assets/font-variant-small-caps.png)
 
 This is often used as a stylistic device. But there is also a practical side to small caps: they are commonly used to mark abbreviations, and they are also used in the first lines of a piece of text to make it easier for the reader to get into the text after the title.
 

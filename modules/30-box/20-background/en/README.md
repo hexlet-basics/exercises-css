@@ -15,6 +15,4 @@ You can use `hex` values for the color:
 }
 ```
 
-<div class="hexlet-basics-example my-3" style="background-color: #673ab7; color: #fff">
-  A card with white text on a purple background
-</div>
+![Card with white text on a purple background](../assets/background-color-card.png)

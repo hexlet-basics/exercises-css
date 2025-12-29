@@ -46,28 +46,11 @@ theory: |
 
   Solo queda crear un párrafo con la clase correspondiente, y la animación comenzará a funcionar.
 
-  <div class="hexlet-basics-example">
-    <style>
-      @keyframes color-change {
-        0% {
-          color: blue;
-        }
+  ```html
+  <p class="animation-text">Text with color-change animation. The color of the text changes from blue to red and back again</p>
+  ```
 
-        50% {
-          color: red;
-        }
-
-        100% {
-          color: blue;
-        }
-      }
-
-      .animation-text {
-        animation: color-change 3s infinite;
-      }
-    </style>
-    <p class="animation-text m-0">Texto con animación color-change. El color del texto cambia de azul a rojo y viceversa</p>
-  </div>
+  ![Animated text that cycles between blue and red](../assets/text-color-animation.png)
 
 instructions: |
   Crea una animación que cambie el color del texto de negro a blanco. Aplica la animación a la clase `black-white`. Escribe los estilos dentro de la etiqueta `<style>`. Luego, envuelve un texto libre dentro de una etiqueta `<p>` y asigna la clase `black-white` a la misma.

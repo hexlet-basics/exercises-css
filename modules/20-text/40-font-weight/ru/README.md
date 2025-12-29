@@ -7,7 +7,7 @@
 2. `normal` — значение по умолчанию. Полезное значение, если весь текст имеет нестандартную насыщенность, но какой-то участок необходимо сделать стандартным по насыщенности
 
 ```html
-<p class="bold">Текст с жирным начертанием шрифта</p>
+<p class="bold">Text with bold typeface</p>
 ```
 
 ```css
@@ -16,9 +16,7 @@
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p style="font-weight: bold;" class="m-0">Текст с жирным начертанием шрифта</p>
-</div>
+![Text rendered with bold font weight](../assets/font-weight-bold.png)
 
 Но это не все значения, которые может принимать свойство. Помимо словесного описания `bold` и `normal` существуют числовые:
 

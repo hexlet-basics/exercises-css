@@ -8,7 +8,7 @@ Crearemos un párrafo y resaltaremos una palabra en él. Para hacer esto, envolv
 
 
 ```html
-<p><span class="info">¡Atención!</span> Información importante</p>
+<p><span class="info">Attention!</span> Important information</p>
 ```
 
 ```css
@@ -17,9 +17,7 @@ Crearemos un párrafo y resaltaremos una palabra en él. Para hacer esto, envolv
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p class="m-0"><span style="color:#5263f3;">¡Atención!</span> Información importante</p>
-</div>
+![Highlighted word rendered in purple](../assets/highlighted-inline-color.png)
 
 Para establecer el color del texto para toda la página, puedes usar el selector `body`. La propiedad `color` es heredada, por lo que el color se establecerá para todos los elementos de texto:
 

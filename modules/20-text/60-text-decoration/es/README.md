@@ -9,8 +9,8 @@ Para este tipo de formato se utiliza la propiedad `text-decoration` con tres pro
 Para desactivar el subrayado en los enlaces se utiliza el valor `none`. A menudo se utiliza para eliminar el subrayado en los enlaces, que está activado por defecto
 
 ```html
-<a href="#">Enlace normal con subrayado por defecto</a>
-<a href="#" class="text-decoration-none">Enlace sin subrayado</a>
+<a href="#">Ordinary link underlined by default</a>
+<a href="#" class="text-decoration-none">Non-underlined link</a>
 ```
 
 ```css
@@ -19,7 +19,4 @@ Para desactivar el subrayado en los enlaces se utiliza el valor `none`. A menudo
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <a href="#" class="d-block mb-3">Enlace normal con subrayado por defecto</a>
-  <a href="#" style="text-decoration: none">Enlace sin subrayado</a>
-</div>
+![Two links, one underlined and one without decoration](../assets/text-decoration-links.png)

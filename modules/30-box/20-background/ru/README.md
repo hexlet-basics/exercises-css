@@ -5,7 +5,7 @@
 В качестве цвета можно использовать уже знакомые `hex`-значения:
 
 ```html
-<div class="card">Карточка с белым текстом на фиолетовом фоне</div>
+<div class="card">A card with white text on a purple background</div>
 ```
 
 ```css
@@ -15,6 +15,4 @@
 }
 ```
 
-<div class="hexlet-basics-example my-3" style="background-color: #673ab7; color: #fff">
-  Карточка с белым текстом на фиолетовом фоне
-</div>
+![Card with white text on a purple background](../assets/background-color-card.png)

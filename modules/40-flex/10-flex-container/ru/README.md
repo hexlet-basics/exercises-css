@@ -14,19 +14,14 @@
 </style>
 
 <div class="container">
-  <div class="theory">Тут теория</div>
-  <div class="practice">Тут редактор с практикой</div>
+  <div class="theory">Here is the theory</div>
+  <div class="practice">Here is the practice editor</div>
 </div>
 ```
 
 Для наглядности добавим немного стилей, чтобы увидеть расположение блоков
 
-<div class="hexlet-basics-example my-3">
-  <div class="container d-flex fw-bold text-white" style="height: 200px;">
-    <div class="bg-black bg-opacity-50 p-3">Тут теория</div>
-    <div class="bg-opacity-50 bg-primary p-3">Тут редактор с практикой</div>
-  </div>
-</div>
+![Two flex columns for theory and practice](../assets/flex-container-layout.png)
 
 В текущей верстке блок с классом `container` называется _Flex-контейнер_, а элементы с классами `theory` и `practice` будут называться _Flex-элементами_. Важно, что _flex-элементы_ это только те элементы, которые лежат непосредственно внутри контейнера.
 
@@ -41,10 +36,10 @@
 
 <div class="container">
   <div class="theory">
-    <div class="theory-text">Тут теория</div>
+    <div class="theory-text">Here is the theory</div>
   </div>
   <div class="practice">
-    <div class="vscode"></div>
+    <div class="vscode">Here is the practice editor</div>
   </div>
 </div>
 ```

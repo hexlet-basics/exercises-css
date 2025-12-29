@@ -18,9 +18,7 @@ Suppose we want italic bold text with a font size of 24 pixels and from the Aria
 }
 ```
 
-<div class="hexlet-basics-example my-3" style="font: italic bold 24px Arial;">
-  Bold italics with a font size of 24 pixels from the Arial family
-</div>
+![Text rendered with the font shorthand rule](../assets/font-shorthand.png)
 
 Note the order in which the values within the `font` property are used. First come the style rules, then the font size and spacing, and then the font family. This is important, because if the order is different, the browser may not process the result correctly.
 

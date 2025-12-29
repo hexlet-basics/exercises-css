@@ -1,9 +1,21 @@
 
 Cualquier elemento de bloque en HTML se puede resaltar con marcos. Este recurso estilístico permite separar convenientemente componentes monocromáticos entre sí o resaltar un elemento clave en la página.
 
-<div class="hexlet-basics-example my-3">
-  <p class="m-0">Este texto está dentro de un marco, por lo que es fácil de encontrar a primera vista en la página</p>
+```html
+<div class="border-card">
+  This text is framed, so it's easy to find on the page straight away
 </div>
+```
+
+```css
+.border-card {
+  border: 3px solid #673ab7;
+  border-radius: 12px;
+  padding: 16px 24px;
+}
+```
+
+![Framed paragraph that uses the border shorthand](../assets/framed-border-card.png)
 
 Para crear un borde en un elemento se utiliza la propiedad `border`, que es una abreviatura de varias propiedades:
 
@@ -40,24 +52,33 @@ y hay un valor `none` que "elimina" el borde, ya que cuando se establece `border
 
 ## Ejemplos de bordes
 
-<div style="border: 3px solid #000; margin-bottom: 10px;" class="p-2">
-  solid (sólido)
-</div>
-<div style="border: 3px dotted #000; margin-bottom: 10px;" class="p-2">
-  dotted (punteado)
-</div>
-<div style="border: 3px dashed #000; margin-bottom: 10px;" class="p-2">
-  dashed (guionado)
-</div>
-
 ```html
-<style>
-  .border-dotted {
-    border: 1px dotted #000;
-  }
-</style>
-
-<div class="border-dotted">
-  Bloque con borde punteado y color negro
-</div>
+<div class="border-sample border-solid">solid</div>
+<div class="border-sample border-dotted">dotted</div>
+<div class="border-sample border-dashed">dashed</div>
 ```
+
+```css
+.border-sample {
+  border-width: 3px;
+  border-color: #111;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-dotted {
+  border-style: dotted;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+```
+
+![solid, dotted, and dashed border samples](../assets/border-style-variants.png)

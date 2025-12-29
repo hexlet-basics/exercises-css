@@ -9,7 +9,7 @@ theory: |
   Puedes utilizar los valores `hex` de color que ya conoces:
 
   ```html
-  <div class="card">Tarjeta con texto blanco sobre fondo violeta</div>
+  <div class="card">A card with white text on a purple background</div>
   ```
 
   ```css
@@ -19,9 +19,7 @@ theory: |
   }
   ```
 
-  <div class="hexlet-basics-example my-3" style="background-color: #673ab7; color: #fff">
-    Tarjeta con texto blanco sobre fondo violeta
-  </div>
+  ![Card with white text on a purple background](../assets/background-color-card.png)
 
 instructions: |
   Agrega un `<div>` con la clase `background` en el editor y establece el color de fondo como `#2196f3`. Escribe los estilos dentro de la etiqueta `<style>`

@@ -7,7 +7,7 @@ Hay dos valores más comunes para la propiedad `font-weight`:
 2. `normal` - valor predeterminado. Un valor útil si todo el texto tiene una intensidad no estándar, pero se necesita que una parte sea estándar en intensidad
 
 ```html
-<p class="bold">Texto con fuente en negrita</p>
+<p class="bold">Text with bold typeface</p>
 ```
 
 ```css
@@ -16,9 +16,7 @@ Hay dos valores más comunes para la propiedad `font-weight`:
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p style="font-weight: bold;" class="m-0">Texto con fuente en negrita</p>
-</div>
+![Text rendered with bold font weight](../assets/font-weight-bold.png)
 
 Pero estos no son todos los valores que puede tener la propiedad. Además de las descripciones verbales `bold` y `normal`, también existen valores numéricos:
 

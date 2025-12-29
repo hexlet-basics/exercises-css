@@ -18,9 +18,7 @@ Supongamos que necesitamos una fuente en negrita cursiva con un tamaño de fuent
 }
 ```
 
-<div class="hexlet-basics-example my-3" style="font: italic bold 24px Arial;">
-  Negrita cursiva con un tamaño de fuente de 24 píxeles de la familia Arial
-</div>
+![Text rendered with the font shorthand rule](../assets/font-shorthand.png)
 
 Ten en cuenta el orden de los valores dentro de la propiedad `font`. Primero van las reglas de estilo, luego el tamaño de fuente y su altura de línea, y luego la familia de fuentes. Esto es importante, ya que en otro orden el navegador puede procesar incorrectamente el resultado.
 

@@ -1,56 +1,105 @@
-В прошлых примерах использовалось достаточно малое количество элементов внутри флекс-контейнера. Представим, что этих элементов больше и они не могут поместиться внутри контейнера.
+В прошлых примерах использовалось довольно мало элементов внутри флекс-контейнера. Представим, что элементов больше и они не помещаются. В этом случае элементы продолжат располагаться вдоль главной оси и выйдут за пределы контейнера.
 
-В этом случае элементы выйдут за пределы контейнера и продолжат располагаться на главной оси, так как, по умолчанию, контейнер не переносит элементы.
+```html
+<div class="wrap-stage wrap-stage--nowrap">
+  <div class="wrap-chip">1</div>
+  <div class="wrap-chip">2</div>
+  <div class="wrap-chip">3</div>
+  <div class="wrap-chip">4</div>
+  <div class="wrap-chip">5</div>
+  <div class="wrap-chip">6</div>
+</div>
+```
 
-В примере ниже ширина контейнера обозначена синим цветом, а между элементами есть пространство, чтобы понять, когда элементы вышли за пределы контейнера:
+```css
+.wrap-stage {
+  display: flex;
+  gap: 12px;
+  width: 320px;
+  padding: 12px;
+  border: 2px dashed #1d4ed8;
+  background: #dbeafe;
+}
 
-<div class="hexlet-basics-example my-3">
-  <div class="d-flex bg-primary gap-2 w-50">
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;"></div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;"></div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;"></div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;"></div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;"></div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;"></div>
+.wrap-stage--nowrap {
+  flex-wrap: nowrap;
+}
+
+.wrap-chip {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #0ea5e9;
+}
+```
+
+![Flex container that overflows because wrapping is disabled](../assets/flex-wrap-overflow.png)
+
+Чтобы контролировать перенос, используется свойство `flex-wrap`, которое принимает значения:
+
+* `nowrap` — перенос отключен
+* `wrap` — элементы переносятся, когда не хватает места
+* `wrap-reverse` — перенос с инверсией порядка вдоль главной оси
+
+```html
+<div class="wrap-gallery">
+  <div>
+    <p class="wrap-label">nowrap</p>
+    <div class="wrap-stage wrap-stage--nowrap">
+      <div class="wrap-chip">1</div>
+      <div class="wrap-chip">2</div>
+      <div class="wrap-chip">3</div>
+      <div class="wrap-chip">4</div>
+      <div class="wrap-chip">5</div>
+      <div class="wrap-chip">6</div>
+    </div>
+  </div>
+
+  <div>
+    <p class="wrap-label">wrap</p>
+    <div class="wrap-stage wrap-stage--wrap">
+      <div class="wrap-chip">1</div>
+      <div class="wrap-chip">2</div>
+      <div class="wrap-chip">3</div>
+      <div class="wrap-chip">4</div>
+      <div class="wrap-chip">5</div>
+      <div class="wrap-chip">6</div>
+    </div>
+  </div>
+
+  <div>
+    <p class="wrap-label">wrap-reverse</p>
+    <div class="wrap-stage wrap-stage--wrap-reverse">
+      <div class="wrap-chip">1</div>
+      <div class="wrap-chip">2</div>
+      <div class="wrap-chip">3</div>
+      <div class="wrap-chip">4</div>
+      <div class="wrap-chip">5</div>
+      <div class="wrap-chip">6</div>
+    </div>
   </div>
 </div>
+```
 
-Чтобы определить, как поведут себя элементы при нехватке пространства используется свойство `flex-wrap`, которое принимает одно из значений:
+```css
+.wrap-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-* `nowrap` — значение по умолчанию. Элементы не переносятся
-* `wrap` — самое распространенное значение. Элементы переносятся при нехватке пространства внутри контейнера
-* `wrap-reverse` — перенос элементов с переворотом порядка элементов по главной оси. Этот порядок удобен при создании блогов, так как более старые записи окажутся внизу
+.wrap-label {
+  margin: 0 0 6px;
+  font-weight: 600;
+}
 
-Вот как располагаются элементы при использовании этих значений:
+.wrap-stage--wrap {
+  flex-wrap: wrap;
+}
 
-<div class="hexlet-basics-example my-3">
-  <p class="h3">nowrap</p>
-  <div class="d-flex bg-primary gap-2 w-50 mb-3">
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">1</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">2</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">3</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">4</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">5</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">6</div>
-  </div>
+.wrap-stage--wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+```
 
-  <p class="h3">wrap</p>
-  <div class="d-flex flex-wrap bg-primary gap-2 w-50 mb-3">
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">1</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">2</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">3</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">4</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">5</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">6</div>
-  </div>
-
-  <p class="h3">wrap-reverse</p>
-  <div class="d-flex flex-wrap-reverse bg-primary gap-2 w-50 mb-3">
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">1</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">2</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">3</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">4</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">5</div>
-    <div class="bg-info flex-shrink-0" style="width: 50px; height: 50px;">6</div>
-  </div>
-</div>
+![nowrap, wrap y wrap-reverse comparados](../assets/flex-wrap-variants.png)

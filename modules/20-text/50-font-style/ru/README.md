@@ -6,18 +6,20 @@
 * `italic` — курсивное начертание
 * `oblique` — косое начертание
 
-<div class="hexlet-basics-example my-3">
-  <p>Текст с обычным начертанием шрифта</p>
-  <p style="font-style: italic">Текст с курсивным начертанием шрифта</p>
-  <p style="font-style: oblique" class="m-0">Текст с косым начертанием шрифта</p>
-</div>
+```html
+<p>Text with normal font style</p>
+<p class="italic">Text with italic font</p>
+<p class="oblique">Text with oblique font</p>
+```
+
+![Normal, italic, and oblique text](../assets/font-style-samples.png)
 
 Обратите внимание, что текст со значением `italic` и `oblique` могут выглядеть совершенно одинаково. В чём же здесь дело? При использовании значения `italic` ищется специальная курсивная версия шрифта, а `oblique` лишь программно наклоняет символы в шрифте. Не все шрифты имееют отдельную версию для курсива, поэтому, визуально, оба значения будут выглядеть одинаково.
 
 Используйте значение `italic` для создания курсива — это самый распространённый вариант
 
 ```html
-<p class="italic">Курсивный текст</p>
+<p class="italic">Italic text</p>
 ```
 
 ```css
@@ -26,6 +28,4 @@
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p style="font-style: italic" class="m-0">Курсивный текст</p>
-</div>
+![Single paragraph rendered in italics](../assets/font-style-italic.png)

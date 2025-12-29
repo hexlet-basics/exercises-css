@@ -1,9 +1,22 @@
 
 Рассматривая различные блоки, которые были созданы на протяжении всех уроков можно заметить, что текст «прилипает» к краям блоков. Например:
 
-<div class="hexlet-basics-example my-3 p-0" style="background-color: #673ab7;color: #fff;padding: 0!important;">
-  Карточка с белым текстом на фиолетовом фоне
-</div>
+```html
+<div class="card card-tight">A card with white text on a purple background</div>
+```
+
+```css
+.card {
+  color: #ffffff;
+  background-color: #673ab7;
+}
+
+.card-tight {
+  padding: 0;
+}
+```
+
+![Card without internal padding](../assets/padding-no-spacing.png)
 
 Вы можете сказать, что в самих уроках примеры обычно выглядят не так и будете правы. В каждом примере, чтобы добавить «воздуха» использовались внутренние отступы от краёв блока.
 
@@ -17,7 +30,7 @@
 Каждое свойство принимает числовое значение и единицу измерения, например пиксели
 
 ```html
-<div class="card">Карточка с белым текстом на фиолетовом фоне</div>
+<div class="card">A card with white text on a purple background</div>
 ```
 
 ```css
@@ -31,9 +44,7 @@
 }
 ```
 
-<div class="hexlet-basics-example my-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;">
-  Карточка с белым текстом на фиолетовом фоне
-</div>
+![Card with asymmetric padding](../assets/padding-with-spacing.png)
 
 ## Сокращённое свойство
 

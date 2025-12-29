@@ -19,7 +19,4 @@ The `none` value is used to remove underscores from links. This is often used to
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <a href="#" class="d-block mb-3">Ordinary link underlined by default</a>
-  <a href="#" style="text-decoration: none">Non-underlined link</a>
-</div>
+![Two links, one underlined and one without decoration](../assets/text-decoration-links.png)

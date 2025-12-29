@@ -1,9 +1,21 @@
 
 Любой блочный элемент в HTML можно выделять с помощью рамок. Такой стилистический приём позволяет удобно отделить однотонные компоненты друг от друга, или выделить ключевой элемент на странице
 
-<div class="hexlet-basics-example my-3">
-  <p class="m-0">Этот текст находится в рамке, поэтому его легко найти с первого взгляда на странице</p>
+```html
+<div class="border-card">
+  This text is framed, so it's easy to find on the page straight away
 </div>
+```
+
+```css
+.border-card {
+  border: 3px solid #673ab7;
+  border-radius: 12px;
+  padding: 16px 24px;
+}
+```
+
+![Framed paragraph that uses the border shorthand](../assets/framed-border-card.png)
 
 Для создания границы у элемента используется свойство `border`, которое является сокращением от нескольких свойств:
 
@@ -40,24 +52,33 @@
 
 ## Примеры границ
 
-<div style="border: 3px solid #000; margin-bottom: 10px;" class="p-2">
-  solid (сплошная)
-</div>
-<div style="border: 3px dotted #000; margin-bottom: 10px;" class="p-2">
-  dotted (пунктирная)
-</div>
-<div style="border: 3px dashed #000; margin-bottom: 10px;" class="p-2">
-  dashed (штриховая)
-</div>
-
 ```html
-<style>
-  .border-dotted {
-    border: 1px dotted #000;
-  }
-</style>
-
-<div class="border-dotted">
-  Блок с пунктирной рамкой и чёрным цветом
-</div>
+<div class="border-sample border-solid">solid</div>
+<div class="border-sample border-dotted">dotted</div>
+<div class="border-sample border-dashed">dashed</div>
 ```
+
+```css
+.border-sample {
+  border-width: 3px;
+  border-color: #111;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-dotted {
+  border-style: dotted;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+```
+
+![solid, dotted, and dashed border samples](../assets/border-style-variants.png)

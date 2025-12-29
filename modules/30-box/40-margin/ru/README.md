@@ -1,12 +1,24 @@
 
 Внутренние отступы позволяли добавить «воздуха» в блок и дать пространство между границей блока и его контентом. А как не дать двум соседним блокам прижиматься друг к другу?
 
-<div class="hexlet-basics-example mt-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;">
-  Карточка с белым текстом на фиолетовом фоне
-</div>
-<div class="hexlet-basics-example mb-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;">
-  Карточка с белым текстом на фиолетовом фоне
-</div>
+```html
+<div class="card card-tight">A card with white text on a purple background</div>
+<div class="card card-tight">A card with white text on a purple background</div>
+```
+
+```css
+.card {
+  color: #ffffff;
+  background-color: #673ab7;
+  padding: 10px 0 10px 20px;
+}
+
+.card-tight {
+  margin: 0;
+}
+```
+
+![Two cards touching because margin is 0](../assets/margin-no-spacing.png)
 
 Чтобы отделить две карточки из примера выше используются внешние отступы. Их принцип работы схож с внутренними отступами, а меняется только направление. В плане свойств и их значений всё то же самое. Существует 4 правила и одно общее:
 
@@ -29,8 +41,8 @@
 * Если указать три значения, то они будут использоваться для отступа сверху, по горизонтали и снизу
 
 ```html
-<div class="card">Карточка с белым текстом на фиолетовом фоне</div>
-<div class="card">Карточка с белым текстом на фиолетовом фоне</div>
+<div class="card">A card with white text on a purple background</div>
+<div class="card">A card with white text on a purple background</div>
 ```
 
 ```css
@@ -42,9 +54,4 @@
 }
 ```
 
-<div class="hexlet-basics-example" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;margin: 10px 0;">
-  Карточка с белым текстом на фиолетовом фоне
-</div>
-<div class="hexlet-basics-example" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;margin: 10px 0;">
-  Карточка с белым текстом на фиолетовом фоне
-</div>
+![Cards separated by vertical margin](../assets/margin-with-spacing.png)

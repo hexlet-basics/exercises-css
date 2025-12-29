@@ -5,7 +5,7 @@ Ten en cuenta que el área de teoría y editor en las lecciones está separada d
 Puedes utilizar los valores `hex` de color que ya conoces:
 
 ```html
-<div class="card">Tarjeta con texto blanco sobre fondo violeta</div>
+<div class="card">A card with white text on a purple background</div>
 ```
 
 ```css
@@ -15,6 +15,4 @@ Puedes utilizar los valores `hex` de color que ya conoces:
 }
 ```
 
-<div class="hexlet-basics-example my-3" style="background-color: #673ab7; color: #fff">
-  Tarjeta con texto blanco sobre fondo violeta
-</div>
+![Card with white text on a purple background](../assets/background-color-card.png)

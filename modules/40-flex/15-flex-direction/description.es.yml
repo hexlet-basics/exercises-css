@@ -11,35 +11,38 @@ theory: |
   * `column` - los elementos se alinean desde arriba hacia abajo. El primer elemento está arriba
   * `column-reverse` - los elementos se alinean desde abajo hacia arriba, es decir, el primer elemento está abajo
 
-  <div class="hexlet-basics-example my-3">
-    <p class="h3">Row (Fila)</p>
-    <div class="d-flex mb-3">
-      <div class="bg-primary" style="width: 50px; height: 50px">1</div>
-      <div class="bg-danger" style="width: 50px; height: 50px">2</div>
-      <div class="bg-success" style="width: 50px; height: 50px">3</div>
-    </div>
-
-    <p class="h3">Row-Reverse (Fila Inversa)</p>
-    <div class="d-flex flex-row-reverse mb-3">
-      <div class="bg-primary" style="width: 50px; height: 50px">1</div>
-      <div class="bg-danger" style="width: 50px; height: 50px">2</div>
-      <div class="bg-success" style="width: 50px; height: 50px">3</div>
-    </div>
-
-    <p class="h3">Column (Columna)</p>
-    <div class="d-flex flex-column mb-3">
-      <div class="bg-primary" style="width: 50px; height: 50px">1</div>
-      <div class="bg-danger" style="width: 50px; height: 50px">2</div>
-      <div class="bg-success" style="width: 50px; height: 50px">3</div>
-    </div>
-
-    <p class="h3">Column-Reverse (Columna Inversa)</p>
-    <div class="d-flex flex-column-reverse">
-      <div class="bg-primary" style="width: 50px; height: 50px">1</div>
-      <div class="bg-danger" style="width: 50px; height: 50px">2</div>
-      <div class="bg-success" style="width: 50px; height: 50px">3</div>
-    </div>
+  ```html
+  <div class="flex-demo row">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
   </div>
+  ```
+
+  ```css
+  .flex-demo {
+    display: flex;
+    gap: 12px;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+  ```
+
+  ![Flex items arranged with row, row-reverse, column, and column-reverse](../assets/flex-direction-variants.png)
 
   Además del eje principal en el que se colocan los elementos, se utiliza el concepto de _eje secundario_. Este eje es perpendicular al eje principal.
 

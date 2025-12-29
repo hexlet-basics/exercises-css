@@ -42,25 +42,8 @@ Ahora debemos aplicar la animación que hemos creado al texto en la página. Par
 
 Solo queda crear un párrafo con la clase correspondiente, y la animación comenzará a funcionar.
 
-<div class="hexlet-basics-example">
-  <style>
-    @keyframes color-change {
-      0% {
-        color: blue;
-      }
+```html
+<p class="animation-text">Text with color-change animation. The color of the text changes from blue to red and back again</p>
+```
 
-      50% {
-        color: red;
-      }
-
-      100% {
-        color: blue;
-      }
-    }
-
-    .animation-text {
-      animation: color-change 3s infinite;
-    }
-  </style>
-  <p class="animation-text m-0">Texto con animación color-change. El color del texto cambia de azul a rojo y viceversa</p>
-</div>
+![Animated text that cycles between blue and red](../assets/text-color-animation.png)

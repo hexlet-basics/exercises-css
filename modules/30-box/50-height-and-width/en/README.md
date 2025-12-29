@@ -16,6 +16,4 @@ Let's create a block 100 pixels high and 100 pixels wide. To visually separate i
 <div class="square"></div>
 ```
 
-<div class="hexlet-basics-example my-3">
-  <div style="width: 100px; height: 100px; background-color: #000;"></div>
-</div>
+![A square that is 100px tall and wide](../assets/square-100.png)

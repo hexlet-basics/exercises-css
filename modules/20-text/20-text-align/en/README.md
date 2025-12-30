@@ -1,9 +1,11 @@
 A strong way to highlight a section of text is to align it differently from the rest of the text. Many sites align the header to the center so that the user can distinguish it more quickly.
 
-<div class="hexlet-basics-example my-3">
-  <p style="" class="h3 text-center">Centered header</p>
-  <p class="m-0">Page text. You can see that the header jumps out more since it's centered</p>
-</div>
+```html
+<p class="text-center h3">Centered header</p>
+<p>Page text. You can see that the header jumps out more since it's centered</p>
+```
+
+![Heading centered over body text](../assets/text-align-centered-heading.png)
 
 CSS allows you to align text using the `text-align` property with 4 basic values:
 
@@ -37,9 +39,4 @@ CSS allows you to align text using the `text-align` property with 4 basic values
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p>Left edge text</p>
-  <p style="text-align: center">Center text</p>
-  <p style="text-align: right">Right edge text</p>
-  <p style="text-align: justify" class="m-0">Justified. It is rarely used, because it leaves unequal spaces between words. This method is often used in book layout because it means that the text will be “rectangular”, i.e., every line finishes at the same point.</p>
-</div>
+![Examples of left, center, right, and justified text](../assets/text-align-variants.png)

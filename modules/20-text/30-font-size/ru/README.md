@@ -4,8 +4,8 @@
 Управлять размером текста в CSS можно с помощью свойства `font-size`, которое принимает числовое значение и единицу измерения. Сейчас, в качестве единицы измерения мы будем использовать пиксели, хотя есть ещё несколько важных единиц, которые будут изучены к концу этого курса.
 
 ```html
-<p>Внимание! Этот параграф со стандартным размером шрифта</p>
-<p class="warning">Внимание! Этот параграф имеет размер шрифта 24 пикселя</p>
+<p>Warning, this paragraph has the standard font size</p>
+<p class="warning">This paragraph has a font size of 24 pixels</p>
 ```
 
 ```css
@@ -14,7 +14,4 @@
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p>Внимание! Этот параграф со стандартным размером шрифта</p>
-  <p class="m-0" style="font-size: 24px;">Внимание! Этот параграф имеет размер шрифта 24 пикселя</p>
-</div>
+![Paragraph with larger font size](../assets/font-size-warning.png)

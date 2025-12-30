@@ -10,4 +10,6 @@ h1 {
 }
 ```
 
+![Result of setting global h1 size](../assets/global-heading-style.png)
+
 But this option is convenient only for setting the initial/main values for our web page. Different parts of it may need different header styles for the same level. We'll learn how to solve this problem using CSS selectors and HTML attributes in future lessons. The main thing to remember is that almost all elements have a default style, which can be both a benefit and a nuisance when designing a page

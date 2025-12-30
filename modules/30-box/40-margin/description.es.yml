@@ -5,12 +5,24 @@ theory: |
 
   Los márgenes internos permiten añadir más espacio a un bloque y dar espacio entre el borde del bloque y su contenido. Pero, ¿cómo evitar que dos bloques adyacentes se peguen entre sí?
 
-  <div class="hexlet-basics-example mt-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;">
-    Tarjeta con texto blanco sobre fondo violeta
-  </div>
-  <div class="hexlet-basics-example mb-3" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;">
-    Tarjeta con texto blanco sobre fondo violeta
-  </div>
+  ```html
+  <div class="card card-tight">A card with white text on a purple background</div>
+  <div class="card card-tight">A card with white text on a purple background</div>
+  ```
+
+  ```css
+  .card {
+    color: #ffffff;
+    background-color: #673ab7;
+    padding: 10px 0 10px 20px;
+  }
+
+  .card-tight {
+    margin: 0;
+  }
+  ```
+
+  ![Two cards touching because margin is 0](../assets/margin-no-spacing.png)
 
   Para separar las dos tarjetas del ejemplo anterior, se utilizan márgenes externos. Su principio de funcionamiento es similar al de los márgenes internos, pero solo cambia la dirección. En cuanto a las propiedades y sus valores, todo es lo mismo. Existen 4 reglas y una regla general:
 
@@ -33,8 +45,8 @@ theory: |
   * Si se especifican tres valores, se utilizarán para el margen superior, horizontal e inferior
 
   ```html
-  <div class="card">Tarjeta con texto blanco sobre fondo violeta</div>
-  <div class="card">Tarjeta con texto blanco sobre fondo violeta</div>
+  <div class="card">A card with white text on a purple background</div>
+  <div class="card">A card with white text on a purple background</div>
   ```
 
   ```css
@@ -46,12 +58,7 @@ theory: |
   }
   ```
 
-  <div class="hexlet-basics-example" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;margin: 10px 0;">
-    Tarjeta con texto blanco sobre fondo violeta
-  </div>
-  <div class="hexlet-basics-example" style="background-color: #673ab7;color: #fff;padding: 10px 0 10px 20px!important;border:0!important;margin: 10px 0;">
-    Tarjeta con texto blanco sobre fondo violeta
-  </div>
+  ![Cards separated by vertical margin](../assets/margin-with-spacing.png)
 
 instructions: |
   Agrega un `<div>` con la clase `margin` en el editor y establece márgenes externos de 20 píxeles en todos los lados. Escribe los estilos dentro de la etiqueta `<style>`. Utiliza la forma abreviada.

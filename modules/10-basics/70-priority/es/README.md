@@ -13,7 +13,7 @@ Una característica importante de CSS es que los diferentes tipos de selectores 
 Veamos un ejemplo. Crearemos un párrafo con la clase `red` y el identificador `blue`:
 
 ```html
-<p id="blue" class="red">Texto con la clase red e identificador blue</p>
+<p id="blue" class="red">Text with the class red and identifier blue</p>
 ```
 
 Agregaremos estilos contradictorios para la clase, el identificador y la etiqueta:
@@ -34,6 +34,8 @@ p {
 
 ¿De qué color será el párrafo? Intenta ejecutar este ejemplo en el editor. Verás que el texto será de color azul. ¿A qué se debe esto?
 
+![Priority between tag, class, and ID selectors](../assets/priority-id-vs-class.png)
+
 Los selectores también tienen prioridades. Convencionalmente, se pueden ordenar los selectores en el siguiente orden de prioridad:
 
 1. Selector por identificador (`#blue`)
@@ -47,7 +49,7 @@ Según estas reglas, se puede entender que las propiedades especificadas en el s
 Es fácil de recordar si los selectores son pequeños, pero estos pueden ser más complejos. Un selector puede ser una combinación de clases, etiquetas, etc. Por ejemplo:
 
 ```html
-<p class="paragraph color-primary">Párrafo</p>
+<p class="paragraph color-primary">Paragraph</p>
 ```
 
 ```css
@@ -59,9 +61,9 @@ Es fácil de recordar si los selectores son pequeños, pero estos pueden ser má
 Aquí se utilizó un selector con dos clases a la vez. Esto significa que los estilos se aplicarán solo a los elementos que tengan ambas clases. Esta separación ayuda a los desarrolladores a establecer estilos de manera precisa para elementos similares. Por ejemplo:
 
 ```html
-<p class="paragraph color-primary">Párrafo</p>
-<p class="paragraph">Párrafo</p>
-<p class="paragraph color-primary">Párrafo</p>
+<p class="paragraph color-primary">Paragraph</p>
+<p class="paragraph">Paragraph</p>
+<p class="paragraph color-primary">Paragraph</p>
 ```
 
 ```css
@@ -75,6 +77,8 @@ Aquí se utilizó un selector con dos clases a la vez. Esto significa que los es
 ```
 
 En este ejemplo, todos los párrafos con la clase `paragraph` tendrán el color del texto en rojo, pero si también se establece la clase `color-primary`, el color será azul. ¿Por qué sucede esto? Estos selectores también tienen sus propias prioridades. En selectores complejos, se cuenta la cantidad de ocurrencias de los diferentes selectores y se calcula el peso total.
+
+![Priority between combined class selectors](../assets/priority-combined-classes.png)
 
 Para determinar la prioridad, se pueden utilizar las siguientes reglas, donde a cada selector se le asigna su "peso":
 

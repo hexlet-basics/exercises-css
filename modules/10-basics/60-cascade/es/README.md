@@ -6,7 +6,7 @@ Imagina una cascada de agua. Fluyen una hacia otra, acumulando cada vez más agu
 Creemos un bloque con las clases `text-bold` y `text-dark`, y definamos algunas propiedades en diferentes selectores:
 
 ```html
-<p class="text-bold text-dark">Texto importante sobre los problemas de CSS complejo</p>
+<p class="text-bold text-dark">An important text about the danger of complex CSS</p>
 ```
 
 ```css
@@ -24,6 +24,8 @@ p {
 ```
 
 Si insertamos este ejemplo en el editor, se mostrará un texto en negrita con un tamaño de 20 píxeles y de color oscuro. Esto es posible gracias a la "cascada" — el navegador combina todos los estilos de diferentes selectores y obtiene las siguientes instrucciones para estilizar el elemento:
+
+![Result of cascading styles](../assets/cascade-text.png)
 
 ```css
 {

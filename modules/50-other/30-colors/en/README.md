@@ -28,9 +28,17 @@ color: #000000;
 
 Suppose you want purple for the text. How is it made? To achieve this, red and blue are mixed. There is no green in purple. So, we need to input the maximum in the first and third block. The result is the color `#ff00ff`.
 
-<div class="hexlet-basics-example my-3" style="color: #ff00ff;">
-  Purple text
-</div>
+```html
+<p class="color-hex">Magenta text rendered via HEX</p>
+```
+
+```css
+.color-hex {
+  color: #ff00ff;
+}
+```
+
+![Highlighted word rendered through a HEX color](../assets/text-color-hex.png)
 
 You can get different variations of this color by adding or reducing the number of compound colors
 
@@ -41,18 +49,16 @@ The second way to specify a color using the RGB color model is to use the specia
 If you think it looks like a hexadecimal system, you are right - the idea is exactly the same. Only we write the colors in the numbers we are accustomed to. Otherwise, everything is the same, which means you can create purple using the `rgb()` function:
 
 ```html
-<p class="text">Purple text</p>
+<p class="color-rgb">Magenta text rendered via rgb()</p>
 ```
 
 ```css
-.text {
+.color-rgb {
   color: rgb(255, 0, 255);
 }
 ```
 
-<div class="hexlet-basics-example my-3" style="color: rgb(255, 0, 255);">
-  Purple text
-</div>
+![The same magenta color but defined with rgb()](../assets/text-color-rgb.png)
 
 And this is what white and black will look like when using `rgb()`:
 
@@ -71,15 +77,17 @@ When you use background colors, you often use not just a color on its own, you m
 In order to be able to add an alpha channel, the `rgba()` function has been created, where `a` is `alpha`. Otherwise, everything is exactly the same as we learned earlier. Let's make a semi-transparent purple background:
 
 ```html
-<div class="background">A block with a semi-transparent purple background</div>
+<div class="background-demo">Semi-transparent magenta background</div>
 ```
 
 ```css
-.background {
+.background-demo {
   background-color: rgba(255, 0, 255, 0.5);
+  color: #3b0764;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 600;
 }
 ```
 
-<div class="hexlet-basics-example my-3" style="background-color: rgba(255, 0, 255, 0.5);">
-  Block with a semi-transparent purple background
-</div>
+![Block with a semi-transparent purple background](../assets/background-color-rgba.png)

@@ -14,6 +14,8 @@ We've seen tag and class selectors in tutorials before. A selector is a descript
 
 The `font-weight` property with a value of **bold** will set the text to bold. You'll learn more about this property when you study text formatting. The most important thing now is that this style will be applied to both the paragraph and the block element `<div>`, since they have the same class.
 
+![Result of applying the text-bold class](../assets/text-bold-class.png)
+
 Another familiar selector is the tag selector. Its purpose is to set styles for all the tags on the page. This is very useful if you want to set initial styles for tags throughout your project. For example, to set the font, its size, and its thickness.
 
 ```css
@@ -24,6 +26,8 @@ p {
 ```
 
 Use the tag selector only to set global rules within the entire project. This is important because styles will be applied to all the tags at once, and you could accidentally overwrite existing styles
+
+![Result of the tag selector](../assets/tag-selector.png)
 
 Another way to specify styles is to use the Identity Selector. By using the `id` attribute, you can specify a unique name for any element on the page. If this name is specified, then the element can be referred to using the identifying selector. For this purpose, the form selector `#identifier_name` is used
 
@@ -38,3 +42,5 @@ Another way to specify styles is to use the Identity Selector. By using the `id`
 ```
 
 It is important to remember that the ID value is unique. There can only be one element on a page with one specific value. For example, in the example above, the identifier `red` has already been used on the paragraph. There cannot be a second version of this element on the page. For this reason, identifiers are generally specified for large wrappers, such as the main site header, but this is not a prerequisite
+
+![Result of the ID selector](../assets/id-selector.png)

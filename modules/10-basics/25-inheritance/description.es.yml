@@ -12,10 +12,7 @@ theory: |
   </div>
   ```
 
-  <div class="hexlet-basics-example my-3 bg-light" style="font-size: 20px;">
-    El tamaño de fuente de este texto es de 20 píxeles.
-    <p class="mb-0">El párrafo anidado también tendrá un tamaño de fuente de 20 píxeles.</p>
-  </div>
+  ![Vista previa de tamaño de fuente heredado](../assets/font-size-inheritance.png)
 
   Además de los estilos que se heredan para todas las etiquetas anidadas, en CSS hay muchos estilos que son únicos para el elemento al que se aplican.
 
@@ -30,11 +27,7 @@ theory: |
   </div>
   ```
 
-  <div class="hexlet-basics-example my-3 bg-light" style="border: 2px solid #000!important;">
-    El bloque tendrá un borde de 2 píxeles de ancho.
-    <p>El párrafo no tendrá su propio borde. Si es necesario, se establece por separado.</p>
-    <p style="border: 1px solid #000;" class="mb-0">Por ejemplo, de esta manera</p>
-  </div>
+  ![Los bordes no se heredan automáticamente](../assets/border-inheritance.png)
 
 instructions: |
   Agrega la etiqueta `<div></div>` al editor y, utilizando atributos, establece el tamaño de fuente en 20 píxeles. Dentro de la etiqueta `<div>`, anida un párrafo con un tamaño de fuente de 10 píxeles.

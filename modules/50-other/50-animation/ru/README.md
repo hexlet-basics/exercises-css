@@ -42,25 +42,8 @@
 
 Осталось создать параграф с необходимым классом, и анимация начнёт работать.
 
-<div class="hexlet-basics-example">
-  <style>
-    @keyframes color-change {
-      0% {
-        color: blue;
-      }
+```html
+<p class="animation-text">Text with color-change animation. The color of the text changes from blue to red and back again</p>
+```
 
-      50% {
-        color: red;
-      }
-
-      100% {
-        color: blue;
-      }
-    }
-
-    .animation-text {
-      animation: color-change 3s infinite;
-    }
-  </style>
-  <p class="animation-text m-0">Текст с анимацией color-change. Цвет текста меняется с голубого на красный и обратно</p>
-</div>
+![Animated text that cycles between blue and red](../assets/text-color-animation.png)

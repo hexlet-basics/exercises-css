@@ -6,13 +6,15 @@
 
 Возьмём пример из прошлого урока:
 
-```
+```html
 <div style="font-size: 20px;">
-  Этот текст будет с размером шрифта 20 пикселей
+  This text will have a font size of 20 pixels
 
-  <p>Вложенный параграф также будет иметь размер шрифта 20 пикселей</p>
+  <p>The enclosed paragraph will also have a font size of 20 pixels</p>
 </div>
 ```
+
+![Result of inline font size](../assets/inline-font-size.png)
 
 Чтобы избавиться от атрибутов, добавим тег `style` и укажем, что для тега `<div>` используется шрифт размером в 20 пикселей.
 
@@ -24,11 +26,13 @@
 </style>
 
 <div>
-  Этот текст будет с размером шрифта 20 пикселей
+  This text will have a font size of 20 pixels
 
-  <p>Вложенный параграф также будет иметь размер шрифта 20 пикселей</p>
+  <p>The enclosed paragraph will also have a font size of 20 pixels</p>
 </div>
 ```
+
+![Font size applied via the style tag](../assets/style-tag-font-size.png)
 
 Таким же образом можно указать, что у параграфа будет размер шрифта 10 пикселей.
 
@@ -44,24 +48,26 @@
 </style>
 
 <div>
-  Этот текст будет с размером шрифта 20 пикселей
+  This text will have a font size of 20 pixels
 
-  <p>Вложенный параграф будет иметь размер шрифта 10 пикселей</p>
+  <p>The enclosed paragraph will have a font size of 10 pixels</p>
 </div>
 ```
+
+![Different sizes for the div and nested paragraph](../assets/style-nested-paragraph.png)
 
 Внутри тега `<style>` использовалась конструкция вида:
 
 ```text
-имя_тега {
-  свойство: значение;
+tag_name {
+  property: value;
 }
 ```
 
 Всё, что было записано до открывающей скобки `{` называется _селектор_. Селекторы — правила, по которым браузер определяет к какому элементу нужно добавить стили. С некоторыми из селекторов мы познакомимся чуть позже. В примерах выше используются селекторы по тегу, то есть стили будут применяться ко всем элементам с тегом, указанном в качестве селектора
 
 ```css
-/* Для всех элементов div будет установлен размер шрифта 20px */
+/* All div elements will have a font size of 20px */
 div {
   font-size: 20px;
 }

@@ -14,6 +14,8 @@ theory: |
   }
   ```
 
+  ![Result of setting global h1 size](../assets/global-heading-style.png)
+
   Sin embargo, esta opción solo es conveniente para establecer valores iniciales/principales para nuestra página web. En diferentes partes de la página, pueden ser necesarios estilos diferentes para los encabezados del mismo nivel. Aprenderemos a resolver este problema utilizando selectores CSS y atributos HTML en las próximas lecciones. Lo más importante es recordar que casi todos los elementos tienen estilos predeterminados, lo que puede ser tanto una ventaja como un inconveniente al desarrollar una página.
 
 instructions: |

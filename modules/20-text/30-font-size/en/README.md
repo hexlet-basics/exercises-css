@@ -14,7 +14,4 @@ You can control the size of the text in CSS by using the `font-size` property, w
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p>Warning, this paragraph has the standard font size</p>
-  <p class="m-0" style="font-size: 24px;">Notice! This paragraph has a font size of 24 pixels</p>
-</div>
+![Paragraph with larger font size](../assets/font-size-warning.png)

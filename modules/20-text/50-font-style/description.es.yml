@@ -10,18 +10,20 @@ theory: |
   * `italic` - tipografía en cursiva
   * `oblique` - tipografía inclinada
 
-  <div class="hexlet-basics-example my-3">
-    <p>Texto con tipografía normal</p>
-    <p style="font-style: italic">Texto con tipografía en cursiva</p>
-    <p style="font-style: oblique" class="m-0">Texto con tipografía inclinada</p>
-  </div>
+  ```html
+  <p>Text with normal font style</p>
+  <p class="italic">Text with italic font</p>
+  <p class="oblique">Text with oblique font</p>
+  ```
+
+  ![Normal, italic, and oblique text](../assets/font-style-samples.png)
 
   Ten en cuenta que el texto con los valores `italic` y `oblique` pueden verse exactamente igual. ¿Cuál es la diferencia? Al utilizar el valor `italic`, se busca una versión especial de la tipografía en cursiva, mientras que `oblique` simplemente inclina los caracteres de la tipografía. No todas las tipografías tienen una versión separada para la cursiva, por lo que visualmente ambos valores se verán iguales.
 
   Utiliza el valor `italic` para crear cursiva, ya que es la opción más común.
 
   ```html
-  <p class="italic">Texto en cursiva</p>
+  <p class="italic">Italic text</p>
   ```
 
   ```css
@@ -30,9 +32,7 @@ theory: |
   }
   ```
 
-  <div class="hexlet-basics-example my-3">
-    <p style="font-style: italic" class="m-0">Texto en cursiva</p>
-  </div>
+  ![Single paragraph rendered in italics](../assets/font-style-italic.png)
 
 instructions: |
   Agrega un párrafo con la clase `italic-type` al editor y establece la tipografía `oblique`. Agrega los estilos en la etiqueta `<style>`.

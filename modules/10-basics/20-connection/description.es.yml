@@ -16,12 +16,10 @@ theory: |
   Vamos a aprender cómo cambiar el tamaño de la fuente. El tamaño se puede modificar utilizando la propiedad `font-size`, cuyo valor es un número seguido de una unidad de medida. Intentaremos hacer que el texto tenga un tamaño de _32 píxeles_. La unidad de medida píxel se indica utilizando la abreviatura `px`. Se explicarán en detalle las diferentes unidades de medida y cómo funcionan en las próximas lecciones.
 
   ```html
-  <p style="font-size: 32px;">Texto grande</p>
+  <p style="font-size: 32px;">Large text</p>
   ```
 
-  <div class="hexlet-basics-example my-3 bg-light">
-    <p class="m-0" style="font-size: 32px;">Texto grande</p>
-  </div>
+  ![Resultado de aplicar un estilo en línea](../assets/text-with-inline-style.png)
 
 instructions: |
   Agrega la etiqueta `<p></p>` al editor y, utilizando el atributo `style`, establece el tamaño de la fuente en 12 píxeles.

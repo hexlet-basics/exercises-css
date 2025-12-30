@@ -4,8 +4,8 @@ Otra forma de separar secciones de texto con significado es utilizando diferente
 En CSS, se puede controlar el tamaño de la fuente utilizando la propiedad `font-size`, que acepta un valor numérico y una unidad de medida. Por ahora, utilizaremos píxeles como unidad de medida, aunque hay algunas unidades importantes que se estudiarán al final de este curso.
 
 ```html
-<p>¡Atención! Este párrafo tiene el tamaño de fuente estándar</p>
-<p class="warning">¡Atención! Este párrafo tiene un tamaño de fuente de 24 píxeles</p>
+<p>Warning, this paragraph has the standard font size</p>
+<p class="warning">This paragraph has a font size of 24 pixels</p>
 ```
 
 ```css
@@ -14,7 +14,4 @@ En CSS, se puede controlar el tamaño de la fuente utilizando la propiedad `font
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p>¡Atención! Este párrafo tiene el tamaño de fuente estándar</p>
-  <p class="m-0" style="font-size: 24px;">¡Atención! Este párrafo tiene un tamaño de fuente de 24 píxeles</p>
-</div>
+![Paragraph with larger font size](../assets/font-size-warning.png)

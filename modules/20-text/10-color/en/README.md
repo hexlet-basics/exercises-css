@@ -16,9 +16,7 @@ Create a paragraph and color one word in it. To do this, let's wrap it in a `<sp
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p class="m-0"><span style="color:#5263f3;">Attention!</span> Important information</p>
-</div>
+![Highlighted word rendered in purple](../assets/highlighted-inline-color.png)
 
 If you want to set the text color for an entire page, you can use the `body` selector. The `color` property is inherited, so the color will be set for all text elements:
 

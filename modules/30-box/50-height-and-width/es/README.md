@@ -16,6 +16,4 @@ Crearemos un bloque con una altura de 100 píxeles y un ancho de 100 píxeles. P
 <div class="square"></div>
 ```
 
-<div class="hexlet-basics-example my-3">
-  <div style="width: 100px; height: 100px; background-color: #000;"></div>
-</div>
+![A square that is 100px tall and wide](../assets/square-100.png)

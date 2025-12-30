@@ -34,6 +34,8 @@ p {
 
 What color will the paragraph be? Try running this example in the editor. You'll see that the text is blue. What does this have to do with anything?
 
+![Priority between tag, class, and ID selectors](../assets/priority-id-vs-class.png)
+
 Selectors also have priorities. Conventionally, you can put the selectors in the following order of priority:
 
 1. Selector by ID (`#blue`)
@@ -75,6 +77,8 @@ Here, a selector for two classes was used at once. This means that styles will o
 ```
 
 In this example, all paragraphs with the `paragraph` class will have red text, but if the `color-primary` class is also set, the color will be blue. Why does this happen? These selectors also have their own priorities. In complex selectors, both the number of occurrences of a particular selector and the total weight are counted.
+
+![Priority between combined class selectors](../assets/priority-combined-classes.png)
 
 To determine the priority, you can use a table where each selector is given a "weight":
 

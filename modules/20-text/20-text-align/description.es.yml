@@ -4,10 +4,12 @@ name: Alineación de texto
 theory: |
   Una buena manera de resaltar una sección de texto es alineándola de manera diferente al resto del texto. En muchos sitios web se utiliza la alineación centrada para los títulos, para que los usuarios puedan identificarlos rápidamente.
 
-  <div class="hexlet-basics-example my-3">
-    <p style="" class="h3 text-center">Título centrado</p>
-    <p class="m-0">Texto de la página. Se puede observar que el título destaca gracias a la alineación centrada</p>
-  </div>
+  ```html
+  <p class="text-center h3">Centered header</p>
+  <p>Page text. You can see that the header jumps out more since it's centered</p>
+  ```
+
+  ![Heading centered over body text](../assets/text-align-centered-heading.png)
 
   CSS permite alinear el texto utilizando la propiedad `text-align` con 4 valores principales:
 
@@ -41,12 +43,7 @@ theory: |
   }
   ```
 
-  <div class="hexlet-basics-example my-3">
-    <p>Texto alineado a la izquierda</p>
-    <p style="text-align: center">Texto centrado</p>
-    <p style="text-align: right">Texto alineado a la derecha</p>
-    <p style="text-align: justify" class="m-0">Texto justificado. Se utiliza raramente, ya que deja espacios desiguales entre las palabras. Este enfoque se utiliza a menudo en la maquetación de libros para evitar "bordes irregulares" en el texto</p>
-  </div>
+  ![Examples of left, center, right, and justified text](../assets/text-align-variants.png)
 
 instructions: |
   Agrega un párrafo con la clase `important` y alinéalo al centro en el editor. Especifica los estilos dentro de la etiqueta `<style>`

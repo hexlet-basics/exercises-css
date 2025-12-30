@@ -15,6 +15,4 @@ We'll learn how to change fonts. You can change the size by using the `font-size
 <p style="font-size: 32px;">Large text</p>
 ```
 
-<div class="hexlet-basics-example my-3 bg-light">
-  <p class="m-0" style="font-size: 32px;">Large text</p>
-</div>
+![Result of applying an inline style](../assets/text-with-inline-style.png)

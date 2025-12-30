@@ -16,9 +16,7 @@ There are two particularly common values for the `font-weight` property:
 }
 ```
 
-<div class="hexlet-basics-example my-3">
-  <p style="font-weight: bold;" class="m-0">Text with bold typeface</p>
-</div>
+![Text rendered with bold font weight](../assets/font-weight-bold.png)
 
 But these are not all the values a property can take. In addition to the `bold` and `normal` descriptions, there are also numeric ones:
 

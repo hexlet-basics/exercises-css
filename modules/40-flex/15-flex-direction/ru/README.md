@@ -7,35 +7,38 @@
 * `column` — элементы выстраиваются сверху вниз. Первый элемент находится сверху
 * `column-reverse` — элементы выстраиваются снизу вверх, то есть первый элемент находится внизу
 
-<div class="hexlet-basics-example my-3">
-  <p class="h3">Row</p>
-  <div class="d-flex mb-3">
-    <div class="bg-primary" style="width: 50px; height: 50px">1</div>
-    <div class="bg-danger" style="width: 50px; height: 50px">2</div>
-    <div class="bg-success" style="width: 50px; height: 50px">3</div>
-  </div>
-
-  <p class="h3">Row-reverse</p>
-  <div class="d-flex flex-row-reverse mb-3">
-    <div class="bg-primary" style="width: 50px; height: 50px">1</div>
-    <div class="bg-danger" style="width: 50px; height: 50px">2</div>
-    <div class="bg-success" style="width: 50px; height: 50px">3</div>
-  </div>
-
-  <p class="h3">Column</p>
-  <div class="d-flex flex-column mb-3">
-    <div class="bg-primary" style="width: 50px; height: 50px">1</div>
-    <div class="bg-danger" style="width: 50px; height: 50px">2</div>
-    <div class="bg-success" style="width: 50px; height: 50px">3</div>
-  </div>
-
-  <p class="h3">Column-reverse</p>
-  <div class="d-flex flex-column-reverse">
-    <div class="bg-primary" style="width: 50px; height: 50px">1</div>
-    <div class="bg-danger" style="width: 50px; height: 50px">2</div>
-    <div class="bg-success" style="width: 50px; height: 50px">3</div>
-  </div>
+```html
+<div class="flex-demo row">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
 </div>
+```
+
+```css
+.flex-demo {
+  display: flex;
+  gap: 12px;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+```
+
+![Flex items arranged with row, row-reverse, column, and column-reverse](../assets/flex-direction-variants.png)
 
 Помимо главной оси, по которой располагаются элементы, используется понятие _побочной оси_. Она находится перпендикулярно главной оси.
 

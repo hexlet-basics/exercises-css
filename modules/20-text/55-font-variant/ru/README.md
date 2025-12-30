@@ -1,9 +1,17 @@
 Капитель — вид строчных букв, размер которых совпадает (или приближен) к размеру заглавных букв.
 
-<div class="hexlet-basics-example my-3">
-  <p>Текст, набранный простым шрифтом</p>
-  <p style="font-variant: small-caps" class="m-0">Текст с использованием капители</p>
-</div>
+```html
+<p>Text typed as plain text</p>
+<p class="small-caps">Text with small caps</p>
+```
+
+```css
+.small-caps {
+  font-variant: small-caps;
+}
+```
+
+![Plain text and a version with small caps](../assets/font-variant-small-caps.png)
 
 Часто такое написание используется как стилистический приём. Но также имеется практическая сторона капители — ею принято обозначать аббревиатуры, а также её используют в первых строчках произведения, чтобы читателю было проще «войти» в текст после заголовка.
 

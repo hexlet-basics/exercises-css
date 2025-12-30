@@ -10,13 +10,15 @@ theory: |
 
   Tomemos el ejemplo de la lección anterior:
 
-  ```
+  ```html
   <div style="font-size: 20px;">
-    Este texto tendrá un tamaño de fuente de 20 píxeles
+    This text will have a font size of 20 pixels
 
-    <p>El párrafo anidado también tendrá un tamaño de fuente de 20 píxeles</p>
+    <p>The enclosed paragraph will also have a font size of 20 pixels</p>
   </div>
   ```
+
+  ![Result of inline font size](../assets/inline-font-size.png)
 
   Para eliminar los atributos, agreguemos la etiqueta `style` y especifiquemos que se utiliza un tamaño de fuente de 20 píxeles para la etiqueta `<div>`.
 
@@ -28,11 +30,13 @@ theory: |
   </style>
 
   <div>
-    Este texto tendrá un tamaño de fuente de 20 píxeles
+    This text will have a font size of 20 pixels
 
-    <p>El párrafo anidado también tendrá un tamaño de fuente de 20 píxeles</p>
+    <p>The enclosed paragraph will also have a font size of 20 pixels</p>
   </div>
   ```
+
+  ![Font size applied via the style tag](../assets/style-tag-font-size.png)
 
   De la misma manera, podemos especificar que el párrafo tendrá un tamaño de fuente de 10 píxeles.
 
@@ -48,24 +52,26 @@ theory: |
   </style>
 
   <div>
-    Este texto tendrá un tamaño de fuente de 20 píxeles
+    This text will have a font size of 20 pixels
 
-    <p>El párrafo anidado tendrá un tamaño de fuente de 10 píxeles</p>
+    <p>The enclosed paragraph will have a font size of 10 pixels</p>
   </div>
   ```
+
+  ![Different sizes for the div and nested paragraph](../assets/style-nested-paragraph.png)
 
   Dentro de la etiqueta `<style>`, se utilizó la siguiente estructura:
 
   ```
-  nombre_etiqueta {
-    propiedad: valor;
+  tag_name {
+    property: value;
   }
   ```
 
   Todo lo que está escrito antes de la llave de apertura `{` se llama _selector_. Los selectores son reglas que el navegador utiliza para determinar a qué elemento se deben aplicar los estilos. A continuación hablaremos de algunos de los seleccionadores. En los ejemplos anteriores, se utilizan selectores por etiqueta, es decir, los estilos se aplicarán a todos los elementos con la etiqueta especificada como selector.
 
   ```css
-  /* Todos los elementos div tendrán un tamaño de fuente de 20px */
+  /* All div elements will have a font size of 20px */
   div {
     font-size: 20px;
   }

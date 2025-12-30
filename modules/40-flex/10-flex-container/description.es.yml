@@ -18,19 +18,14 @@ theory: |
   </style>
 
   <div class="container">
-    <div class="theory">Aquí está la teoría</div>
-    <div class="practice">Aquí está el editor de práctica</div>
+    <div class="theory">Here is the theory</div>
+    <div class="practice">Here is the practice editor</div>
   </div>
   ```
 
   Para mayor claridad, agreguemos algunos estilos para ver la disposición de los bloques.
 
-  <div class="hexlet-basics-example my-3">
-    <div class="container d-flex fw-bold text-white" style="height: 200px;">
-      <div class="bg-black bg-opacity-50 p-3">Aquí está la teoría</div>
-      <div class="bg-opacity-50 bg-primary p-3">Aquí está el editor de práctica</div>
-    </div>
-  </div>
+  ![Two flex columns for theory and practice](../assets/flex-container-layout.png)
 
   En la maquetación actual, el bloque con la clase `container` se llama _Contenedor Flex_, y los elementos con las clases `theory` y `practice` se llamarán _Elementos Flex_. Es importante destacar que los _elementos flex_ son solo aquellos elementos que se encuentran directamente dentro del contenedor.
 
@@ -45,7 +40,7 @@ theory: |
 
   <div class="container">
     <div class="theory">
-      <div class="theory-text">Aquí va la teoría</div>
+      <div class="theory-text">Here is the theory</div>
     </div>
     <div class="practice">
       <div class="vscode"></div>

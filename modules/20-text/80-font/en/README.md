@@ -1,10 +1,10 @@
 A convenient way to set font properties is to use the `font` rule, which lets you specify:
 
-* `font-style`
-* `font-variant`
-* `font-weight`
-* `font-size` / `line-height` (these two rules are written with a slash)
-* `font-family`
+- `font-style`
+- `font-variant`
+- `font-weight`
+- `font-size` / `line-height` (these two rules are written with a slash)
+- `font-family`
 
 Six different rules within one! This helps shorten CSS code and improve its readability. The mandatory ones are `font-size` and `font-family`. The rest can be omitted.
 

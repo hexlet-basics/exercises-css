@@ -1,7 +1,7 @@
 
 The HTML markup language course covered various elements that have a default style - indented paragraphs, color-coded links, different-sized headings, etc. As a developer, you can change this styles or add entirely new ones. Want to add a background to the text? Resize elements? Create an animation? You can do all this with CSS (Cascading Style Sheets), the language that defines how HTML elements will look in the browser.
 
-This CSS course is a logical continuation of the [HTML course] (https://code-basics.com/languages/html). Many of the tags and concepts that we'll be encountering along the way have already been covered.
+This CSS course is a logical continuation of the [HTML course] (<https://code-basics.com/languages/html>). Many of the tags and concepts that we'll be encountering along the way have already been covered.
 
 The example below shows how to render text without using your CSS (i.e., using the styles your browser "puts in") and how to style a document using CSS.
 

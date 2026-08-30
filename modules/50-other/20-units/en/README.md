@@ -6,10 +6,10 @@ On the one hand, this is good because you can be sure that on different devices 
 
 In addition to pixels, there are other absolute units of measurement:
 
-* centimeters
-* millimeters
-* inches
-* points
+- centimeters
+- millimeters
+- inches
+- points
 
 Although they are not often used, they can be useful when setting up printing. Websites only use pixels.
 
@@ -57,9 +57,9 @@ h2 {
 
 What is the size of the second level header? The correct answer is `32px`. If you build a logical chain of font sizes, it looks like this:
 
-* The `<main>` element has the font size set to `16px`.
-* The element with class `news` has no separate font size indication, so it inherits from `<main>`, which is also `16px`
-* The second level header has a font size of `200%`. The value is set relative to the font size of the parent, i.e., the block with the class `.news`. Otherwise, it'll be `16px * 2 = 32px`.
+- The `<main>` element has the font size set to `16px`.
+- The element with class `news` has no separate font size indication, so it inherits from `<main>`, which is also `16px`
+- The second level header has a font size of `200%`. The value is set relative to the font size of the parent, i.e., the block with the class `.news`. Otherwise, it'll be `16px * 2 = 32px`.
 
 There are several other basic relative units of measurement:
 

@@ -9,10 +9,10 @@ A strong way to highlight a section of text is to align it differently from the 
 
 CSS allows you to align text using the `text-align` property with 4 basic values:
 
-* `left`. This one is used by default
-* `center`
-* `right`
-* `justify`
+- `left`. This one is used by default
+- `center`
+- `right`
+- `justify`
 
 ```html
 <p class="left">Left edge text</p>

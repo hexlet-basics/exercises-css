@@ -1,14 +1,14 @@
 
 During this course, we encountered properties whose values are colors. These properties included:
 
-* `color`
-* `background-color`
-* `border-color`
+- `color`
+- `background-color`
+- `border-color`
 
 The hexadecimal RGB model, which stands for _Red Green Blue_, was used to represent colors. CSS uses two basic types of notation to represent colors in RGB:
 
-* Hexadecimal. This is a 6-character notation, divided into three blocks of two values. Each block is responsible for one of the colors: red, green or blue
-* The `rgb(red, green, blue)` function. The function accepts three numbers from _0_ to _255_, each of which determines the amount of red, green and blue
+- Hexadecimal. This is a 6-character notation, divided into three blocks of two values. Each block is responsible for one of the colors: red, green or blue
+- The `rgb(red, green, blue)` function. The function accepts three numbers from _0_ to _255_, each of which determines the amount of red, green and blue
 
 ## Hexadecimal notation
 

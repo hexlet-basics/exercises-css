@@ -1,8 +1,8 @@
 Speaking of cascading, you may be wondering what happens if different sources have the same rules for an element, but with different values. In that case, there are rules that prioritize styles from different sources. In order of importance, the list looks like this:
 
-* Styles in a tag attribute
-* Styles in a separate file
-* Default styles added by the browser
+- Styles in a tag attribute
+- Styles in a separate file
+- Default styles added by the browser
 
 The values specified in the `style` attribute will be more important than the properties in the `<style>` tag, and they will be more important than the default browser styles.
 
@@ -82,15 +82,15 @@ In this example, all paragraphs with the `paragraph` class will have red text, b
 
 To determine the priority, you can use a table where each selector is given a "weight":
 
-* Tag selector: **1**
-* Class selector: **10**
-* ID selector: **100**
-* Style in tag attribute: **1000**
+- Tag selector: **1**
+- Class selector: **10**
+- ID selector: **100**
+- Style in tag attribute: **1000**
 
 To find out which selector will have the greater weight, you have to add up all the values obtained using this table.
 
-* The `.paragraph` selector consists of one class, so its weight is 10
-* The selector `.paragraph.color-primary` consists of two classes. Its weight is 20.
+- The `.paragraph` selector consists of one class, so its weight is 10
+- The selector `.paragraph.color-primary` consists of two classes. Its weight is 20.
 
 Thus, the properties in the `.paragraph.color-primary` selector will have a higher priority than those inside the `.paragraph` selector.
 

@@ -1,10 +1,10 @@
 Una forma conveniente de establecer propiedades para una fuente es utilizando la regla `font`, que permite especificar:
 
-* `font-style`
-* `font-variant`
-* `font-weight`
-* `font-size` / `line-height` (estas dos reglas se escriben separadas por una barra)
-* `font-family`
+- `font-style`
+- `font-variant`
+- `font-weight`
+- `font-size` / `line-height` (estas dos reglas se escriben separadas por una barra)
+- `font-family`
 
 ¡Seis reglas diferentes en una sola! Esto ayuda a reducir el código CSS y mejorar su legibilidad. Los obligatorios son `font-size` y `font-family`. Los demás no es necesario especificarlos.
 

@@ -2,9 +2,9 @@ Italic text is often used to emphasize quotations or terms. In contrast to chang
 
 To change the font style, use the `font-style` property, which can take one of these values:
 
-* `normal` - normal text output.
-* `italic` - italic style
-* `oblique` - italic style
+- `normal` - normal text output.
+- `italic` - italic style
+- `oblique` - italic style
 
 ```html
 <p>Text with normal font style</p>

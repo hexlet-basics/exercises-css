@@ -1,8 +1,8 @@
 Al hablar de cascada, surge la pregunta: "¿Qué sucede si hay reglas iguales para un elemento en diferentes fuentes, pero con valores diferentes?". En este caso, existen reglas que determinan la prioridad de los estilos de diferentes fuentes. La lista de prioridades se ve así:
 
-* Estilos en el atributo de la etiqueta
-* Estilos en un archivo separado
-* Estilos por defecto que agrega el navegador
+- Estilos en el atributo de la etiqueta
+- Estilos en un archivo separado
+- Estilos por defecto que agrega el navegador
 
 Los valores especificados en el atributo `style` serán más importantes que las propiedades en la etiqueta `<style>`, y estas serán más importantes que los estilos predeterminados del navegador.
 
@@ -82,15 +82,15 @@ En este ejemplo, todos los párrafos con la clase `paragraph` tendrán el color 
 
 Para determinar la prioridad, se pueden utilizar las siguientes reglas, donde a cada selector se le asigna su "peso":
 
-* Selector por etiqueta: **1**
-* Selector por clase: **10**
-* Selector por ID: **100**
-* Estilo en el atributo de la etiqueta: **1000**
+- Selector por etiqueta: **1**
+- Selector por clase: **10**
+- Selector por ID: **100**
+- Estilo en el atributo de la etiqueta: **1000**
 
 Para saber qué selector tendrá mayor peso, es necesario sumar todos los valores obtenidos. Por ejemplo:
 
-* El selector `.paragraph` consta de una clase, por lo que su peso es 10.
-* El selector `.paragraph.color-primary` consta de dos clases. Su peso es 20.
+- El selector `.paragraph` consta de una clase, por lo que su peso es 10.
+- El selector `.paragraph.color-primary` consta de dos clases. Su peso es 20.
 
 Por lo tanto, las propiedades del selector `.paragraph.color-primary` tendrán mayor prioridad que las del selector `.paragraph`.
 

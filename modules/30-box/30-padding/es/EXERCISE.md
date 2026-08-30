@@ -1,8 +1,8 @@
 Agrega un párrafo con la clase `padding` al editor y establece márgenes internos:
 
-* 10 píxeles en la parte superior
-* 15 píxeles en la parte inferior
-* 20 píxeles en los lados izquierdo y derecho
+- 10 píxeles en la parte superior
+- 15 píxeles en la parte inferior
+- 20 píxeles en los lados izquierdo y derecho
 
 Utiliza el siguiente texto para el párrafo:
 

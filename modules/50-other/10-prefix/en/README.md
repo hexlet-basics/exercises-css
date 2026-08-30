@@ -27,9 +27,9 @@ For example, the `box-shadow` property, which sets the shadow for an element, wa
 
 You can see three references to the `box-shadow` property:
 
-* `-webkit-box-shadow` — property for a WebKit browser
-* `-moz-box-shadow` — property for browsers based on solutions from Mozilla
-* `box-shadow` — property without prefixes
+- `-webkit-box-shadow` — property for a WebKit browser
+- `-moz-box-shadow` — property for browsers based on solutions from Mozilla
+- `box-shadow` — property without prefixes
 
 If the browser could not handle the `box-shadow` property, it looked for its `-webkit-` or `-moz-` prefix. If this couldn't be found either, then the rule would be ignored. Nowadays, using these prefixes will help you use the `box-shadow` property in very old Chrome, Safari and Firefox browsers.
 

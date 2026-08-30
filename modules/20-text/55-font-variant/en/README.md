@@ -17,5 +17,5 @@ This is often used as a stylistic device. But there is also a practical side to 
 
 To set small caps, use the `font-variant` property with one of two basic values:
 
-* `normal` - normal writing
-* `small-caps` - small caps
+- `normal` - normal writing
+- `small-caps` - small caps

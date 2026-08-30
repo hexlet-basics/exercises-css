@@ -19,9 +19,9 @@ Cualquier elemento de bloque en HTML se puede resaltar con marcos. Este recurso 
 
 Para crear un borde en un elemento se utiliza la propiedad `border`, que es una abreviatura de varias propiedades:
 
-* `border-width` - ancho del borde
-* `border-style` - estilo del borde
-* `border-color` - color del borde
+- `border-width` - ancho del borde
+- `border-style` - estilo del borde
+- `border-color` - color del borde
 
 Se pueden especificar varias propiedades o se pueden combinar todas en la propiedad `border`. Esta es la opción más común y se ve así:
 
@@ -33,20 +33,20 @@ Se pueden especificar varias propiedades o se pueden combinar todas en la propie
 
 donde:
 
-* `1px` - ancho del borde
-* `solid` - estilo del borde
-* `#ccc` - color del borde
+- `1px` - ancho del borde
+- `solid` - estilo del borde
+- `#ccc` - color del borde
 
 Ya hemos estudiado valores en píxeles y colores hex en el curso, pero en CSS hay ocho estilos de borde:
 
-* `dotted` (punteado)
-* `dashed` (guionado)
-* `solid` (sólido)
-* `double` (doble)
-* `groove` (acanalado)
-* `ridge` (relieve)
-* `inset` (hundido)
-* `outset` (saliente)
+- `dotted` (punteado)
+- `dashed` (guionado)
+- `solid` (sólido)
+- `double` (doble)
+- `groove` (acanalado)
+- `ridge` (relieve)
+- `inset` (hundido)
+- `outset` (saliente)
 
 y hay un valor `none` que "elimina" el borde, ya que cuando se establece `border-style: none`, los navegadores ignoran las demás propiedades y eliminan el borde
 

@@ -14,21 +14,21 @@ Las fuentes se obtienen de las que están instaladas en tu sistema. Por esta raz
 
 Las fuentes más comunes son:
 
-* Times New Roman
-* Arial
-* Tahoma
-* Verdana
-* Courier New
+- Times New Roman
+- Arial
+- Tahoma
+- Verdana
+- Courier New
 
 Es más probable que estas fuentes estén instaladas en el sistema de otro usuario. Si las fuentes especificadas en la propiedad `font-family` no están en la computadora, se utilizará la fuente predeterminada establecida en la configuración del navegador.
 
 Al agregar estilos, es una buena práctica agregar una familia de fuentes universal a la regla `font-family`. Actualmente hay 5 de estas familias:
 
-* `serif` - fuentes con remates (antiguas). Un ejemplo destacado de estas fuentes es _Times New Roman_
-* `sans-serif` - fuentes sin remates (grotesco). Las fuentes más conocidas de este tipo son _Arial_ y _Verdana_
-* `cursive` - fuentes cursivas
-* `fantasy` - fuentes decorativas. Esta familia se utiliza con menos frecuencia. El motivo es que las fuentes decorativas son demasiado diferentes para ser intercambiables
-* `monospace` - fuentes de ancho fijo. Estas son fuentes en las que todos los caracteres tienen el mismo ancho. Los programadores las utilizan con mucha frecuencia en editores de texto
+- `serif` - fuentes con remates (antiguas). Un ejemplo destacado de estas fuentes es _Times New Roman_
+- `sans-serif` - fuentes sin remates (grotesco). Las fuentes más conocidas de este tipo son _Arial_ y _Verdana_
+- `cursive` - fuentes cursivas
+- `fantasy` - fuentes decorativas. Esta familia se utiliza con menos frecuencia. El motivo es que las fuentes decorativas son demasiado diferentes para ser intercambiables
+- `monospace` - fuentes de ancho fijo. Estas son fuentes en las que todos los caracteres tienen el mismo ancho. Los programadores las utilizan con mucha frecuencia en editores de texto
 
 Al agregar una familia de fuentes universal a la regla `font-family`, nos protegemos de que el usuario no tenga la fuente que hemos especificado. El navegador automáticamente seleccionará una sustitución de la fuente faltante de la familia de fuentes universal que se haya especificado.
 

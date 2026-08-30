@@ -6,7 +6,6 @@ En esta lección, el color se indicará en formato `HEX`, que es una representac
 
 Crearemos un párrafo y resaltaremos una palabra en él. Para hacer esto, envolveremos la palabra en una etiqueta `<span>` y le daremos una clase aleatoria, que utilizaremos para seleccionar el elemento en CSS:
 
-
 ```html
 <p><span class="info">Attention!</span> Important information</p>
 ```

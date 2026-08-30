@@ -2,9 +2,9 @@ Para resaltar citas o términos, a menudo se utiliza _tipografía en cursiva_. A
 
 Para cambiar la tipografía se utiliza la propiedad `font-style`, que puede tener uno de los siguientes valores:
 
-* `normal` - texto normal.
-* `italic` - tipografía en cursiva
-* `oblique` - tipografía inclinada
+- `normal` - texto normal.
+- `italic` - tipografía en cursiva
+- `oblique` - tipografía inclinada
 
 ```html
 <p>Text with normal font style</p>

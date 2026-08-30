@@ -30,9 +30,9 @@ Dentro de `@keyframes`, debes especificar diferentes intervalos de tiempo en los
 
 Ahora debemos aplicar la animación que hemos creado al texto en la página. Para ello, se utiliza la regla `animation` con tres valores principales:
 
-* Nombre de la animación
-* Duración de la animación. Se especifica en segundos (1s, 2s, 3s, etc.)
-* Si la animación es infinita o no (si es infinita, se especifica el parámetro `infinite`)
+- Nombre de la animación
+- Duración de la animación. Se especifica en segundos (1s, 2s, 3s, etc.)
+- Si la animación es infinita o no (si es infinita, se especifica el parámetro `infinite`)
 
 ```css
 .animation-text {

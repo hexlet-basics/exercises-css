@@ -14,21 +14,21 @@ You can use fonts installed on your system. You should choose “common fonts”
 
 The most common fonts are:
 
-* Times New Roman
-* Arial
-* Tahoma
-* Verdana
-* Courier New
+- Times New Roman
+- Arial
+- Tahoma
+- Verdana
+- Courier New
 
 More often than not, these fonts will also be installed on other users' systems. If the fonts specified in the `font-family` property are not on the computer, the default font specified in the browser settings will be used.
 
 When adding styles, it's good practice to add a universal font family to the `font-family` rule. There are currently 5 such families:
 
-* `serif` - fonts with serifs. _Times New Roman_ is a notable example
-* `sans-serif` - fonts without serifs. The most familiar of these fonts are _Arial_ and _Verdana_.
-* `cursive` - italic fonts
-* `fantasy` - decorative fonts. This family is the least frequently used. This is because decorative fonts are too different to be interchangeable
-* `monospace` - monospace fonts. These include fonts in which all characters have the same width. They're often used by programmers in text editors
+- `serif` - fonts with serifs. _Times New Roman_ is a notable example
+- `sans-serif` - fonts without serifs. The most familiar of these fonts are _Arial_ and _Verdana_.
+- `cursive` - italic fonts
+- `fantasy` - decorative fonts. This family is the least frequently used. This is because decorative fonts are too different to be interchangeable
+- `monospace` - monospace fonts. These include fonts in which all characters have the same width. They're often used by programmers in text editors
 
 By adding a universal font family to the `font-family` rule, we can insure ourselves, as it were, against the possibility that the user will not have the font we specified. The browser will automatically choose a replacement for the missing font from the universal font family that was specified.
 

@@ -1,8 +1,8 @@
 Add a paragraph to the editor with the class set to `padding` and set internal indents:
 
-* 10 pixels at the top
-* 15 pixels at the bottom
-* 20 pixels left and right
+- 10 pixels at the top
+- 15 pixels at the bottom
+- 20 pixels left and right
 
 Use the following text for the paragraph:
 

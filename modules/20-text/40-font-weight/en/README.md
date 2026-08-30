@@ -20,14 +20,14 @@ There are two particularly common values for the `font-weight` property:
 
 But these are not all the values a property can take. In addition to the `bold` and `normal` descriptions, there are also numeric ones:
 
-* `100`
-* `200`
-* `300`
-* `400` - corresponds to the value of `normal`
-* `500`
-* `600`
-* `700` - corresponds to the value of `bold`
-* `800`
-* `900`
+- `100`
+- `200`
+- `300`
+- `400` - corresponds to the value of `normal`
+- `500`
+- `600`
+- `700` - corresponds to the value of `bold`
+- `800`
+- `900`
 
 Although there are many numerical values, here it all depends on the typefaces of the font, and more precisely on whether it has characters for each type of font weight. Most fonts support only `normal` and `bold` values and if specified otherwise, the browser will choose which weight to substitute. More often than not, all values above `500` will be interpreted as `bold`

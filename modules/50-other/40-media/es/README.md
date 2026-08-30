@@ -2,9 +2,9 @@ Para ver páginas web se utilizan muchos dispositivos con diferentes tamaños y 
 
 Una forma de cambiar estilos dependiendo de la resolución es mediante el uso de reglas CSS especiales que se activan cuando se cumplen ciertas condiciones. Estas condiciones pueden ser:
 
-* Ancho o alto del `viewport`
-* Orientación horizontal o vertical de la pantalla
-* Tipo de dispositivo
+- Ancho o alto del `viewport`
+- Orientación horizontal o vertical de la pantalla
+- Tipo de dispositivo
 
 y otros.
 
@@ -44,8 +44,8 @@ Con la llegada de los teléfonos celulares, surgió la necesidad de trabajar con
 
 En las consultas de medios existe una condición especial llamada `orientation`, que puede tener uno de dos valores:
 
-* `portrait` - orientación vertical del dispositivo. La altura de la pantalla es **mayor** que su ancho
-* `landscape` - orientación horizontal del dispositivo. La altura de la pantalla es **menor** que su ancho
+- `portrait` - orientación vertical del dispositivo. La altura de la pantalla es **mayor** que su ancho
+- `landscape` - orientación horizontal del dispositivo. La altura de la pantalla es **menor** que su ancho
 
 Supongamos que para la orientación vertical el texto debe ser blanco, y para la orientación horizontal debe ser negro:
 

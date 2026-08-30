@@ -19,9 +19,9 @@ Any block element in HTML can be highlighted with frames. This stylistic device 
 
 To create a border for an element, we use the `border` property, which is shorthand for several properties:
 
-* `border-width`
-* `border-style`
-* `border-color`
+- `border-width`
+- `border-style`
+- `border-color`
 
 You can specify multiple properties, or you can combine everything within the `border` property. This is the most common variant and looks like this:
 
@@ -33,20 +33,20 @@ You can specify multiple properties, or you can combine everything within the `b
 
 where:
 
-* `1px` - border width
-* `solid` - border style
-* `#ccc` - border color
+- `1px` - border width
+- `solid` - border style
+- `#ccc` - border color
 
 Pixel values and hex color we've already dealt with in this course, but there are eight border styles in CSS:
 
-* `dotted`
-* `dashed`
-* `solid`
-* `double`
-* `groove`
-* `ridge`
-* `inset`
-* `outset`
+- `dotted`
+- `dashed`
+- `solid`
+- `double`
+- `groove`
+- `ridge`
+- `inset`
+- `outset`
 
 and there is also a `none` value that will "remove" the border, because with `border-style: none`, browsers ignore the other properties and remove the border
 

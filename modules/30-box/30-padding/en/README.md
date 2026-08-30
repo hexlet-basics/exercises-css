@@ -22,10 +22,10 @@ You might say that that's not how the examples usually look in the lessons thems
 
 Four rules are used to create internal indents:
 
-* `padding-top`
-* `padding-right`
-* `padding-bottom`
-* `padding-left`
+- `padding-top`
+- `padding-right`
+- `padding-bottom`
+- `padding-left`
 
 Each property takes a numeric value and a unit of measurement, e.g. pixels
 
@@ -50,10 +50,10 @@ Each property takes a numeric value and a unit of measurement, e.g. pixels
 
 If you want to set indents on all sides, don't use 4 different properties, you only need one - `padding`. This is shorthand for some properties we already know which allows you to set them in the following order:
 
-* top
-* right
-* bottom
-* left
+- top
+- right
+- bottom
+- left
 
 The order in which it is specified is important and corresponds to the order specified above. If you rework the example above, it will look like this:
 
@@ -68,6 +68,6 @@ The order in which it is specified is important and corresponds to the order spe
 
 In addition to this notation, there are shorthand notations of these rules for convenience:
 
-* If you specify only one value, it will be used simultaneously for all sides
-* If you specify two values, the first will be used for vertical (top and bottom) margin and the second for horizontal (right and left) margin
-* If you specify three values, they will be used for top, horizontal and bottom margin
+- If you specify only one value, it will be used simultaneously for all sides
+- If you specify two values, the first will be used for vertical (top and bottom) margin and the second for horizontal (right and left) margin
+- If you specify three values, they will be used for top, horizontal and bottom margin

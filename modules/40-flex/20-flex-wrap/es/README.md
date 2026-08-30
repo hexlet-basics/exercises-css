@@ -37,9 +37,9 @@ En los ejemplos anteriores se utilizó un número bastante pequeño de elementos
 
 Para determinar cómo se comportarán los elementos cuando no haya suficiente espacio, se utiliza la propiedad `flex-wrap`, que puede tener uno de los siguientes valores:
 
-* `nowrap` — valor por defecto. Los elementos no se mueven
-* `wrap` — valor más común. Los elementos se mueven cuando no hay suficiente espacio dentro del contenedor
-* `wrap-reverse` — los elementos se mueven invirtiendo el orden a lo largo del eje principal. Este orden es útil para crear blogs, ya que las entradas más antiguas se colocarán en la parte inferior
+- `nowrap` — valor por defecto. Los elementos no se mueven
+- `wrap` — valor más común. Los elementos se mueven cuando no hay suficiente espacio dentro del contenedor
+- `wrap-reverse` — los elementos se mueven invirtiendo el orden a lo largo del eje principal. Este orden es útil para crear blogs, ya que las entradas más antiguas se colocarán en la parte inferior
 
 Así es como se comportan los elementos con cada valor:
 

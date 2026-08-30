@@ -2,9 +2,9 @@ Para enfatizar el texto, a menudo se utiliza <u>subrayado</u>. Esto muestra la i
 
 Para este tipo de formato se utiliza la propiedad `text-decoration` con tres propiedades principales:
 
-* `underline` — <u>Subrayado del texto</u>
-* `line-through` — <s>Tachado del texto</s>
-* `overline` — <span style="text-decoration: overline;">Sobrerayado del texto</span>
+- `underline` — <u>Subrayado del texto</u>
+- `line-through` — <s>Tachado del texto</s>
+- `overline` — <span style="text-decoration: overline;">Sobrerayado del texto</span>
 
 Para desactivar el subrayado en los enlaces se utiliza el valor `none`. A menudo se utiliza para eliminar el subrayado en los enlaces, que está activado por defecto
 

@@ -22,10 +22,10 @@ Puedes decir que en las propias lecciones los ejemplos no suelen verse así, y t
 
 Para crear márgenes internos se utilizan 4 reglas:
 
-* `padding-top` - margen interno superior
-* `padding-right` - margen interno derecho
-* `padding-bottom` - margen interno inferior
-* `padding-left` - margen interno izquierdo
+- `padding-top` - margen interno superior
+- `padding-right` - margen interno derecho
+- `padding-bottom` - margen interno inferior
+- `padding-left` - margen interno izquierdo
 
 Cada propiedad toma un valor numérico y una unidad de medida, por ejemplo píxeles
 
@@ -50,10 +50,10 @@ Cada propiedad toma un valor numérico y una unidad de medida, por ejemplo píxe
 
 Si se necesita establecer márgenes en todos los lados, se utiliza no 4 propiedades diferentes, sino una sola: `padding`. Esta propiedad es una abreviatura de las propiedades ya conocidas y permite establecer:
 
-* margen superior
-* margen derecho
-* margen inferior
-* margen izquierdo
+- margen superior
+- margen derecho
+- margen inferior
+- margen izquierdo
 
 El orden de especificación es importante y coincide con el mencionado anteriormente. Si se reescribe el ejemplo anterior, se verá así:
 
@@ -68,6 +68,6 @@ El orden de especificación es importante y coincide con el mencionado anteriorm
 
 Además de esta forma de escritura, existen formas abreviadas para mayor comodidad:
 
-* Si se especifica solo un valor, se utilizará para todos los lados al mismo tiempo
-* Si se especifican dos valores, el primero se utilizará para los márgenes verticales (superior e inferior) y el segundo para los márgenes horizontales (derecho e izquierdo)
-* Si se especifican tres valores, se utilizarán para el margen superior, los márgenes horizontales y el margen inferior
+- Si se especifica solo un valor, se utilizará para todos los lados al mismo tiempo
+- Si se especifican dos valores, el primero se utilizará para los márgenes verticales (superior e inferior) y el segundo para los márgenes horizontales (derecho e izquierdo)
+- Si se especifican tres valores, se utilizarán para el margen superior, los márgenes horizontales y el margen inferior

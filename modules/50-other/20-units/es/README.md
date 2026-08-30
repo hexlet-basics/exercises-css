@@ -6,10 +6,10 @@ Por un lado, esto es bueno, ya que puedes estar seguro de que todos los tamaños
 
 Además de los píxeles, también existen otras unidades de medida absolutas:
 
-* centímetros
-* milímetros
-* pulgadas
-* puntos
+- centímetros
+- milímetros
+- pulgadas
+- puntos
 
 Aunque no se utilizan con frecuencia, pueden ser útiles para el diseño de páginas impresas. En los sitios web, solo se utilizan píxeles.
 
@@ -57,9 +57,9 @@ h2 {
 
 ¿Cuál es el tamaño del título del segundo nivel? La respuesta correcta es `32px`. Si construimos una cadena lógica de tamaños de fuente, se verá así:
 
-* El elemento `<main>` tiene un tamaño de fuente establecido en `16px`
-* El elemento con la clase `news` no tiene una especificación de tamaño de fuente separada, por lo que hereda el tamaño de fuente de `<main>`, es decir, también `16px`
-* El título de nivel 2 tiene un tamaño de fuente del `200%`. El valor se establece en relación con el tamaño de fuente del padre, es decir, el bloque con la clase `.news`. Por lo tanto, obtenemos `16px * 2 = 32px`
+- El elemento `<main>` tiene un tamaño de fuente establecido en `16px`
+- El elemento con la clase `news` no tiene una especificación de tamaño de fuente separada, por lo que hereda el tamaño de fuente de `<main>`, es decir, también `16px`
+- El título de nivel 2 tiene un tamaño de fuente del `200%`. El valor se establece en relación con el tamaño de fuente del padre, es decir, el bloque con la clase `.news`. Por lo tanto, obtenemos `16px * 2 = 32px`
 
 También existen otras unidades de medida relativas principales:
 

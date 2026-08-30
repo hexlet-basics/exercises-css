@@ -1,4 +1,4 @@
-El cliente está completamente satisfecho con el bloque de preguntas y respuestas y ha dejado una última corección: permitir que el *bloque con la flecha* se estire para ocupar todo el espacio vacío y alinear la flecha en el centro del bloque.
+El cliente está completamente satisfecho con el bloque de preguntas y respuestas y ha dejado una última corección: permitir que el _bloque con la flecha_ se estire para ocupar todo el espacio vacío y alinear la flecha en el centro del bloque.
 
 De esta manera, la flecha siempre conectará de manera ordenada la pregunta y la respuesta en pantallas de alta resolución y el usuario podrá encontrar rápidamente la respuesta a la pregunta.
 

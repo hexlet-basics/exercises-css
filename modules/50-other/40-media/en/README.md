@@ -2,9 +2,9 @@ Many devices with different screen sizes and resolutions are used to browse the 
 
 One way to change styles depending on the resolution is to use special CSS rules which work under certain conditions. Such conditions can be:
 
-* Width or height of the `viewport`
-* Horizontal or vertical screen orientation
-* Device type
+- Width or height of the `viewport`
+- Horizontal or vertical screen orientation
+- Device type
 
 and others.
 
@@ -44,8 +44,8 @@ With the advent of smartphones, the need to work with the way the user holds the
 
 Media queries have a special condition `orientation`, which can have one of two values:
 
-* `portrait` - portrait orientation of the device. The screen height is **bigger** than its width
-* `landscape` - landscape orientation of the device. The screen height is **smaller** than its width
+- `portrait` - portrait orientation of the device. The screen height is **bigger** than its width
+- `landscape` - landscape orientation of the device. The screen height is **smaller** than its width
 
 Let the text be white for portrait orientation and black for landscape orientation:
 

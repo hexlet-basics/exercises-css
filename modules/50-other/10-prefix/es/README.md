@@ -27,9 +27,9 @@ Por ejemplo, antes la propiedad `box-shadow`, que establece una sombra para un e
 
 Se pueden observar tres menciones de la propiedad `box-shadow`:
 
-* `-webkit-box-shadow` - propiedad para navegadores basados en WebKit
-* `-moz-box-shadow` - propiedad para navegadores basados en soluciones de Mozilla
-* `box-shadow` - propiedad sin prefijos
+- `-webkit-box-shadow` - propiedad para navegadores basados en WebKit
+- `-moz-box-shadow` - propiedad para navegadores basados en soluciones de Mozilla
+- `box-shadow` - propiedad sin prefijos
 
 Si el navegador no puede procesar la propiedad `box-shadow`, buscará su prefijo `-webkit-` o `-moz-`. Si no se encuentra ninguno de ellos, la regla se ignora. Actualmente, el uso de estos prefijos ayuda a utilizar la propiedad `box-shadow` en navegadores Chrome, Safari y Firefox muy antiguos.
 

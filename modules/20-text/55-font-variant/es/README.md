@@ -17,5 +17,5 @@ A menudo, esta forma de escritura se utiliza como recurso estilístico. Sin emba
 
 Para aplicar la letra capital, se utiliza la propiedad `font-variant` con uno de los dos valores principales:
 
-* `normal` — escritura normal del texto
-* `small-caps` — capital
+- `normal` — escritura normal del texto
+- `small-caps` — capital

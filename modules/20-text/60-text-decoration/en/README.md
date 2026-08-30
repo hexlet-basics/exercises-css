@@ -2,9 +2,9 @@
 
 The `text-decoration` property with three basic properties is used for this kind of text modification:
 
-* `underline` - <u>underline text</u>
-* `line-through` - <s>Redraw text</s>
-* `overline` - <span style="text-decoration: overline;">overline text</span>
+- `underline` - <u>underline text</u>
+- `line-through` - <s>Redraw text</s>
+- `overline` - <span style="text-decoration: overline;">overline text</span>
 
 The `none` value is used to remove underscores from links. This is often used to remove the underscore from links, which are there by default
 

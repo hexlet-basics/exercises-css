@@ -9,10 +9,10 @@ Una buena manera de resaltar una sección de texto es alineándola de manera dif
 
 CSS permite alinear el texto utilizando la propiedad `text-align` con 4 valores principales:
 
-* `left` — a la izquierda. Se utiliza por defecto
-* `center` — centrado
-* `right` — a la derecha
-* `justify` — justificado
+- `left` — a la izquierda. Se utiliza por defecto
+- `center` — centrado
+- `right` — a la derecha
+- `justify` — justificado
 
 ```html
 <p class="left">Texto alineado a la izquierda</p>

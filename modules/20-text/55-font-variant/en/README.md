@@ -19,3 +19,5 @@ To set small caps, use the `font-variant` property with one of two basic values:
 
 - `normal` - normal writing
 - `small-caps` - small caps
+
+Small caps depend on the font and the browser. If the font has no small-cap glyphs, the browser draws scaled-down capitals or leaves the text as is. For example, Firefox on Linux with the default font renders Latin text in small caps but leaves Cyrillic text in regular lowercase.

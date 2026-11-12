@@ -19,3 +19,5 @@ Para aplicar la letra capital, se utiliza la propiedad `font-variant` con uno de
 
 - `normal` — escritura normal del texto
 - `small-caps` — capital
+
+La versalita depende de la fuente y del navegador. Si la fuente no tiene versalitas, el navegador dibuja mayúsculas reducidas o deja el texto como está. Por ejemplo, Firefox en Linux con la fuente predeterminada muestra el texto latino en versalitas, pero deja el cirílico en minúsculas normales.

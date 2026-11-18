@@ -1,11 +1,10 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, '.padding');
-
-  const style = getComputedStyle(element);
-  expect(style).to.have.property('padding-top', '10px');
-  expect(style).to.have.property('padding-bottom', '15px');
-  expect(style).to.have.property('padding-left', '20px');
-  expect(style).to.have.property('padding-right', '20px');
+test("padding", () => {
+  const style = getComputedStyle(query(document, ".padding"));
+  expect(style.paddingTop).toBe("10px");
+  expect(style.paddingBottom).toBe("15px");
+  expect(style.paddingLeft).toBe("20px");
+  expect(style.paddingRight).toBe("20px");
 });

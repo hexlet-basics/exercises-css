@@ -1,9 +1,8 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const flexContainer = query(document, '.qa');
-
-  const style = getComputedStyle(flexContainer);
-  expect(style).to.have.property('display', 'flex');
-  expect(style).to.have.property('flex-wrap', 'wrap');
+test("flex-wrap", () => {
+  const style = getComputedStyle(query(document, ".qa"));
+  expect(style.display).toBe("flex");
+  expect(style.flexWrap).toBe("wrap");
 });

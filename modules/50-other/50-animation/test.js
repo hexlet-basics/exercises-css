@@ -1,10 +1,9 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { html, query } from "hexlet-basics/dom";
 
-test(({ query, expect, html }) => {
-  const p = query(document, '.black-white');
-  const pStyle = getComputedStyle(p);
-
-  expect(html).to.contain('@keyframes');
-  expect(html).to.contain('<style>');
-  expect(pStyle).to.have.property('animation');
+test("animation", () => {
+  const style = getComputedStyle(query(document, ".black-white"));
+  expect(html).toContain("@keyframes");
+  expect(html).toContain("<style>");
+  expect(style.animationName).not.toBe("none");
 });

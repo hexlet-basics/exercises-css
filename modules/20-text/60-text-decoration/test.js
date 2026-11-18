@@ -1,9 +1,8 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, 'p');
-  expect(element).to.have.class('line');
-
-  const style = getComputedStyle(element);
-  expect(style).to.have.property('text-decoration', 'underline');
+test("text-decoration", () => {
+  const element = query(document, "p");
+  expect(element).toHaveClass("line");
+  expect(getComputedStyle(element).textDecoration).toBe("underline");
 });

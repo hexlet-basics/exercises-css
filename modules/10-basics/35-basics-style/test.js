@@ -1,12 +1,9 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const styleTag = query(document, 'style');
-  expect(styleTag).to.be.visible;
-
-  const header = query(document, 'h1')
-  expect(header).to.be.visible;
-
-  const styleHeader = getComputedStyle(header);
-  expect(styleHeader).to.have.property('font-size', '20px');
+test("styles for a header", () => {
+  query(document, "style");
+  const header = query(document, "h1");
+  expect(header).toBeVisible();
+  expect(getComputedStyle(header).fontSize).toBe("20px");
 });

@@ -1,13 +1,12 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, 'p');
-
-  expect(element).to.have.class('bold');
-  expect(element).to.have.id('red');
+test("selectors", () => {
+  const element = query(document, "p");
+  expect(element).toHaveClass("bold");
+  expect(element).toHaveAttribute("id", "red");
 
   const style = getComputedStyle(element);
-
-  expect(style).to.have.property('font-weight', 'bold');
-  expect(style).to.have.property('color', 'rgb(255, 0, 0)');
+  expect(style.fontWeight).toBe("700");
+  expect(style.color).toBe("rgb(255, 0, 0)");
 });

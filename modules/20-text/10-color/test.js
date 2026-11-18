@@ -1,9 +1,8 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, 'span');
-  expect(element).to.have.class('violet');
-
-  const style = getComputedStyle(element);
-  expect(style).to.have.property('color', 'rgb(148, 0, 211)');
+test("color", () => {
+  const element = query(document, "span");
+  expect(element).toHaveClass("violet");
+  expect(getComputedStyle(element).color).toBe("rgb(148, 0, 211)");
 });

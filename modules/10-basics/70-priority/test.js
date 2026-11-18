@@ -1,9 +1,15 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, '#no-border');
-  const style = getComputedStyle(element);
+test("priority", () => {
+  const element = query(document, "#no-border");
+  expect(element).toHaveClass("border");
+  expect(getComputedStyle(element).borderStyle).toBe("none");
 
-  expect(style).to.have.property('border-width', '1px');
-  expect(style).to.have.property('border-style', 'none');
+  const otherParagraph = document.createElement("p");
+  otherParagraph.classList.add("border");
+  document.body.append(otherParagraph);
+  const otherStyle = getComputedStyle(otherParagraph);
+  expect(otherStyle.borderWidth, "the border class sets a 1px border").toBe("1px");
+  expect(otherStyle.borderStyle, "the border class sets a solid border").toBe("solid");
 });

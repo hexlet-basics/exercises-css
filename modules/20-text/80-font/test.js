@@ -1,8 +1,7 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { html, query } from "hexlet-basics/dom";
 
-test(({ query, expect, html }) => {
-  const element = query(document, '.bold-text');
-  expect(element).to.have.class('bold-text');
-
-  expect(html).to.contain('bold 24px Verdana, sans-serif');
+test("font shorthand", () => {
+  query(document, ".bold-text");
+  expect(html).toContain("bold 24px Verdana, sans-serif");
 });

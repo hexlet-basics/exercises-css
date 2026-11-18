@@ -1,11 +1,8 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const styleTag = query(document, 'style');
-  expect(styleTag).to.be.visible;
-
-  const paragraph = query(document, 'p')
-  const styleP = getComputedStyle(paragraph);
-
-  expect(styleP).to.have.property('font-size', '10px');
+test("style tag", () => {
+  query(document, "style");
+  const style = getComputedStyle(query(document, "p"));
+  expect(style.fontSize).toBe("10px");
 });

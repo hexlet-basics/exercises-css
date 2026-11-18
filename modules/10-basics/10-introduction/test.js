@@ -1,8 +1,7 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, 'p');
-
-  const style = getComputedStyle(element);
-  expect(style).to.have.property('font-size', '25px');
+test("introduction", () => {
+  const style = getComputedStyle(query(document, "p"));
+  expect(style.fontSize).toBe("25px");
 });

@@ -1,12 +1,10 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { html, query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const div = query(document, '.header');
-  const p = query(div, '.offer');
-
-  const divStyle = getComputedStyle(div);
-  const pStyle = getComputedStyle(p);
-
-  expect(divStyle).to.have.property('font-size', '22px');
-  expect(pStyle).to.have.property('font-size', '200%');
+test("units", () => {
+  const div = query(document, ".header");
+  const p = query(div, ".offer");
+  expect(getComputedStyle(div).fontSize).toBe("22px");
+  expect(html).toContain("200%");
+  expect(getComputedStyle(p).fontSize).toBe("44px");
 });

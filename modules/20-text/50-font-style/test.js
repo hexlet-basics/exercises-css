@@ -1,9 +1,8 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, 'p');
-  expect(element).to.have.class('italic-type');
-
-  const style = getComputedStyle(element);
-  expect(style).to.have.property('font-style', 'oblique');
+test("font-style", () => {
+  const element = query(document, "p");
+  expect(element).toHaveClass("italic-type");
+  expect(getComputedStyle(element).fontStyle).toBe("oblique");
 });

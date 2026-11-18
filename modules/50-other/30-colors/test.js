@@ -1,8 +1,7 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const p = query(document, '.background-black-50');
-  const pStyle = getComputedStyle(p);
-
-  expect(pStyle).to.have.property('background-color', 'rgba(0, 0, 0, 0.5)');
+test("colors", () => {
+  const style = getComputedStyle(query(document, ".background-black-50"));
+  expect(style.backgroundColor).toBe("rgba(0, 0, 0, 0.5)");
 });

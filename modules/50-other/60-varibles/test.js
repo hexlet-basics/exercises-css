@@ -1,7 +1,8 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { html } from "hexlet-basics/dom";
 
-test(({ query, expect, html }) => {
-  expect(html).to.contain(':root');
-  expect(html).to.contain('--main-blue');
-  expect(html).to.contain('#00bfff');
+test("variables", () => {
+  expect(html).toContain(":root");
+  expect(html).toContain("--main-blue");
+  expect(html).toContain("#00bfff");
 });

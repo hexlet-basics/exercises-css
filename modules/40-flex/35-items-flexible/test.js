@@ -1,15 +1,12 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const flexContainer = query(document, '.qa');
+test("flexible items", () => {
+  const style = getComputedStyle(query(document, ".qa"));
+  expect(style.display).toBe("flex");
+  expect(style.alignItems).toBe("center");
 
-  const style = getComputedStyle(flexContainer);
-  expect(style).to.have.property('display', 'flex');
-  expect(style).to.have.property('align-items', 'center');
-
-  const flexArrow = query(document, '.arrow');
-
-  const styleArrow = getComputedStyle(flexArrow);
-  expect(styleArrow).to.have.property('flex-grow', '1');
-  expect(styleArrow).to.have.property('text-align', 'center');
+  const arrowStyle = getComputedStyle(query(document, ".arrow"));
+  expect(arrowStyle.flexGrow).toBe("1");
+  expect(arrowStyle.textAlign).toBe("center");
 });

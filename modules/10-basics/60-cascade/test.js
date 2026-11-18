@@ -1,9 +1,8 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, '.cascade');
-  const style = getComputedStyle(element);
-
-  expect(style).to.have.property('font-size', '25px');
-  expect(style).to.have.property('padding', '15px');
+test("cascade", () => {
+  const style = getComputedStyle(query(document, ".cascade"));
+  expect(style.fontSize).toBe("25px");
+  expect(style.padding).toBe("15px");
 });

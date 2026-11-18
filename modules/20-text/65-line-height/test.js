@@ -1,10 +1,11 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, 'p');
-  expect(element).to.have.class('line-height');
+test("line-height", () => {
+  const element = query(document, "p");
+  expect(element).toHaveClass("line-height");
 
   const style = getComputedStyle(element);
-  expect(style).to.have.property('font-size', '24px');
-  expect(style).to.have.property('line-height', '36px');
+  expect(style.fontSize).toBe("24px");
+  expect(style.lineHeight).toBe("36px");
 });

@@ -1,10 +1,9 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, '.rectangle');
-
-  const style = getComputedStyle(element);
-  expect(style).to.have.property('width', '300px');
-  expect(style).to.have.property('height', '100px');
-  expect(style).to.have.property('background-color', 'rgb(0, 0, 0)');
+test("height and width", () => {
+  const style = getComputedStyle(query(document, ".rectangle"));
+  expect(style.width).toBe("300px");
+  expect(style.height).toBe("100px");
+  expect(style.backgroundColor).toBe("rgb(0, 0, 0)");
 });

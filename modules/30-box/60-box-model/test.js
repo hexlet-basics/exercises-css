@@ -1,21 +1,16 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, '.card-hello');
-  const style = getComputedStyle(element);
-
-  expect(style).to.have.property('width', '230px');
-  expect(style).to.have.property('height', '25px');
-
-  expect(style).to.have.property('padding', '20px');
-  expect(style).to.have.property('margin', '10px');
-
-  expect(style).to.have.property('color', 'rgb(255, 255, 255)');
-  expect(style).to.have.property('font-size', '20px');
-
-  expect(style).to.have.property('border-width', '2px');
-  expect(style).to.have.property('border-color', 'rgb(156, 39, 176)');
-  expect(style).to.have.property('border-style', 'solid');
-
-  expect(style).to.have.property('background-color', 'rgb(250, 114, 104)');
+test("box model", () => {
+  const style = getComputedStyle(query(document, ".card-hello"));
+  expect(style.width).toBe("230px");
+  expect(style.height).toBe("25px");
+  expect(style.padding).toBe("20px");
+  expect(style.margin).toBe("10px");
+  expect(style.color).toBe("rgb(255, 255, 255)");
+  expect(style.fontSize).toBe("20px");
+  expect(style.borderWidth).toBe("2px");
+  expect(style.borderColor).toBe("rgb(156, 39, 176)");
+  expect(style.borderStyle).toBe("solid");
+  expect(style.backgroundColor).toBe("rgb(250, 114, 104)");
 });

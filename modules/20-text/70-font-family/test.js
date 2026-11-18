@@ -1,9 +1,8 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, 'p');
-  expect(element).to.have.class('verdana-text');
-
-  const style = getComputedStyle(element);
-  expect(style).to.have.property('font-family', 'Verdana, sans-serif');
+test("font-family", () => {
+  const element = query(document, "p");
+  expect(element).toHaveClass("verdana-text");
+  expect(getComputedStyle(element).fontFamily).toBe("Verdana, sans-serif");
 });

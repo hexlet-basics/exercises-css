@@ -1,7 +1,8 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { html } from "hexlet-basics/dom";
 
-test(({ query, expect, html }) => {
-  expect(html).to.contain('@media');
-  expect(html).to.contain('max-width');
-  expect(html).to.contain('750px');
+test("media queries", () => {
+  expect(html).toContain("@media");
+  expect(html).toContain("max-width");
+  expect(html).toContain("750px");
 });

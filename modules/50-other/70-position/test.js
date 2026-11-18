@@ -1,10 +1,9 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const div = query(document, '.relative-position');
-  const divStyle = getComputedStyle(div);
-
-  expect(divStyle).to.have.property('position', 'relative');
-  expect(divStyle).to.have.property('top', '100px');
-  expect(divStyle).to.have.property('right', '50px');
+test("position", () => {
+  const style = getComputedStyle(query(document, ".relative-position"));
+  expect(style.position).toBe("relative");
+  expect(style.top).toBe("100px");
+  expect(style.right).toBe("50px");
 });

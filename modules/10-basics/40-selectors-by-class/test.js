@@ -1,15 +1,15 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, 'p');
-  expect(element).to.have.class('news');
-  const style = getComputedStyle(element);
-  // NOTE: Почему-то тест с #55333 значением не работает и требуется rgb
-  // AssertionError: expected { Object (0, 1, ...) } to have property 'color' of '#553333', but got 'rgb(85, 51, 51)'
-  expect(style).to.have.property('color', 'rgb(85, 51, 51)');
+test("selectors by class", () => {
+  const element = query(document, "p");
+  expect(element).toHaveClass("news");
+  expect(getComputedStyle(element).color).toBe("rgb(85, 51, 51)");
 
-  const otherParagraph = document.createElement('p');
+  const otherParagraph = document.createElement("p");
   document.body.append(otherParagraph);
-  const otherStyle = getComputedStyle(otherParagraph);
-  expect(otherStyle, 'цвет задаётся только параграфу с классом news').not.to.have.property('color', 'rgb(85, 51, 51)');
+  expect(
+    getComputedStyle(otherParagraph).color,
+    "the color is set only for the paragraph with the news class",
+  ).not.toBe("rgb(85, 51, 51)");
 });

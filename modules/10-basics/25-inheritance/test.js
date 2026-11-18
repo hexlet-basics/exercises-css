@@ -1,12 +1,9 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const div = query(document, 'div');
-  const p = query(div, 'p');
-
-  const styleDiv = getComputedStyle(div);
-  expect(styleDiv).to.have.property('font-size', '20px');
-
-  const styleP = getComputedStyle(p);
-  expect(styleP).to.have.property('font-size', '10px');
+test("inheritance", () => {
+  const div = query(document, "div");
+  const p = query(div, "p");
+  expect(getComputedStyle(div).fontSize).toBe("20px");
+  expect(getComputedStyle(p).fontSize).toBe("10px");
 });

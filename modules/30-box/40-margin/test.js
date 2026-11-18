@@ -1,8 +1,7 @@
-const { test } = require('tests');
+import { expect, test } from "vitest";
+import { query } from "hexlet-basics/dom";
 
-test(({ query, expect }) => {
-  const element = query(document, '.margin');
-
-  const style = getComputedStyle(element);
-  expect(style).to.have.property('margin', '20px');
+test("margin", () => {
+  const style = getComputedStyle(query(document, ".margin"));
+  expect(style.margin).toBe("20px");
 });

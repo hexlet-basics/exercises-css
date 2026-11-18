@@ -1,5 +1,3 @@
-const { test } = require('tests');
+import { test } from "vitest";
 
-test(({ query, expect }) => {
-  expect(true);
-});
+test("conclusion", () => {});
